@@ -1,0 +1,14 @@
+{
+  "model_name": "qihoo360/fg-clip2-base",
+  "model_revision": "430fbc8a912c86fd4de601381b6245a0edab22f0",
+  "bank_revision": "4edc5ef4ac601a3d08225b53567b6695cbd60b5e",
+  "patch_budget": 1024,
+  "dtype": "float32",
+  "device": "cuda",
+  "image_batch_size": 1,
+  "text_chunk_size": 512,
+  "reference_atol": 0.0002,
+  "reference_rtol": 0.0002,
+  "implementation": "fgclip-masked-max-v1",
+  "preset": "pilot"
+}

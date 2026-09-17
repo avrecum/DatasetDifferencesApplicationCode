@@ -1,0 +1,307 @@
+{
+  "sources": {
+    "imagereward": {
+      "repo": "zai-org/ImageRewardDB",
+      "revision": "c493721e19e296eb615420036f2a2eed08412bb4",
+      "type": "dataset"
+    },
+    "pickapic_images": {
+      "repo": "yuvalkirstain/PickaPic-images",
+      "revision": "d7eb782e625634e2d5f086e74d3724d10984209c",
+      "type": "dataset"
+    },
+    "pickapic_rankings": {
+      "repo": "yuvalkirstain/PickaPic-rankings",
+      "revision": "6627c83e298369e8d4fe25ed6ae7afd75ba978e3",
+      "type": "dataset"
+    },
+    "bank": {
+      "repo": "LGirrbach/fg-clip-text-embeddings",
+      "revision": "4edc5ef4ac601a3d08225b53567b6695cbd60b5e",
+      "type": "dataset"
+    },
+    "model": {
+      "repo": "qihoo360/fg-clip2-base",
+      "revision": "430fbc8a912c86fd4de601381b6245a0edab22f0",
+      "type": "model"
+    }
+  },
+  "tests": {
+    "cpu_passed": 25,
+    "cpu_skipped": 1,
+    "gpu_passed": 1,
+    "gpu_skip_reason": "GPU test executed separately inside Slurm; skipped only during CPU suite",
+    "ruff": "passed"
+  },
+  "jobs": [
+    {
+      "id": 1863367,
+      "scope": "10-prompt smoke, both adapters",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed": "00:05:12"
+    },
+    {
+      "id": 1863492,
+      "scope": "100-prompt ImageReward pilot plus real GPU equivalence test",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed": "00:05:40"
+    }
+  ],
+  "imagereward": {
+    "requested_prompts": 100,
+    "requested_events": 101,
+    "requested_images": 607,
+    "scored_images": 576,
+    "failed_images": 31,
+    "excluded_failed_events": 5,
+    "analysis_counts": {
+      "discovery": {
+        "prompts": 65,
+        "events": 66,
+        "comparisons": 1005,
+        "components": 65,
+        "unique_images": 408
+      },
+      "validation": {
+        "prompts": 15,
+        "events": 15,
+        "comparisons": 222,
+        "components": 15,
+        "unique_images": 90
+      },
+      "test": {
+        "prompts": 15,
+        "events": 15,
+        "comparisons": 158,
+        "components": 15,
+        "unique_images": 78
+      }
+    },
+    "joint_score_by_construction": {
+      "all_strict_pairs": {
+        "concept_id": 0,
+        "concept": "frozen signed concept mean",
+        "side": "preferred",
+        "direction": 1,
+        "discovery_rank": 1,
+        "discovery_effect": 0.005865571044311713,
+        "heldout_effect": -0.001614863626728183,
+        "effect_ci_low": -0.005756358617083051,
+        "effect_ci_high": 0.0024455633926995885,
+        "raw_concordance": 0.4526000899685111,
+        "concordance_ci_low": 0.35205806717648824,
+        "concordance_ci_high": 0.5674166666666667,
+        "direction_adjusted_concordance": 0.4526000899685111,
+        "adjusted_concordance_ci_low": 0.35205806717648824,
+        "adjusted_concordance_ci_high": 0.5674166666666667,
+        "counts": {
+          "prompts": 15,
+          "events": 15,
+          "comparisons": 158,
+          "components": 15,
+          "unique_images": 78
+        },
+        "interval_status": "per-concept percentile intervals; not simultaneous"
+      },
+      "best_vs_rest": {
+        "concept_id": 0,
+        "concept": "frozen signed concept mean",
+        "side": "preferred",
+        "direction": 1,
+        "discovery_rank": 1,
+        "discovery_effect": 0.008466729633209904,
+        "heldout_effect": -0.002746358536183833,
+        "effect_ci_low": -0.010193494207039475,
+        "effect_ci_high": 0.0032877380301141084,
+        "raw_concordance": 0.43555555555555553,
+        "concordance_ci_low": 0.31,
+        "concordance_ci_high": 0.5622499999999999,
+        "direction_adjusted_concordance": 0.43555555555555553,
+        "adjusted_concordance_ci_low": 0.31,
+        "adjusted_concordance_ci_high": 0.5622499999999999,
+        "counts": {
+          "prompts": 15,
+          "events": 15,
+          "comparisons": 80,
+          "components": 15,
+          "unique_images": 78
+        },
+        "interval_status": "per-concept percentile intervals; not simultaneous"
+      },
+      "best_vs_worst": {
+        "concept_id": 0,
+        "concept": "frozen signed concept mean",
+        "side": "preferred",
+        "direction": 1,
+        "discovery_rank": 1,
+        "discovery_effect": 0.00990139217903981,
+        "heldout_effect": -0.0006713163107633591,
+        "effect_ci_low": -0.008557912708881,
+        "effect_ci_high": 0.005810654025835294,
+        "raw_concordance": 0.43333333333333335,
+        "concordance_ci_low": 0.2,
+        "concordance_ci_high": 0.6666666666666666,
+        "direction_adjusted_concordance": 0.43333333333333335,
+        "adjusted_concordance_ci_low": 0.2,
+        "adjusted_concordance_ci_high": 0.6666666666666666,
+        "counts": {
+          "prompts": 15,
+          "events": 15,
+          "comparisons": 27,
+          "components": 15,
+          "unique_images": 40
+        },
+        "interval_status": "per-concept percentile intervals; not simultaneous"
+      }
+    },
+    "direction_replication": {
+      "selected_evaluated": 20,
+      "same_direction": 7,
+      "different_or_zero_direction": 13,
+      "discovery_examples": [
+        "emerald-green",
+        "red-flag",
+        "red-velvet"
+      ],
+      "interpretation": "descriptive direction replication, not significance or verified semantic presence"
+    },
+    "per_concept_intervals_supporting_frozen_direction": 0,
+    "score_fingerprint": "6b1345ec6e2c3189f7472dbe1f3d7007790922f7ea8b806f97fcbea4d446cef9"
+  },
+  "pickapic": {
+    "status": "unavailable: original image URLs returned HTTP 403",
+    "attempted_images": 119,
+    "valid_images": 0,
+    "metadata_rows": 25355,
+    "metadata_valid_strict_events": 13085
+  },
+  "gpu_validation": {
+    "passed": true,
+    "max_absolute_score_error": 1.1920928955078125e-07,
+    "atol": 0.0002,
+    "rtol": 0.0002,
+    "images": [
+      "imagereward:images/train/train_12/985bb12e-7e4a-45aa-a759-b191c7619664.webp",
+      "imagereward:images/train/train_7/631d80e5-e344-4b9c-aeec-dd9d02c38ba2.webp"
+    ],
+    "concepts": 128,
+    "reference": "official dense API, float32, one image",
+    "candidate": "supplied detection dense-head batch",
+    "dtype": "float32",
+    "patch_budget": 1024
+  },
+  "semantic_validation": "unverified by humans; text-bank encoder/template provenance unresolved",
+  "text_bank_compatibility": {
+    "settings": [
+      {
+        "walk_type": "box",
+        "max_length": 64,
+        "lowercased": true,
+        "words": [
+          "(abbe)",
+          "bedeck",
+          "complication",
+          "dyslexia",
+          "gargle",
+          "ingestion",
+          "mid-sixties",
+          "pathetic",
+          "reinvented",
+          "sociobiologist",
+          "transparent",
+          "zzzz"
+        ],
+        "cosine_to_bank": [
+          0.6386818289756775,
+          0.7249525785446167,
+          0.5421590805053711,
+          0.783596932888031,
+          0.6844692230224609,
+          0.4234658479690552,
+          0.8248113989830017,
+          0.6632131338119507,
+          0.7576111555099487,
+          0.7694419622421265,
+          0.7616487741470337,
+          0.550384521484375
+        ],
+        "mean_cosine": 0.6770363450050354,
+        "min_cosine": 0.4234658479690552
+      },
+      {
+        "walk_type": "short",
+        "max_length": 64,
+        "lowercased": true,
+        "words": [
+          "(abbe)",
+          "bedeck",
+          "complication",
+          "dyslexia",
+          "gargle",
+          "ingestion",
+          "mid-sixties",
+          "pathetic",
+          "reinvented",
+          "sociobiologist",
+          "transparent",
+          "zzzz"
+        ],
+        "cosine_to_bank": [
+          0.4370700716972351,
+          0.46667832136154175,
+          0.23888371884822845,
+          0.47652411460876465,
+          0.3468380570411682,
+          0.25485503673553467,
+          0.4677489399909973,
+          0.3228844404220581,
+          0.5221478939056396,
+          0.41689175367355347,
+          0.41273272037506104,
+          0.3690180778503418
+        ],
+        "mean_cosine": 0.3943561017513275,
+        "min_cosine": 0.23888371884822845
+      },
+      {
+        "walk_type": "long",
+        "max_length": 196,
+        "lowercased": true,
+        "words": [
+          "(abbe)",
+          "bedeck",
+          "complication",
+          "dyslexia",
+          "gargle",
+          "ingestion",
+          "mid-sixties",
+          "pathetic",
+          "reinvented",
+          "sociobiologist",
+          "transparent",
+          "zzzz"
+        ],
+        "cosine_to_bank": [
+          0.4399300813674927,
+          0.44250306487083435,
+          0.20335900783538818,
+          0.43563440442085266,
+          0.33269011974334717,
+          0.2580718696117401,
+          0.4026298522949219,
+          0.28248101472854614,
+          0.4664548337459564,
+          0.35960710048675537,
+          0.3607349693775177,
+          0.36734479665756226
+        ],
+        "mean_cosine": 0.362620085477829,
+        "min_cosine": 0.20335900783538818
+      }
+    ],
+    "conclusion": "Diagnostic only: high agreement supports compatibility, but cannot recover missing generation provenance. Original bank retained."
+  },
+  "full_experiment_run": false
+}

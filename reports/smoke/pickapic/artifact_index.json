@@ -1,0 +1,174 @@
+{
+  "run_root": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/smoke/pickapic",
+  "files": [
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/smoke/pickapic/analysis/all_concepts.csv",
+      "relative_path": "analysis/all_concepts.csv",
+      "bytes": 2374623,
+      "sha256": "f39e9052a1e01b735ed2a35b1b6ff041579e51035ddf904a979b62760135459c"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/smoke/pickapic/analysis/analysis_summary.json",
+      "relative_path": "analysis/analysis_summary.json",
+      "bytes": 4977,
+      "sha256": "33aeaae49d7e936a17b73d86d459271db67a91b527ff1c2e743b7d2a5fd49d0a"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/smoke/pickapic/analysis/annotation_template.csv",
+      "relative_path": "analysis/annotation_template.csv",
+      "bytes": 38,
+      "sha256": "71c05d167dcb5f9de92acd1be20baab8e7d9d9671e343cc77ff15b203ad91840"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/smoke/pickapic/analysis/comparisons.jsonl",
+      "relative_path": "analysis/comparisons.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/smoke/pickapic/analysis/confounder_audit.json",
+      "relative_path": "analysis/confounder_audit.json",
+      "bytes": 971,
+      "sha256": "32f39051ad8e27773c50d92f4a54c3855d8a735b38bb9066ade5715a70382411"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/smoke/pickapic/analysis/dataset_audit.json",
+      "relative_path": "analysis/dataset_audit.json",
+      "bytes": 54246,
+      "sha256": "6010501e9d8527839dc4611aa74ec06d31154ee158ed6ad3660cf433bc67dcb2"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/smoke/pickapic/analysis/frozen_candidates.json",
+      "relative_path": "analysis/frozen_candidates.json",
+      "bytes": 504,
+      "sha256": "c06d68b57fd802f90b64448eb8e6d4b98195bd3067947ae7c0166f72d22145e4"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/smoke/pickapic/analysis/gallery_selection.json",
+      "relative_path": "analysis/gallery_selection.json",
+      "bytes": 132,
+      "sha256": "a05c71e618eb13ade8033db4eaac674525725fcc78b27b99681e68778c509704"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/smoke/pickapic/analysis/heatmaps/index.json",
+      "relative_path": "analysis/heatmaps/index.json",
+      "bytes": 71,
+      "sha256": "8c01037e06028999e9347f221e666bef24baf5cdb829f6e0e6b22957583a7964"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/smoke/pickapic/analysis/paper_subsection.tex",
+      "relative_path": "analysis/paper_subsection.tex",
+      "bytes": 987,
+      "sha256": "ea12f27cbbd0ddc781d0358203eee14c3484405af828177a52b21b1b76ea6214"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/smoke/pickapic/analysis/report.md",
+      "relative_path": "analysis/report.md",
+      "bytes": 3554,
+      "sha256": "81bee01b8d1c3b0f86a621d3a5411bb2a74416d3f3eb314785b5c912456579e6"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/smoke/pickapic/analysis/results_table.tex",
+      "relative_path": "analysis/results_table.tex",
+      "bytes": 166,
+      "sha256": "83cad175e858910fab64767decc2f32e86d3c6bb888a2f9def2eca4276fa723d"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/smoke/pickapic/analysis/stratified_sensitivity.json",
+      "relative_path": "analysis/stratified_sensitivity.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/smoke/pickapic/analysis/top_concepts.json",
+      "relative_path": "analysis/top_concepts.json",
+      "bytes": 796,
+      "sha256": "6f9923f138f88d987e0ddcb565a2779e5f6b42788e55ca43fab91ec1762c7d59"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/smoke/pickapic/manifest/comparisons.jsonl",
+      "relative_path": "manifest/comparisons.jsonl",
+      "bytes": 57126,
+      "sha256": "96e4e7a28977bcbd830e816984d06728a7143e1a4192d450f751f626492f8acf"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/smoke/pickapic/manifest/dataset_audit.json",
+      "relative_path": "manifest/dataset_audit.json",
+      "bytes": 49828,
+      "sha256": "c45634a189e1ef9cd0baab66acfa8cfe68cedb77040cbbfc3141e54c7f3923c8"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/smoke/pickapic/manifest/events.jsonl",
+      "relative_path": "manifest/events.jsonl",
+      "bytes": 38312368,
+      "sha256": "850c46ebbfc3b8678e3b73585fddac59d3eb970e7a77a44a1acfe5806c5a27a4"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/smoke/pickapic/manifest/images.jsonl",
+      "relative_path": "manifest/images.jsonl",
+      "bytes": 147505939,
+      "sha256": "84ce7ca422e11c777f5a9368307d7a33084cfc444af9ef12a999c53d57010f65"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/smoke/pickapic/manifest/provenance.json",
+      "relative_path": "manifest/provenance.json",
+      "bytes": 1981,
+      "sha256": "bb5f33061fec49527e004d83156355a672c707d968f41c35c4522d11e81a053a"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/smoke/pickapic/score_config.json",
+      "relative_path": "score_config.json",
+      "bytes": 410,
+      "sha256": "97242adf169fbd26e2e26d2186b2b6b0e1610a48ba9d54b1442c30d07d02bbb8"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/smoke/pickapic/scores/bank_audit.json",
+      "relative_path": "scores/bank_audit.json",
+      "bytes": 668,
+      "sha256": "c3957be172bb0ab09e9c9ced2f4db2e0b6d59bab1d396595b4a9a8dcbc2a4251"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/smoke/pickapic/scores/cache.json",
+      "relative_path": "scores/cache.json",
+      "bytes": 1539,
+      "sha256": "9ab46d24a881d260d1d1b4be0899bc218320c862df46c2582a0006d69dc735eb"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/smoke/pickapic/scores/row_index.json",
+      "relative_path": "scores/row_index.json",
+      "bytes": 6557,
+      "sha256": "76f26c9d70f5b6292640c735ef635085e7f7146383416828da9ca0c620ee445c"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/smoke/pickapic/scores/rows.json",
+      "relative_path": "scores/rows.json",
+      "bytes": 183377,
+      "sha256": "1094bc6ee8625e51a3a55f3e8be52cc360f3164c3fbd6496958b0d52fa8eaea1"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/smoke/pickapic/scores/scores.f32",
+      "relative_path": "scores/scores.f32",
+      "bytes": 25718280,
+      "sha256": "dff93d9fe8aa0b1add0a158c2ddd3c1e926876cdfb0ecfb2d5072cd54bf28363"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/smoke/pickapic/scores/state.json",
+      "relative_path": "scores/state.json",
+      "bytes": 22324,
+      "sha256": "dbc2e3f3a7ee03364f30940cbfaa95a4ae2ab9a88f2483a1d179962c5b6dfc4d"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/smoke/pickapic/scores/valid.npy",
+      "relative_path": "scores/valid.npy",
+      "bytes": 247,
+      "sha256": "75c22481deba70eb971970c20596fb42aacb3d9026005084d2441ff875e9dbac"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/smoke/pickapic/scores/vocab.json",
+      "relative_path": "scores/vocab.json",
+      "bytes": 818330,
+      "sha256": "67d5843c259a82e580d4b0c4d95f617fb5e3de960099e104540a55991b079237"
+    }
+  ],
+  "note": "Raw manifests, scores and full vocabulary tables remain at original run paths; this export copies compact review artifacts only."
+}

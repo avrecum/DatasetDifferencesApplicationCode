@@ -1,0 +1,51 @@
+{
+  "annotators_available": 0,
+  "repeated_annotators": 0,
+  "max_events_per_annotator": 0,
+  "patch_count": {
+    "known": 0,
+    "missing": 0,
+    "min": null,
+    "max": null,
+    "quantiles": []
+  },
+  "width": {
+    "known": 0,
+    "missing": 0,
+    "min": null,
+    "max": null,
+    "quantiles": []
+  },
+  "height": {
+    "known": 0,
+    "missing": 0,
+    "min": null,
+    "max": null,
+    "quantiles": []
+  },
+  "aspect_ratio": {
+    "known": 0,
+    "missing": 0,
+    "min": null,
+    "max": null,
+    "quantiles": []
+  },
+  "generation_models": {},
+  "settings": {
+    "gs": {
+      "known": 0,
+      "missing": 0,
+      "min": null,
+      "max": null,
+      "quantiles": []
+    },
+    "steps": {
+      "known": 0,
+      "missing": 0,
+      "min": null,
+      "max": null,
+      "quantiles": []
+    }
+  },
+  "note": "Prompt matching does not eliminate generator/user confounding; subgroup estimates change the target population. Categories only when provided."
+}

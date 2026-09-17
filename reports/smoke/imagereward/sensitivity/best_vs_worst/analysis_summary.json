@@ -1,0 +1,43 @@
+{
+  "dataset": "imagereward",
+  "synthetic": false,
+  "construction_mode": "best_vs_worst",
+  "counts": {
+    "discovery": {
+      "prompts": 5,
+      "events": 5,
+      "comparisons": 10,
+      "components": 5,
+      "unique_images": 15
+    },
+    "validation": {
+      "prompts": 2,
+      "events": 2,
+      "comparisons": 3,
+      "components": 2,
+      "unique_images": 5
+    },
+    "test": {
+      "prompts": 2,
+      "events": 2,
+      "comparisons": 5,
+      "components": 2,
+      "unique_images": 6
+    }
+  },
+  "vocabulary_size": 54030,
+  "score_fingerprint": "d6c2cc1fbd950931a424a143baf3163424de5a8193230238dd96c5ce1e9180c5",
+  "frozen_artifact_hash": "0b772d6f54b0efd64acf61d46c1fc7ad265b932321d8b0d93deb090472ac50bc",
+  "excluded_invalid_events": [
+    {
+      "event_id": "imagereward:train:004199-0025",
+      "reason": "incomplete_valid_scored_event"
+    }
+  ],
+  "tie_tolerance": 0.0,
+  "bootstrap_resamples": 2000,
+  "seed": 42,
+  "patch_budget": 1024,
+  "status": "held-out results available",
+  "inference": "associations; similarity scores are not calibrated concept presence probabilities"
+}

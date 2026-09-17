@@ -1,0 +1,469 @@
+{
+  "dataset": "imagereward",
+  "input_rows": 55247,
+  "unique_images": 55247,
+  "events": 8878,
+  "duplicate_rows": 0,
+  "schema_version": 1,
+  "prompt_normalization": "Unicode NFC + collapse whitespace; case/punctuation retained",
+  "exclusions": {},
+  "fields": [
+    "classification",
+    "fidelity_rating",
+    "image_amount_in_total",
+    "image_path",
+    "image_text_alignment_rating",
+    "original_split",
+    "overall_rating",
+    "prompt",
+    "prompt_id",
+    "rank"
+  ],
+  "rank_direction": "smaller rank is preferred",
+  "incomplete_policy": "exclude whole event",
+  "split_audit": {
+    "policy": "official; quarantine entire cross-boundary component",
+    "seed": 42,
+    "components": 8533,
+    "quarantined_event_ids": [
+      "imagereward:test:001135-0100",
+      "imagereward:train:011234-0012",
+      "imagereward:test:001142-0089",
+      "imagereward:train:000900-0040",
+      "imagereward:train:001342-0062",
+      "imagereward:test:001197-0059",
+      "imagereward:test:009528-0020",
+      "imagereward:test:011025-0007",
+      "imagereward:train:000652-0022",
+      "imagereward:train:001634-0018",
+      "imagereward:train:002056-0072",
+      "imagereward:train:003888-0077",
+      "imagereward:test:001213-0008",
+      "imagereward:train:000233-0078",
+      "imagereward:test:001231-0014",
+      "imagereward:train:001448-0112",
+      "imagereward:test:001280-0101",
+      "imagereward:train:000366-0071",
+      "imagereward:train:000826-0027",
+      "imagereward:train:001503-0036",
+      "imagereward:train:001934-0057",
+      "imagereward:train:002354-0051",
+      "imagereward:train:002813-0006",
+      "imagereward:train:003281-0055",
+      "imagereward:train:003749-0081",
+      "imagereward:train:003987-0004",
+      "imagereward:train:004223-0094",
+      "imagereward:train:004424-0078",
+      "imagereward:train:005656-0086",
+      "imagereward:test:001287-0085",
+      "imagereward:train:002145-0046",
+      "imagereward:test:001321-0067",
+      "imagereward:train:003582-0112",
+      "imagereward:test:005903-0142",
+      "imagereward:train:007454-0161",
+      "imagereward:test:005912-0052",
+      "imagereward:train:006199-0033",
+      "imagereward:test:005937-0170",
+      "imagereward:train:011628-0047",
+      "imagereward:test:005972-0040",
+      "imagereward:train:001470-0073",
+      "imagereward:train:001869-0064",
+      "imagereward:train:002332-0177",
+      "imagereward:train:002565-0144",
+      "imagereward:train:002793-0040",
+      "imagereward:train:003954-0115",
+      "imagereward:train:004477-0040",
+      "imagereward:train:011389-0060",
+      "imagereward:test:007191-0058",
+      "imagereward:train:005646-0114",
+      "imagereward:test:007755-0051",
+      "imagereward:test:008615-0036",
+      "imagereward:train:004798-0010",
+      "imagereward:train:005903-0026",
+      "imagereward:train:006188-0094",
+      "imagereward:train:007191-0088",
+      "imagereward:train:008277-0090",
+      "imagereward:test:007755-0122",
+      "imagereward:train:000785-0091",
+      "imagereward:train:001040-0190",
+      "imagereward:train:006188-0035",
+      "imagereward:train:006451-0080",
+      "imagereward:test:008311-0076",
+      "imagereward:train:008034-0178",
+      "imagereward:validation:007779-0108",
+      "imagereward:test:008607-0111",
+      "imagereward:train:009604-0099",
+      "imagereward:test:008728-0030",
+      "imagereward:train:008965-0001",
+      "imagereward:validation:008432-0050",
+      "imagereward:test:009555-0103",
+      "imagereward:train:005845-0028",
+      "imagereward:test:009610-0055",
+      "imagereward:train:007750-0124",
+      "imagereward:test:009619-0108",
+      "imagereward:train:009886-0174",
+      "imagereward:test:009639-0195",
+      "imagereward:train:009901-0147",
+      "imagereward:test:010635-0000",
+      "imagereward:train:010003-0084",
+      "imagereward:train:010326-0120",
+      "imagereward:test:010786-0113",
+      "imagereward:train:011134-0010",
+      "imagereward:test:010938-0051",
+      "imagereward:train:011250-0071",
+      "imagereward:train:000007-0105",
+      "imagereward:train:001039-0134",
+      "imagereward:train:001239-0002",
+      "imagereward:train:001459-0042",
+      "imagereward:train:001675-0099",
+      "imagereward:train:001676-0066",
+      "imagereward:train:001898-0027",
+      "imagereward:train:002307-0066",
+      "imagereward:train:002773-0031",
+      "imagereward:train:002986-0117",
+      "imagereward:train:003707-0176",
+      "imagereward:train:004794-0141",
+      "imagereward:train:008612-0122",
+      "imagereward:train:011398-0005",
+      "imagereward:train:012022-0101",
+      "imagereward:train:012666-0085",
+      "imagereward:validation:006954-0156",
+      "imagereward:train:000831-0000",
+      "imagereward:train:002591-0031",
+      "imagereward:train:004220-0108",
+      "imagereward:train:006988-0096",
+      "imagereward:train:013051-0036",
+      "imagereward:validation:005687-0045",
+      "imagereward:validation:007231-0045",
+      "imagereward:train:002410-0044",
+      "imagereward:validation:003096-0063",
+      "imagereward:train:002942-0091",
+      "imagereward:train:003655-0001",
+      "imagereward:train:003885-0001",
+      "imagereward:validation:007654-0016",
+      "imagereward:train:003247-0023",
+      "imagereward:train:007616-0008",
+      "imagereward:validation:006829-0055",
+      "imagereward:train:003568-0092",
+      "imagereward:train:004031-0051",
+      "imagereward:validation:004263-0052",
+      "imagereward:train:004339-0022",
+      "imagereward:validation:007643-0027",
+      "imagereward:train:005275-0060",
+      "imagereward:train:005277-0021",
+      "imagereward:validation:007173-0078",
+      "imagereward:train:006511-0087",
+      "imagereward:train:009167-0087",
+      "imagereward:validation:009422-0073",
+      "imagereward:train:006756-0047",
+      "imagereward:train:007017-0011",
+      "imagereward:validation:008045-0094",
+      "imagereward:train:006868-0064",
+      "imagereward:train:007665-0047",
+      "imagereward:validation:006610-0062",
+      "imagereward:validation:007936-0075",
+      "imagereward:train:006952-0123",
+      "imagereward:validation:008269-0071",
+      "imagereward:train:007047-0030",
+      "imagereward:train:007298-0065",
+      "imagereward:train:007874-0069",
+      "imagereward:validation:006795-0005",
+      "imagereward:train:007765-0169",
+      "imagereward:train:008291-0111",
+      "imagereward:validation:008023-0095",
+      "imagereward:train:008159-0036",
+      "imagereward:validation:007616-0039",
+      "imagereward:validation:007897-0069",
+      "imagereward:train:008304-0010",
+      "imagereward:validation:008632-0188",
+      "imagereward:train:008674-0059",
+      "imagereward:validation:009155-0047",
+      "imagereward:train:010375-0054",
+      "imagereward:validation:005168-0017"
+    ],
+    "event_counts": {
+      "test": 438,
+      "quarantine": 154,
+      "discovery": 7897,
+      "validation": 389
+    },
+    "component_counts": {
+      "discovery": 7663,
+      "validation": 389,
+      "test": 438,
+      "quarantine": 43
+    },
+    "content_hash_scope": "decoded/downloaded images only; metadata identity and prompts checked across full metadata"
+  },
+  "sampling": {
+    "seed": 42,
+    "prompt_limit": 100,
+    "algorithm": "hash-order whole components within fixed splits; 70/15/15 prompt caps; no replenishment after image failure",
+    "selected_prompt_counts": {
+      "discovery": 70,
+      "test": 15,
+      "validation": 15
+    },
+    "skipped_components": 8390
+  },
+  "image_availability": {
+    "required": 607,
+    "statuses": {
+      "valid": 576,
+      "failed": 31
+    },
+    "failures": [
+      {
+        "image_id": "imagereward:images/train/train_23/bfae2403-bc7d-4fd7-ab96-8b93927c5abc.webp",
+        "url": "images/train/train_23/bfae2403-bc7d-4fd7-ab96-8b93927c5abc.webp",
+        "error": "ValueError: archive image decode: UnidentifiedImageError: cannot identify image file '/e/project1/taco-vlm/avrecum/.hf/preference_diff/images/imagereward/c493721e19e296eb615420036f2a2eed08412bb4/263ba98954055e82dde8fa0bd4bb69dca2841542ffe75ec95c265714ca01fe1f.part'"
+      },
+      {
+        "image_id": "imagereward:images/train/train_23/9bd55da6-59a3-4654-8bb1-608e87cb9a52.webp",
+        "url": "images/train/train_23/9bd55da6-59a3-4654-8bb1-608e87cb9a52.webp",
+        "error": "ValueError: archive image decode: UnidentifiedImageError: cannot identify image file '/e/project1/taco-vlm/avrecum/.hf/preference_diff/images/imagereward/c493721e19e296eb615420036f2a2eed08412bb4/75fba5797dd01e23c9313621eec8661d00ee0373670ec8e2e2f26b63cd0a0e18.part'"
+      },
+      {
+        "image_id": "imagereward:images/train/train_23/4b45a85f-6837-41b6-9bfe-fd85bc67d6a0.webp",
+        "url": "images/train/train_23/4b45a85f-6837-41b6-9bfe-fd85bc67d6a0.webp",
+        "error": "ValueError: archive image decode: UnidentifiedImageError: cannot identify image file '/e/project1/taco-vlm/avrecum/.hf/preference_diff/images/imagereward/c493721e19e296eb615420036f2a2eed08412bb4/0fc1ce417ac92813b3230a19bfac5e6aa2703d0d5bf1a7fca3909bd7f32a0beb.part'"
+      },
+      {
+        "image_id": "imagereward:images/train/train_23/8d4e6d2f-0ed2-4218-92a0-28e5b6e6258c.webp",
+        "url": "images/train/train_23/8d4e6d2f-0ed2-4218-92a0-28e5b6e6258c.webp",
+        "error": "ValueError: archive image decode: UnidentifiedImageError: cannot identify image file '/e/project1/taco-vlm/avrecum/.hf/preference_diff/images/imagereward/c493721e19e296eb615420036f2a2eed08412bb4/0bf4c34ba8d32e32c55ecf6d4bab4c866c657f028b1886d74193e88fd809554f.part'"
+      },
+      {
+        "image_id": "imagereward:images/train/train_23/e94f43e1-9747-40bc-a002-7d64a130eb17.webp",
+        "url": "images/train/train_23/e94f43e1-9747-40bc-a002-7d64a130eb17.webp",
+        "error": "ValueError: archive image decode: UnidentifiedImageError: cannot identify image file '/e/project1/taco-vlm/avrecum/.hf/preference_diff/images/imagereward/c493721e19e296eb615420036f2a2eed08412bb4/ebfdaec410caa3526f02cc386ae55360c936317838148d5809226b490dc32c11.part'"
+      },
+      {
+        "image_id": "imagereward:images/train/train_23/8677f13d-0125-4e83-bb77-54fe966d6bf6.webp",
+        "url": "images/train/train_23/8677f13d-0125-4e83-bb77-54fe966d6bf6.webp",
+        "error": "ValueError: archive image decode: UnidentifiedImageError: cannot identify image file '/e/project1/taco-vlm/avrecum/.hf/preference_diff/images/imagereward/c493721e19e296eb615420036f2a2eed08412bb4/94850e1bfa94a500f9c5b38fae89326379a3772240ca2ca6a3e3e12ac62a4403.part'"
+      },
+      {
+        "image_id": "imagereward:images/train/train_23/48173ad9-270a-454e-bdcd-5b34489ecc01.webp",
+        "url": "images/train/train_23/48173ad9-270a-454e-bdcd-5b34489ecc01.webp",
+        "error": "ValueError: archive image decode: UnidentifiedImageError: cannot identify image file '/e/project1/taco-vlm/avrecum/.hf/preference_diff/images/imagereward/c493721e19e296eb615420036f2a2eed08412bb4/dd5633b96cb34d7f824ba7ceb5d26272463329d55772de6c6e4ba306b9bef63d.part'"
+      },
+      {
+        "image_id": "imagereward:images/train/train_23/3d5a4f16-9501-4ab1-b883-117767b8e93b.webp",
+        "url": "images/train/train_23/3d5a4f16-9501-4ab1-b883-117767b8e93b.webp",
+        "error": "ValueError: archive image decode: UnidentifiedImageError: cannot identify image file '/e/project1/taco-vlm/avrecum/.hf/preference_diff/images/imagereward/c493721e19e296eb615420036f2a2eed08412bb4/c63e0c5d82cc2fd80f5ef6205f81dbea4f1087d665d148c1f04eb82ca5cf719d.part'"
+      },
+      {
+        "image_id": "imagereward:images/train/train_23/2e95b835-f73f-4256-9c05-b647099fe128.webp",
+        "url": "images/train/train_23/2e95b835-f73f-4256-9c05-b647099fe128.webp",
+        "error": "ValueError: archive image decode: UnidentifiedImageError: cannot identify image file '/e/project1/taco-vlm/avrecum/.hf/preference_diff/images/imagereward/c493721e19e296eb615420036f2a2eed08412bb4/2cb8d10fd7c998d6b92b5de9ee92e7779d7b17403ed92d06a963f6634eb4397a.part'"
+      },
+      {
+        "image_id": "imagereward:images/train/train_23/8d8af298-b6ad-40ff-924b-cb15354602ad.webp",
+        "url": "images/train/train_23/8d8af298-b6ad-40ff-924b-cb15354602ad.webp",
+        "error": "ValueError: archive image decode: UnidentifiedImageError: cannot identify image file '/e/project1/taco-vlm/avrecum/.hf/preference_diff/images/imagereward/c493721e19e296eb615420036f2a2eed08412bb4/c901d05302483605e95e5d705701ff644c975912e19c98ba7e4213f46e14a4b7.part'"
+      },
+      {
+        "image_id": "imagereward:images/train/train_23/7e4283e2-7603-4bcd-9be5-fe29e06621d8.webp",
+        "url": "images/train/train_23/7e4283e2-7603-4bcd-9be5-fe29e06621d8.webp",
+        "error": "ValueError: archive image decode: UnidentifiedImageError: cannot identify image file '/e/project1/taco-vlm/avrecum/.hf/preference_diff/images/imagereward/c493721e19e296eb615420036f2a2eed08412bb4/c4978cd12284f044bf670ed08bcc8d6fe3ff228c7d924ceb23adc2ab9c3c5a10.part'"
+      },
+      {
+        "image_id": "imagereward:images/train/train_26/812cf17e-987d-4c83-9d24-cfa9d72d8dad.webp",
+        "url": "images/train/train_26/812cf17e-987d-4c83-9d24-cfa9d72d8dad.webp",
+        "error": "ValueError: archive image decode: UnidentifiedImageError: cannot identify image file '/e/project1/taco-vlm/avrecum/.hf/preference_diff/images/imagereward/c493721e19e296eb615420036f2a2eed08412bb4/3398f0293483d771722aa975db08d1b8b4e6e0e13c3b82fd23c953cfb8c7d29e.part'"
+      },
+      {
+        "image_id": "imagereward:images/train/train_26/3ce065c0-7b62-4ef9-8232-1d6a72b684f2.webp",
+        "url": "images/train/train_26/3ce065c0-7b62-4ef9-8232-1d6a72b684f2.webp",
+        "error": "ValueError: archive image decode: UnidentifiedImageError: cannot identify image file '/e/project1/taco-vlm/avrecum/.hf/preference_diff/images/imagereward/c493721e19e296eb615420036f2a2eed08412bb4/842c4e13761afd6506d8db82da2f69b649347b5dfef464a928b86f9e77170e11.part'"
+      },
+      {
+        "image_id": "imagereward:images/train/train_26/6c1ee8df-7815-41ae-bee5-cdfd88595004.webp",
+        "url": "images/train/train_26/6c1ee8df-7815-41ae-bee5-cdfd88595004.webp",
+        "error": "ValueError: archive image decode: UnidentifiedImageError: cannot identify image file '/e/project1/taco-vlm/avrecum/.hf/preference_diff/images/imagereward/c493721e19e296eb615420036f2a2eed08412bb4/c139fd367cde72ac5889185a278aa1fb5a0358e1657219c5d2d9eabbb3c79d4d.part'"
+      },
+      {
+        "image_id": "imagereward:images/train/train_26/658c5acd-5a31-491a-b3a7-bcdb4581bda9.webp",
+        "url": "images/train/train_26/658c5acd-5a31-491a-b3a7-bcdb4581bda9.webp",
+        "error": "ValueError: archive image decode: UnidentifiedImageError: cannot identify image file '/e/project1/taco-vlm/avrecum/.hf/preference_diff/images/imagereward/c493721e19e296eb615420036f2a2eed08412bb4/63bfb7d297a642f2c5a343595aa842990f2f1dddc1c8f6885e52f2f63a2972ea.part'"
+      },
+      {
+        "image_id": "imagereward:images/train/train_26/f62856a3-0f64-431b-8f99-879a413c6996.webp",
+        "url": "images/train/train_26/f62856a3-0f64-431b-8f99-879a413c6996.webp",
+        "error": "ValueError: archive image decode: UnidentifiedImageError: cannot identify image file '/e/project1/taco-vlm/avrecum/.hf/preference_diff/images/imagereward/c493721e19e296eb615420036f2a2eed08412bb4/203a04529fe5e58c0bdc26fc242fece2a60d43b839db46d2696de78fdd699a8a.part'"
+      },
+      {
+        "image_id": "imagereward:images/train/train_26/28c066d2-592c-42fa-a111-9a66d0abd763.webp",
+        "url": "images/train/train_26/28c066d2-592c-42fa-a111-9a66d0abd763.webp",
+        "error": "ValueError: archive image decode: UnidentifiedImageError: cannot identify image file '/e/project1/taco-vlm/avrecum/.hf/preference_diff/images/imagereward/c493721e19e296eb615420036f2a2eed08412bb4/e898aa1e2ced98c21c0171a67db1e429b9e7e97802fccb428c1697eede00d642.part'"
+      },
+      {
+        "image_id": "imagereward:images/train/train_24/fb2ec983-f6ea-4991-b5a1-932d13cc11f8.webp",
+        "url": "images/train/train_24/fb2ec983-f6ea-4991-b5a1-932d13cc11f8.webp",
+        "error": "ValueError: archive image decode: UnidentifiedImageError: cannot identify image file '/e/project1/taco-vlm/avrecum/.hf/preference_diff/images/imagereward/c493721e19e296eb615420036f2a2eed08412bb4/521f8e541ed09ca590d0462521989d4097a6880a21c7447ebeae1c40e6294e68.part'"
+      },
+      {
+        "image_id": "imagereward:images/train/train_24/67088aad-2f9f-4b5d-b663-076708bfef3d.webp",
+        "url": "images/train/train_24/67088aad-2f9f-4b5d-b663-076708bfef3d.webp",
+        "error": "ValueError: archive image decode: UnidentifiedImageError: cannot identify image file '/e/project1/taco-vlm/avrecum/.hf/preference_diff/images/imagereward/c493721e19e296eb615420036f2a2eed08412bb4/7b70bf07f209b9360d8a48a566a00bbe0cb13ace701d7b4d83a314208fabde0e.part'"
+      },
+      {
+        "image_id": "imagereward:images/train/train_24/fab9e2b4-2b19-4aa6-82a9-5d9674a6b6cd.webp",
+        "url": "images/train/train_24/fab9e2b4-2b19-4aa6-82a9-5d9674a6b6cd.webp",
+        "error": "ValueError: archive image decode: UnidentifiedImageError: cannot identify image file '/e/project1/taco-vlm/avrecum/.hf/preference_diff/images/imagereward/c493721e19e296eb615420036f2a2eed08412bb4/c63205c1ea0bbf2068fedceabdbfd3c65d36c36b9d850c73d7918616ab89be2b.part'"
+      },
+      {
+        "image_id": "imagereward:images/train/train_24/43a9100a-3e29-43d4-9878-9fdbc7571f96.webp",
+        "url": "images/train/train_24/43a9100a-3e29-43d4-9878-9fdbc7571f96.webp",
+        "error": "ValueError: archive image decode: UnidentifiedImageError: cannot identify image file '/e/project1/taco-vlm/avrecum/.hf/preference_diff/images/imagereward/c493721e19e296eb615420036f2a2eed08412bb4/81a287451c9a70d900e1bd36c5302ee9f873c4226623ece32953f8e1f6587e57.part'"
+      },
+      {
+        "image_id": "imagereward:images/train/train_24/bc884724-9995-419a-8e3d-2d0a043c5c22.webp",
+        "url": "images/train/train_24/bc884724-9995-419a-8e3d-2d0a043c5c22.webp",
+        "error": "ValueError: archive image decode: UnidentifiedImageError: cannot identify image file '/e/project1/taco-vlm/avrecum/.hf/preference_diff/images/imagereward/c493721e19e296eb615420036f2a2eed08412bb4/5195dcd68502d62e4ce3f947d61ebfa3783559e49c0d0324a4e3bdeba9e95151.part'"
+      },
+      {
+        "image_id": "imagereward:images/train/train_24/b8891b85-07f9-450d-8b85-d69136f25e33.webp",
+        "url": "images/train/train_24/b8891b85-07f9-450d-8b85-d69136f25e33.webp",
+        "error": "ValueError: archive image decode: UnidentifiedImageError: cannot identify image file '/e/project1/taco-vlm/avrecum/.hf/preference_diff/images/imagereward/c493721e19e296eb615420036f2a2eed08412bb4/9bce0aca94c0a27ab3149fbdd25f972ce03e0568e3368d5595fb8076d1e1a9cd.part'"
+      },
+      {
+        "image_id": "imagereward:images/train/train_24/b5795e7e-5f6e-40e4-b9bf-6f8d612729ff.webp",
+        "url": "images/train/train_24/b5795e7e-5f6e-40e4-b9bf-6f8d612729ff.webp",
+        "error": "ValueError: archive image decode: UnidentifiedImageError: cannot identify image file '/e/project1/taco-vlm/avrecum/.hf/preference_diff/images/imagereward/c493721e19e296eb615420036f2a2eed08412bb4/85dedd010354f06e1e017e512b2104a3badf2ad035ff3048d2c7ab3cc79113e0.part'"
+      },
+      {
+        "image_id": "imagereward:images/train/train_24/62571468-1775-49da-ad2b-49036432cda8.webp",
+        "url": "images/train/train_24/62571468-1775-49da-ad2b-49036432cda8.webp",
+        "error": "ValueError: archive image decode: UnidentifiedImageError: cannot identify image file '/e/project1/taco-vlm/avrecum/.hf/preference_diff/images/imagereward/c493721e19e296eb615420036f2a2eed08412bb4/15e5a71124db131313cbaf7283bd88763ca1effaeec879926cc1cfe540573c65.part'"
+      },
+      {
+        "image_id": "imagereward:images/train/train_24/071629ae-5faf-4596-97ca-946a2d528490.webp",
+        "url": "images/train/train_24/071629ae-5faf-4596-97ca-946a2d528490.webp",
+        "error": "ValueError: archive image decode: UnidentifiedImageError: cannot identify image file '/e/project1/taco-vlm/avrecum/.hf/preference_diff/images/imagereward/c493721e19e296eb615420036f2a2eed08412bb4/f883355730cccee68ab60b507671cf21763fd106290fb07bbcc1d3683bc2dac2.part'"
+      },
+      {
+        "image_id": "imagereward:images/train/train_24/593b574e-be48-45a6-a6b0-f0f51633d98c.webp",
+        "url": "images/train/train_24/593b574e-be48-45a6-a6b0-f0f51633d98c.webp",
+        "error": "ValueError: archive image decode: UnidentifiedImageError: cannot identify image file '/e/project1/taco-vlm/avrecum/.hf/preference_diff/images/imagereward/c493721e19e296eb615420036f2a2eed08412bb4/6e937b64607cd48c8e1f49ba2efbc29ffac01d2431a3243d98d9aba6da49730d.part'"
+      },
+      {
+        "image_id": "imagereward:images/train/train_24/9cf939c5-0f33-4c54-b650-070eec504b50.webp",
+        "url": "images/train/train_24/9cf939c5-0f33-4c54-b650-070eec504b50.webp",
+        "error": "ValueError: archive image decode: UnidentifiedImageError: cannot identify image file '/e/project1/taco-vlm/avrecum/.hf/preference_diff/images/imagereward/c493721e19e296eb615420036f2a2eed08412bb4/14e199d570e23aa90beb8dd1821e3b33816cf8aa1060677dcb7e78fd1dd30333.part'"
+      },
+      {
+        "image_id": "imagereward:images/train/train_24/6a1b6684-dd61-4ec5-a71c-2078957ffcea.webp",
+        "url": "images/train/train_24/6a1b6684-dd61-4ec5-a71c-2078957ffcea.webp",
+        "error": "ValueError: archive image decode: UnidentifiedImageError: cannot identify image file '/e/project1/taco-vlm/avrecum/.hf/preference_diff/images/imagereward/c493721e19e296eb615420036f2a2eed08412bb4/321821fa450f366f04ba7f6b5ed8534cb99aa0ffca8b34bc1afe9a78406586ea.part'"
+      },
+      {
+        "image_id": "imagereward:images/train/train_24/f6007c88-6d4d-4c94-931c-e7c14f958721.webp",
+        "url": "images/train/train_24/f6007c88-6d4d-4c94-931c-e7c14f958721.webp",
+        "error": "ValueError: archive image decode: UnidentifiedImageError: cannot identify image file '/e/project1/taco-vlm/avrecum/.hf/preference_diff/images/imagereward/c493721e19e296eb615420036f2a2eed08412bb4/0cbc99c0a8fc31f8f44006b65f5d21beca75a1803205742f32b79d4d0bde6301.part'"
+      },
+      {
+        "image_id": "imagereward:images/train/train_24/9cdcb043-505f-44c2-b89e-42d0a10ee35e.webp",
+        "url": "images/train/train_24/9cdcb043-505f-44c2-b89e-42d0a10ee35e.webp",
+        "error": "ValueError: archive image decode: UnidentifiedImageError: cannot identify image file '/e/project1/taco-vlm/avrecum/.hf/preference_diff/images/imagereward/c493721e19e296eb615420036f2a2eed08412bb4/6590bca3ea7068b486700d53f72c6383fbf3a3cfcdb1fde307066b40d887c29a.part'"
+      }
+    ]
+  },
+  "post_download_hash_quarantine": [],
+  "missingness": {
+    "classification": {
+      "null": 0,
+      "blank_string": 0
+    },
+    "fidelity_rating": {
+      "null": 0,
+      "blank_string": 0
+    },
+    "image_amount_in_total": {
+      "null": 0,
+      "blank_string": 0
+    },
+    "image_path": {
+      "null": 0,
+      "blank_string": 0
+    },
+    "image_text_alignment_rating": {
+      "null": 0,
+      "blank_string": 0
+    },
+    "original_split": {
+      "null": 0,
+      "blank_string": 0
+    },
+    "overall_rating": {
+      "null": 0,
+      "blank_string": 0
+    },
+    "prompt": {
+      "null": 0,
+      "blank_string": 0
+    },
+    "prompt_id": {
+      "null": 0,
+      "blank_string": 0
+    },
+    "rank": {
+      "null": 0,
+      "blank_string": 0
+    }
+  },
+  "observed_candidate_count_distribution": {
+    "8": 1147,
+    "7": 3646,
+    "9": 477,
+    "6": 886,
+    "4": 2670,
+    "5": 52
+  },
+  "analysis_counts": {
+    "discovery": {
+      "prompts": 65,
+      "events": 66,
+      "comparisons": 494,
+      "components": 65,
+      "unique_images": 408
+    },
+    "validation": {
+      "prompts": 15,
+      "events": 15,
+      "comparisons": 96,
+      "components": 15,
+      "unique_images": 90
+    },
+    "test": {
+      "prompts": 15,
+      "events": 15,
+      "comparisons": 80,
+      "components": 15,
+      "unique_images": 78
+    }
+  },
+  "scoring_exclusions": [
+    {
+      "event_id": "imagereward:train:004140-0070",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "imagereward:train:004199-0025",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "imagereward:train:004381-0075",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "imagereward:train:006360-0083",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "imagereward:train:006559-0050",
+      "reason": "incomplete_valid_scored_event"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "selected_evaluated": 20,
+  "same_direction": 10,
+  "different_or_zero_direction": 10,
+  "discovery_examples": [
+    "red-and-green",
+    "red-and-yellow",
+    "red-letter"
+  ],
+  "interpretation": "descriptive direction replication, not significance or verified semantic presence"
+}

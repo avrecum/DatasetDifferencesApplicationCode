@@ -1,0 +1,203 @@
+{
+  "dataset": "pickapic",
+  "synthetic": false,
+  "construction_mode": "winner_vs_rest",
+  "counts": {
+    "discovery": {
+      "prompts": 0,
+      "events": 0,
+      "comparisons": 0,
+      "components": 0,
+      "unique_images": 0
+    },
+    "validation": {
+      "prompts": 0,
+      "events": 0,
+      "comparisons": 0,
+      "components": 0,
+      "unique_images": 0
+    },
+    "test": {
+      "prompts": 0,
+      "events": 0,
+      "comparisons": 0,
+      "components": 0,
+      "unique_images": 0
+    }
+  },
+  "vocabulary_size": 54030,
+  "score_fingerprint": "049e1657e472541ee248c72846ac3bc4e75184e4f7f8fcd814869641f218ea45",
+  "frozen_artifact_hash": "76facc402db5af12cc667791d6bbf5e39381dc42afb2930033c6c44df419a8f8",
+  "excluded_invalid_events": [
+    {
+      "event_id": "pickapic:11205",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:11206",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:11207",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:11208",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:11209",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:12985",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:12986",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:13108",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:13109",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:13110",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:13111",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:13112",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:13922",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:13924",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:13925",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:17788",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:18313",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:18314",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:2041",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:2044",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:2046",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:2048",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:2049",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:2051",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:2053",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:2055",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:2056",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:2057",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:2629",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:2630",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:2631",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:2633",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:2635",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:2637",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:2639",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:2640",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:2641",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:5132",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:5969",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:5970",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "pickapic:7640",
+      "reason": "incomplete_valid_scored_event"
+    }
+  ],
+  "tie_tolerance": 0.0,
+  "bootstrap_resamples": 2000,
+  "seed": 42,
+  "patch_budget": 1024,
+  "status": "held-out results unavailable: no valid test groups",
+  "inference": "associations; similarity scores are not calibrated concept presence probabilities"
+}

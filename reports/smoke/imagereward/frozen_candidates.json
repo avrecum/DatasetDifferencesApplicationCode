@@ -1,0 +1,174 @@
+{
+  "settings": {
+    "seed": 42,
+    "top_k": 10,
+    "tie_tolerance": 0.0,
+    "mode": null,
+    "score_fingerprint": "d6c2cc1fbd950931a424a143baf3163424de5a8193230238dd96c5ce1e9180c5",
+    "comparisons_hash": "0c15c16658ac93b3bc395a1330fb59704c722b30ebcb783618283ee88179d7e4",
+    "selection": "signed discovery effect; strictly positive/negative only; stable vocabulary-index tie break"
+  },
+  "candidates": [
+    {
+      "concept_id": 38920,
+      "concept": "red-and-green",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 1,
+      "discovery_effect": 0.025261796967436873
+    },
+    {
+      "concept_id": 38923,
+      "concept": "red-and-yellow",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 2,
+      "discovery_effect": 0.025080332131021545
+    },
+    {
+      "concept_id": 38948,
+      "concept": "red-letter",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 3,
+      "discovery_effect": 0.025073713337381676
+    },
+    {
+      "concept_id": 38952,
+      "concept": "red-orange",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 4,
+      "discovery_effect": 0.02318644087761641
+    },
+    {
+      "concept_id": 38961,
+      "concept": "red-tile",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 5,
+      "discovery_effect": 0.02308626770559285
+    },
+    {
+      "concept_id": 38919,
+      "concept": "red-and-blue",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 6,
+      "discovery_effect": 0.0217736627947953
+    },
+    {
+      "concept_id": 38926,
+      "concept": "red-blue",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 7,
+      "discovery_effect": 0.021719996101326418
+    },
+    {
+      "concept_id": 40658,
+      "concept": "ruby-red",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 8,
+      "discovery_effect": 0.021307342087643018
+    },
+    {
+      "concept_id": 39052,
+      "concept": "redware",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 9,
+      "discovery_effect": 0.020530072773496305
+    },
+    {
+      "concept_id": 38950,
+      "concept": "red-meat",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 10,
+      "discovery_effect": 0.02050015384538307
+    },
+    {
+      "concept_id": 17445,
+      "concept": "fencepost",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 1,
+      "discovery_effect": -0.026579600030349364
+    },
+    {
+      "concept_id": 45208,
+      "concept": "stanchion",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 2,
+      "discovery_effect": -0.02525003950628969
+    },
+    {
+      "concept_id": 40892,
+      "concept": "sailplane",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 3,
+      "discovery_effect": -0.02338725095614791
+    },
+    {
+      "concept_id": 18066,
+      "concept": "flagpole",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 4,
+      "discovery_effect": -0.0217995727683107
+    },
+    {
+      "concept_id": 45234,
+      "concept": "standpipe",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 5,
+      "discovery_effect": -0.0209122810471389
+    },
+    {
+      "concept_id": 34603,
+      "concept": "peg",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 6,
+      "discovery_effect": -0.02078421115047402
+    },
+    {
+      "concept_id": 6046,
+      "concept": "bollard",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 7,
+      "discovery_effect": -0.020683654708166917
+    },
+    {
+      "concept_id": 30211,
+      "concept": "monorail",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 8,
+      "discovery_effect": -0.020093771008153766
+    },
+    {
+      "concept_id": 2154,
+      "concept": "airfoil",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 9,
+      "discovery_effect": -0.019879654662476636
+    },
+    {
+      "concept_id": 32217,
+      "concept": "nozzle",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 10,
+      "discovery_effect": -0.01979151415121224
+    }
+  ],
+  "artifact_hash": "5abfb0b06ef2a2edb0495589b230f962aa85380a1fa5f7607b6ce7d44c768645"
+}

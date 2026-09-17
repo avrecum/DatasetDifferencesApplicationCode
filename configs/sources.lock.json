@@ -1,0 +1,7 @@
+{
+  "imagereward": {"repo": "zai-org/ImageRewardDB", "revision": "c493721e19e296eb615420036f2a2eed08412bb4", "type": "dataset"},
+  "pickapic_images": {"repo": "yuvalkirstain/PickaPic-images", "revision": "d7eb782e625634e2d5f086e74d3724d10984209c", "type": "dataset"},
+  "pickapic_rankings": {"repo": "yuvalkirstain/PickaPic-rankings", "revision": "6627c83e298369e8d4fe25ed6ae7afd75ba978e3", "type": "dataset"},
+  "bank": {"repo": "LGirrbach/fg-clip-text-embeddings", "revision": "4edc5ef4ac601a3d08225b53567b6695cbd60b5e", "type": "dataset"},
+  "model": {"repo": "qihoo360/fg-clip2-base", "revision": "430fbc8a912c86fd4de601381b6245a0edab22f0", "type": "model"}
+}

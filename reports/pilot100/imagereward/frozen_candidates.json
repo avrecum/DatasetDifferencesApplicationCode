@@ -1,0 +1,174 @@
+{
+  "settings": {
+    "seed": 42,
+    "top_k": 10,
+    "tie_tolerance": 0.0,
+    "mode": null,
+    "score_fingerprint": "6b1345ec6e2c3189f7472dbe1f3d7007790922f7ea8b806f97fcbea4d446cef9",
+    "comparisons_hash": "ee75b8d7f76e056c2d61d19e8d57320343e17553cebfce9ed7b22d70c39f3e81",
+    "selection": "signed discovery effect; strictly positive/negative only; stable vocabulary-index tie break"
+  },
+  "candidates": [
+    {
+      "concept_id": 15414,
+      "concept": "emerald-green",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 1,
+      "discovery_effect": 0.006237832773641972
+    },
+    {
+      "concept_id": 38940,
+      "concept": "red-flag",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 2,
+      "discovery_effect": 0.005884321781667413
+    },
+    {
+      "concept_id": 38963,
+      "concept": "red-velvet",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 3,
+      "discovery_effect": 0.005789001891779425
+    },
+    {
+      "concept_id": 22951,
+      "concept": "hot-pink",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 4,
+      "discovery_effect": 0.0056484996615471525
+    },
+    {
+      "concept_id": 38923,
+      "concept": "red-and-yellow",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 5,
+      "discovery_effect": 0.005239509311758732
+    },
+    {
+      "concept_id": 21229,
+      "concept": "hairstyle",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 6,
+      "discovery_effect": 0.005226634868266202
+    },
+    {
+      "concept_id": 38972,
+      "concept": "redcoat",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 7,
+      "discovery_effect": 0.00509792245109365
+    },
+    {
+      "concept_id": 27330,
+      "concept": "lip-syncing",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 8,
+      "discovery_effect": 0.00491802600399225
+    },
+    {
+      "concept_id": 38961,
+      "concept": "red-tile",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 9,
+      "discovery_effect": 0.004829455392181973
+    },
+    {
+      "concept_id": 31257,
+      "concept": "neon-green",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 10,
+      "discovery_effect": 0.00458570712661409
+    },
+    {
+      "concept_id": 14316,
+      "concept": "drainboard",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 1,
+      "discovery_effect": -0.007076782732104334
+    },
+    {
+      "concept_id": 8362,
+      "concept": "chickweed",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 2,
+      "discovery_effect": -0.006749548116285668
+    },
+    {
+      "concept_id": 9094,
+      "concept": "clover",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 3,
+      "discovery_effect": -0.00641358531396537
+    },
+    {
+      "concept_id": 45037,
+      "concept": "spurge",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 4,
+      "discovery_effect": -0.006341073189338758
+    },
+    {
+      "concept_id": 6317,
+      "concept": "bowl-shaped",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 5,
+      "discovery_effect": -0.0063397943827097685
+    },
+    {
+      "concept_id": 21204,
+      "concept": "hail",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 6,
+      "discovery_effect": -0.0062859152340046754
+    },
+    {
+      "concept_id": 7361,
+      "concept": "canister",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 7,
+      "discovery_effect": -0.006253169600314932
+    },
+    {
+      "concept_id": 52693,
+      "concept": "weed",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 8,
+      "discovery_effect": -0.006233977524221598
+    },
+    {
+      "concept_id": 11321,
+      "concept": "crock",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 9,
+      "discovery_effect": -0.006224357001936308
+    },
+    {
+      "concept_id": 53798,
+      "concept": "yarmulke",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 10,
+      "discovery_effect": -0.005936306528809986
+    }
+  ],
+  "artifact_hash": "7e606e7fa3996c8773e90fcc96301b02ebda4f071c6384b17eabbfc7342193fa"
+}

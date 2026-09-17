@@ -1,0 +1,126 @@
+{
+  "status": "unverified model similarity maps",
+  "geometry": "inverse processor HWC patch packing; valid prefix patches only; exact processed view",
+  "maps": [
+    {
+      "concept": "emerald-green",
+      "event_id": "imagereward:test:010856-0009",
+      "selection": "first seeded random-audit pair",
+      "figure": "1715857ee7c02e23c4c4.png",
+      "geometry": [
+        {
+          "image_id": "imagereward:images/test/test_2/de0d0967-da8b-4313-aabc-8586351f274e.webp",
+          "spatial_shape": [
+            32,
+            32
+          ],
+          "patch_size": 16,
+          "valid_patches": 1024,
+          "maximum": 0.17791125178337097,
+          "argmax_patch": [
+            10,
+            10
+          ]
+        },
+        {
+          "image_id": "imagereward:images/test/test_2/8b7d05e4-9a3b-4c73-b087-104251033467.webp",
+          "spatial_shape": [
+            32,
+            32
+          ],
+          "patch_size": 16,
+          "valid_patches": 1024,
+          "maximum": 0.1646726429462433,
+          "argmax_patch": [
+            5,
+            31
+          ]
+        }
+      ],
+      "scale": [
+        -0.000962553545832634,
+        0.17791125178337097
+      ]
+    },
+    {
+      "concept": "red-flag",
+      "event_id": "imagereward:test:007713-0046",
+      "selection": "first seeded random-audit pair",
+      "figure": "d2c34a25ffeb4cdfa670.png",
+      "geometry": [
+        {
+          "image_id": "imagereward:images/test/test_1/047841df-97f9-4a15-b607-09277e3b1b95.webp",
+          "spatial_shape": [
+            32,
+            32
+          ],
+          "patch_size": 16,
+          "valid_patches": 1024,
+          "maximum": 0.28091275691986084,
+          "argmax_patch": [
+            22,
+            0
+          ]
+        },
+        {
+          "image_id": "imagereward:images/test/test_1/9dc88b05-f911-4a4d-abdb-e0bd03c4d01b.webp",
+          "spatial_shape": [
+            32,
+            32
+          ],
+          "patch_size": 16,
+          "valid_patches": 1024,
+          "maximum": 0.24018752574920654,
+          "argmax_patch": [
+            25,
+            3
+          ]
+        }
+      ],
+      "scale": [
+        -0.003591538406908512,
+        0.28091275691986084
+      ]
+    },
+    {
+      "concept": "red-velvet",
+      "event_id": "imagereward:test:010921-0064",
+      "selection": "first seeded random-audit pair",
+      "figure": "07aac848f1dba0f08227.png",
+      "geometry": [
+        {
+          "image_id": "imagereward:images/test/test_2/f0c4de4f-0e70-44e5-a872-8e0a11e94df3.webp",
+          "spatial_shape": [
+            22,
+            44
+          ],
+          "patch_size": 16,
+          "valid_patches": 968,
+          "maximum": 0.13552996516227722,
+          "argmax_patch": [
+            20,
+            4
+          ]
+        },
+        {
+          "image_id": "imagereward:images/test/test_2/481c5c41-fe90-44a6-a4d6-d48706d6f7f7.webp",
+          "spatial_shape": [
+            22,
+            44
+          ],
+          "patch_size": 16,
+          "valid_patches": 968,
+          "maximum": 0.14694298803806305,
+          "argmax_patch": [
+            16,
+            21
+          ]
+        }
+      ],
+      "scale": [
+        0.0024105720221996307,
+        0.14694298803806305
+      ]
+    }
+  ]
+}

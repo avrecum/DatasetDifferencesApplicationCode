@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "preference-diff"
+version = "0.1.0"
+description = "Prompt-balanced fine-grained dataset diffing of recorded human preferences"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "Pillow>=10", "pyarrow>=15", "requests>=2.31", "scipy>=1.11", "matplotlib>=3.8", "huggingface-hub>=0.27"]
+
+[project.optional-dependencies]
+scoring = ["torch>=2.6", "torchvision", "transformers==4.57.6", "tokenizers==0.22.2", "huggingface-hub==0.36.2", "sentencepiece", "protobuf"]
+test = ["pytest>=8"]
+
+[project.scripts]
+preference-diff = "preference_diff.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["preference_diff*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["gpu: real FG-CLIP model equivalence; requires configured GPU and model"]

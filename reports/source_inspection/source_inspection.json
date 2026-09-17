@@ -1,0 +1,510 @@
+{
+  "sources": {
+    "imagereward": {
+      "repo": "zai-org/ImageRewardDB",
+      "revision": "c493721e19e296eb615420036f2a2eed08412bb4",
+      "type": "dataset",
+      "files": [
+        {
+          "path": ".gitattributes",
+          "size": 2265
+        },
+        {
+          "path": "ImageRewardDB.py",
+          "size": 15671
+        },
+        {
+          "path": "README.md",
+          "size": 8003
+        },
+        {
+          "path": "images/test/test_1.zip",
+          "size": 596587827
+        },
+        {
+          "path": "images/test/test_2.zip",
+          "size": 586962189
+        },
+        {
+          "path": "images/train/train_1.zip",
+          "size": 697693404
+        },
+        {
+          "path": "images/train/train_10.zip",
+          "size": 714251358
+        },
+        {
+          "path": "images/train/train_11.zip",
+          "size": 676435499
+        },
+        {
+          "path": "images/train/train_12.zip",
+          "size": 630085780
+        },
+        {
+          "path": "images/train/train_13.zip",
+          "size": 714683480
+        },
+        {
+          "path": "images/train/train_14.zip",
+          "size": 685108945
+        },
+        {
+          "path": "images/train/train_15.zip",
+          "size": 730739082
+        },
+        {
+          "path": "images/train/train_16.zip",
+          "size": 628582062
+        },
+        {
+          "path": "images/train/train_17.zip",
+          "size": 600535720
+        },
+        {
+          "path": "images/train/train_18.zip",
+          "size": 718812291
+        },
+        {
+          "path": "images/train/train_19.zip",
+          "size": 624971763
+        },
+        {
+          "path": "images/train/train_2.zip",
+          "size": 640159817
+        },
+        {
+          "path": "images/train/train_20.zip",
+          "size": 654472939
+        },
+        {
+          "path": "images/train/train_21.zip",
+          "size": 722794772
+        },
+        {
+          "path": "images/train/train_22.zip",
+          "size": 722581324
+        },
+        {
+          "path": "images/train/train_23.zip",
+          "size": 564667244
+        },
+        {
+          "path": "images/train/train_24.zip",
+          "size": 544540073
+        },
+        {
+          "path": "images/train/train_25.zip",
+          "size": 743941562
+        },
+        {
+          "path": "images/train/train_26.zip",
+          "size": 528214929
+        },
+        {
+          "path": "images/train/train_27.zip",
+          "size": 690366245
+        },
+        {
+          "path": "images/train/train_28.zip",
+          "size": 570038607
+        },
+        {
+          "path": "images/train/train_29.zip",
+          "size": 714034539
+        },
+        {
+          "path": "images/train/train_3.zip",
+          "size": 644433936
+        },
+        {
+          "path": "images/train/train_30.zip",
+          "size": 670902112
+        },
+        {
+          "path": "images/train/train_31.zip",
+          "size": 680004574
+        },
+        {
+          "path": "images/train/train_32.zip",
+          "size": 590049362
+        },
+        {
+          "path": "images/train/train_4.zip",
+          "size": 784582758
+        },
+        {
+          "path": "images/train/train_5.zip",
+          "size": 683753534
+        },
+        {
+          "path": "images/train/train_6.zip",
+          "size": 754699089
+        },
+        {
+          "path": "images/train/train_7.zip",
+          "size": 709228277
+        },
+        {
+          "path": "images/train/train_8.zip",
+          "size": 694869320
+        },
+        {
+          "path": "images/train/train_9.zip",
+          "size": 668656534
+        },
+        {
+          "path": "images/validation/validation_1.zip",
+          "size": 711563251
+        },
+        {
+          "path": "images/validation/validation_2.zip",
+          "size": 414510849
+        },
+        {
+          "path": "metadata-test.parquet",
+          "size": 167776
+        },
+        {
+          "path": "metadata-train.parquet",
+          "size": 2858373
+        },
+        {
+          "path": "metadata-validation.parquet",
+          "size": 158001
+        }
+      ],
+      "url": "https://huggingface.co/datasets/zai-org/ImageRewardDB/tree/c493721e19e296eb615420036f2a2eed08412bb4"
+    },
+    "pickapic_images": {
+      "repo": "yuvalkirstain/PickaPic-images",
+      "revision": "d7eb782e625634e2d5f086e74d3724d10984209c",
+      "type": "dataset",
+      "files": [
+        {
+          "path": ".gitattributes",
+          "size": 2265
+        },
+        {
+          "path": "README.md",
+          "size": 843
+        },
+        {
+          "path": "data/train-00000-of-00001-3fc76ae33f4e5a79.parquet",
+          "size": 12059565
+        }
+      ],
+      "url": "https://huggingface.co/datasets/yuvalkirstain/PickaPic-images/tree/d7eb782e625634e2d5f086e74d3724d10984209c"
+    },
+    "pickapic_rankings": {
+      "repo": "yuvalkirstain/PickaPic-rankings",
+      "revision": "6627c83e298369e8d4fe25ed6ae7afd75ba978e3",
+      "type": "dataset",
+      "files": [
+        {
+          "path": ".gitattributes",
+          "size": 2265
+        },
+        {
+          "path": "README.md",
+          "size": 684
+        },
+        {
+          "path": "data/train-00000-of-00001-5088566feaadd3d9.parquet",
+          "size": 3973871
+        }
+      ],
+      "url": "https://huggingface.co/datasets/yuvalkirstain/PickaPic-rankings/tree/6627c83e298369e8d4fe25ed6ae7afd75ba978e3"
+    },
+    "bank": {
+      "repo": "LGirrbach/fg-clip-text-embeddings",
+      "revision": "4edc5ef4ac601a3d08225b53567b6695cbd60b5e",
+      "type": "dataset",
+      "files": [
+        {
+          "path": ".gitattributes",
+          "size": 2504
+        },
+        {
+          "path": "embeddings.pt",
+          "size": 165981758
+        },
+        {
+          "path": "vocab.txt",
+          "size": 548177
+        }
+      ],
+      "url": "https://huggingface.co/datasets/LGirrbach/fg-clip-text-embeddings/tree/4edc5ef4ac601a3d08225b53567b6695cbd60b5e"
+    },
+    "model": {
+      "repo": "qihoo360/fg-clip2-base",
+      "revision": "430fbc8a912c86fd4de601381b6245a0edab22f0",
+      "type": "model",
+      "files": [
+        {
+          "path": ".gitattributes",
+          "size": 1750
+        },
+        {
+          "path": "FGCLIP2_compare_all_n.png",
+          "size": 1382672
+        },
+        {
+          "path": "FGCLIP2_dfcolor_cat_all_2K.png",
+          "size": 880510
+        },
+        {
+          "path": "README.md",
+          "size": 10294
+        },
+        {
+          "path": "cn_re_demo.png",
+          "size": 180886
+        },
+        {
+          "path": "config.json",
+          "size": 1107
+        },
+        {
+          "path": "configuration_fgclip2.py",
+          "size": 13267
+        },
+        {
+          "path": "model.safetensors",
+          "size": 1535264416
+        },
+        {
+          "path": "modeling_fgclip2.py",
+          "size": 60139
+        },
+        {
+          "path": "preprocessor_config.json",
+          "size": 393
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 636
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 34356304
+        },
+        {
+          "path": "tokenizer.model",
+          "size": 4241003
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 40160
+        }
+      ],
+      "url": "https://huggingface.co/qihoo360/fg-clip2-base/tree/430fbc8a912c86fd4de601381b6245a0edab22f0"
+    }
+  },
+  "metadata": {
+    "imagereward/ImageRewardDB.py": {
+      "path": "/e/project1/taco-vlm/avrecum/.hf/hub/datasets--zai-org--ImageRewardDB/snapshots/c493721e19e296eb615420036f2a2eed08412bb4/ImageRewardDB.py",
+      "sha256": "0f09404db794ec68a4c70cc05e6352a07fd4fb7e622500fd8d134dda7a7a5c06"
+    },
+    "imagereward/README.md": {
+      "path": "/e/project1/taco-vlm/avrecum/.hf/hub/datasets--zai-org--ImageRewardDB/snapshots/c493721e19e296eb615420036f2a2eed08412bb4/README.md",
+      "sha256": "2965f9f966d8aa56ebb070d7b92bf83ea4072a9e34011eddf5e3fcdc690c6b44"
+    },
+    "imagereward/metadata-test.parquet": {
+      "path": "/e/project1/taco-vlm/avrecum/.hf/hub/datasets--zai-org--ImageRewardDB/snapshots/c493721e19e296eb615420036f2a2eed08412bb4/metadata-test.parquet",
+      "sha256": "318b071eb7a53565138ccc215d6cfeaf513b31ee7c03bda89efb590b2b7cd072",
+      "rows": 2720,
+      "schema": "image_path: string\nprompt_id: string\nprompt: string\nclassification: string\nimage_amount_in_total: int64\nrank: int64\noverall_rating: int64\nimage_text_alignment_rating: int64\nfidelity_rating: int64\n-- schema metadata --\npandas: '{\"index_columns\": [{\"kind\": \"range\", \"name\": null, \"start\": 0, \"' + 1387",
+      "example": [
+        {
+          "image_path": "images/test/test_1/45b0de4d-5a57-4ae3-8810-ffbd328204fd.webp",
+          "prompt_id": "005658-0040",
+          "prompt": "deathly portal to the abyss, ultra detailed, warm interior light, cinematic shot, photorealistic, octane render, high definition, fine details, sinister tones, 8 k, mcbess mood, ",
+          "classification": "Arts",
+          "image_amount_in_total": 4,
+          "rank": 1,
+          "overall_rating": 5,
+          "image_text_alignment_rating": 5,
+          "fidelity_rating": 6
+        },
+        {
+          "image_path": "images/test/test_1/7d4cc31d-2451-4a9d-99e6-3bdc157aaf2d.webp",
+          "prompt_id": "005658-0040",
+          "prompt": "deathly portal to the abyss, ultra detailed, warm interior light, cinematic shot, photorealistic, octane render, high definition, fine details, sinister tones, 8 k, mcbess mood, ",
+          "classification": "Arts",
+          "image_amount_in_total": 4,
+          "rank": 2,
+          "overall_rating": 5,
+          "image_text_alignment_rating": 5,
+          "fidelity_rating": 6
+        }
+      ]
+    },
+    "imagereward/metadata-train.parquet": {
+      "path": "/e/project1/taco-vlm/avrecum/.hf/hub/datasets--zai-org--ImageRewardDB/snapshots/c493721e19e296eb615420036f2a2eed08412bb4/metadata-train.parquet",
+      "sha256": "0dbadccb812ea20f7072b4dbe76f103c36740c9acdcf07eaccabb6ae110cb3d2",
+      "rows": 49943,
+      "schema": "image_path: string\nprompt_id: string\nprompt: string\nclassification: string\nimage_amount_in_total: int64\nrank: int64\noverall_rating: int64\nimage_text_alignment_rating: int64\nfidelity_rating: int64\n-- schema metadata --\npandas: '{\"index_columns\": [{\"kind\": \"range\", \"name\": null, \"start\": 0, \"' + 1388",
+      "example": [
+        {
+          "image_path": "images/train/train_1/0d26d78f-5f6a-4ee6-a5d5-3c080564a0dc.webp",
+          "prompt_id": "000904-0035",
+          "prompt": "perfect white haired egyptian goddess wearing white dove wings, warframe armor, regal, attractive, ornate, sultry, beautiful, ice queen, half asian, pretty face, blue eyes, detailed, scifi platform, 4 k, ultra realistic, epic lighting, illuminated, cinematic, masterpiece, art by akihito tsukushi, voidstar ",
+          "classification": "People",
+          "image_amount_in_total": 7,
+          "rank": 1,
+          "overall_rating": 7,
+          "image_text_alignment_rating": 7,
+          "fidelity_rating": 7
+        },
+        {
+          "image_path": "images/train/train_1/dc77cb3b-28f9-4723-b3ab-ff8e7828f791.webp",
+          "prompt_id": "000904-0035",
+          "prompt": "perfect white haired egyptian goddess wearing white dove wings, warframe armor, regal, attractive, ornate, sultry, beautiful, ice queen, half asian, pretty face, blue eyes, detailed, scifi platform, 4 k, ultra realistic, epic lighting, illuminated, cinematic, masterpiece, art by akihito tsukushi, voidstar ",
+          "classification": "People",
+          "image_amount_in_total": 7,
+          "rank": 2,
+          "overall_rating": 7,
+          "image_text_alignment_rating": 7,
+          "fidelity_rating": 7
+        }
+      ]
+    },
+    "imagereward/metadata-validation.parquet": {
+      "path": "/e/project1/taco-vlm/avrecum/.hf/hub/datasets--zai-org--ImageRewardDB/snapshots/c493721e19e296eb615420036f2a2eed08412bb4/metadata-validation.parquet",
+      "sha256": "c022eff66ce7241c8f5eaf8a1314b9fdbf36a562655b1a69a3c8668452c6d3db",
+      "rows": 2584,
+      "schema": "image_path: string\nprompt_id: string\nprompt: string\nclassification: string\nimage_amount_in_total: int64\nrank: int64\noverall_rating: int64\nimage_text_alignment_rating: int64\nfidelity_rating: int64\n-- schema metadata --\npandas: '{\"index_columns\": [{\"kind\": \"range\", \"name\": null, \"start\": 0, \"' + 1387",
+      "example": [
+        {
+          "image_path": "images/validation/validation_1/b3682ff9-e89e-4733-b3cd-3b8cfbd0f0ea.webp",
+          "prompt_id": "001667-0100",
+          "prompt": "professional full body photo of a tall late-20s caucasian man with short dark-brown hair, stubble, and bold eyebrows",
+          "classification": "People",
+          "image_amount_in_total": 6,
+          "rank": 2,
+          "overall_rating": 6,
+          "image_text_alignment_rating": 6,
+          "fidelity_rating": 6
+        },
+        {
+          "image_path": "images/validation/validation_1/e40ab1ef-eb83-4bb3-a54c-d707b1d4b7ff.webp",
+          "prompt_id": "001667-0100",
+          "prompt": "professional full body photo of a tall late-20s caucasian man with short dark-brown hair, stubble, and bold eyebrows",
+          "classification": "People",
+          "image_amount_in_total": 6,
+          "rank": 2,
+          "overall_rating": 6,
+          "image_text_alignment_rating": 6,
+          "fidelity_rating": 6
+        }
+      ]
+    },
+    "pickapic_images/README.md": {
+      "path": "/e/project1/taco-vlm/avrecum/.hf/hub/datasets--yuvalkirstain--PickaPic-images/snapshots/d7eb782e625634e2d5f086e74d3724d10984209c/README.md",
+      "sha256": "5b70cec4066560f717587080922e87f0e3ef312241ed28f2ebebd70bb8ad020a"
+    },
+    "pickapic_images/data/train-00000-of-00001-3fc76ae33f4e5a79.parquet": {
+      "path": "/e/project1/taco-vlm/avrecum/.hf/hub/datasets--yuvalkirstain--PickaPic-images/snapshots/d7eb782e625634e2d5f086e74d3724d10984209c/data/train-00000-of-00001-3fc76ae33f4e5a79.parquet",
+      "sha256": "a1334777140bdb1b284bc63c2a3a870e361f4ece3e99edcc86a123c4e43aca38",
+      "rows": 109356,
+      "schema": "image_id: int64\ncreated_at: timestamp[us]\nimage_uid: string\nuser_id: int64\nprompt: string\nnegative_prompt: string\nseed: int64\ngs: double\nsteps: int64\nidx: int64\nnum_generated: int64\nscheduler_cls: string\nmodel_id: string\nurl: string",
+      "example": [
+        {
+          "image_id": 29493,
+          "created_at": "2023-01-12T21:15:00.648197",
+          "image_uid": "e815662d-9709-4380-b4c1-96be11f07574",
+          "user_id": 641,
+          "prompt": "medieval protoss , glowing blue eyes",
+          "negative_prompt": "hood",
+          "seed": 987113576,
+          "gs": 7.8482246,
+          "steps": 25,
+          "idx": 1,
+          "num_generated": 4,
+          "scheduler_cls": "FlaxDPMSolverMultistepScheduler",
+          "model_id": "stabilityai/stable-diffusion-2-1",
+          "url": "https://text-to-image-human-preferences.s3.us-east-2.amazonaws.com/images/e815662d-9709-4380-b4c1-96be11f07574.png"
+        },
+        {
+          "image_id": 29494,
+          "created_at": "2023-01-12T21:15:00.675614",
+          "image_uid": "ca7cc72b-8271-4510-91b4-1f7a227fca96",
+          "user_id": 641,
+          "prompt": "medieval protoss , glowing blue eyes",
+          "negative_prompt": "hood",
+          "seed": 987113576,
+          "gs": 7.8482246,
+          "steps": 25,
+          "idx": 2,
+          "num_generated": 4,
+          "scheduler_cls": "FlaxDPMSolverMultistepScheduler",
+          "model_id": "stabilityai/stable-diffusion-2-1",
+          "url": "https://text-to-image-human-preferences.s3.us-east-2.amazonaws.com/images/ca7cc72b-8271-4510-91b4-1f7a227fca96.png"
+        }
+      ]
+    },
+    "pickapic_rankings/README.md": {
+      "path": "/e/project1/taco-vlm/avrecum/.hf/hub/datasets--yuvalkirstain--PickaPic-rankings/snapshots/6627c83e298369e8d4fe25ed6ae7afd75ba978e3/README.md",
+      "sha256": "27476e564abcc4b701e2e1f809538dd1eb5eca3b31114f1b3f20e6851ba4420c"
+    },
+    "pickapic_rankings/data/train-00000-of-00001-5088566feaadd3d9.parquet": {
+      "path": "/e/project1/taco-vlm/avrecum/.hf/hub/datasets--yuvalkirstain--PickaPic-rankings/snapshots/6627c83e298369e8d4fe25ed6ae7afd75ba978e3/data/train-00000-of-00001-5088566feaadd3d9.parquet",
+      "sha256": "1151f8156ae48a23139f7c118caabfd6c59b7c6f4ece1e1abb04926bf0bbb263",
+      "rows": 25355,
+      "schema": "ranking_id: int64\ncreated_at: timestamp[us]\nuser_id: int64\nimage_1_uid: string\nimage_2_uid: string\nimage_3_uid: string\nimage_4_uid: string\nbest_image_uid: string\nprompt: string",
+      "example": [
+        {
+          "ranking_id": 339,
+          "created_at": "2023-01-09T15:55:54.448333",
+          "user_id": 17,
+          "image_1_uid": "6fe1c961-fa85-4258-babd-0c446ff30e7b",
+          "image_2_uid": "26534730-266e-4f9a-bb56-17562c5ee1ae",
+          "image_3_uid": "1a48f361-2d11-404b-a28d-314a5b3e1c5e",
+          "image_4_uid": "3899c239-81e8-40af-849c-7dd71ca27d58",
+          "best_image_uid": "none",
+          "prompt": "a sweaty elephant"
+        },
+        {
+          "ranking_id": 196,
+          "created_at": "2023-01-09T00:54:45.762998",
+          "user_id": 2,
+          "image_1_uid": "45137a02-64b8-407d-8cc7-8c9dd74ed660",
+          "image_2_uid": "f60ae378-41a7-43af-a4ed-ee2d15863851",
+          "image_3_uid": "2d818053-93ef-4e8b-a606-e4bbad89c494",
+          "image_4_uid": "06e1af6d-fede-43a7-bd8e-46cc5caf669c",
+          "best_image_uid": "2d818053-93ef-4e8b-a606-e4bbad89c494",
+          "prompt": "A mature poodle toy."
+        }
+      ]
+    },
+    "model/README.md": {
+      "path": "/e/project1/taco-vlm/avrecum/.hf/hub/models--qihoo360--fg-clip2-base/snapshots/430fbc8a912c86fd4de601381b6245a0edab22f0/README.md",
+      "sha256": "6a45e6023625052c2d68f116c598fb48e2a9e8eb2f711b32f88d39435ef6d02f"
+    },
+    "model/config.json": {
+      "path": "/e/project1/taco-vlm/avrecum/.hf/hub/models--qihoo360--fg-clip2-base/snapshots/430fbc8a912c86fd4de601381b6245a0edab22f0/config.json",
+      "sha256": "030a2f607e2090c2bd580be40361f228e7849381f025e5e2dc8955c84d53fb8f"
+    },
+    "model/configuration_fgclip2.py": {
+      "path": "/e/project1/taco-vlm/avrecum/.hf/hub/models--qihoo360--fg-clip2-base/snapshots/430fbc8a912c86fd4de601381b6245a0edab22f0/configuration_fgclip2.py",
+      "sha256": "a554895ce535aacb123cbca527376b8bf97186201f80130d4925b44895674187"
+    },
+    "model/modeling_fgclip2.py": {
+      "path": "/e/project1/taco-vlm/avrecum/.hf/hub/models--qihoo360--fg-clip2-base/snapshots/430fbc8a912c86fd4de601381b6245a0edab22f0/modeling_fgclip2.py",
+      "sha256": "190fd0710336a885b74a1a2b3a7054824cd095d28348833ff45f5c0a3458c2d1"
+    },
+    "model/preprocessor_config.json": {
+      "path": "/e/project1/taco-vlm/avrecum/.hf/hub/models--qihoo360--fg-clip2-base/snapshots/430fbc8a912c86fd4de601381b6245a0edab22f0/preprocessor_config.json",
+      "sha256": "1125703e5446d5b6ff4d5893a33bac128cdd21dc12e3dad2469a648fb0ae3bf7"
+    },
+    "model/special_tokens_map.json": {
+      "path": "/e/project1/taco-vlm/avrecum/.hf/hub/models--qihoo360--fg-clip2-base/snapshots/430fbc8a912c86fd4de601381b6245a0edab22f0/special_tokens_map.json",
+      "sha256": "baec30ea10906f16adb8c18af7a34023002c1746542612b8b41c9f09e1351351"
+    },
+    "model/tokenizer_config.json": {
+      "path": "/e/project1/taco-vlm/avrecum/.hf/hub/models--qihoo360--fg-clip2-base/snapshots/430fbc8a912c86fd4de601381b6245a0edab22f0/tokenizer_config.json",
+      "sha256": "607049b4766b302a66e31906a6b4729e01f623597c82262fb52e552f0d4f7fb4"
+    }
+  }
+}

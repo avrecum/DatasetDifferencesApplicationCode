@@ -1,0 +1,15 @@
+{
+  "rows": 54030,
+  "dimension": 768,
+  "finite": true,
+  "duplicate_terms": 0,
+  "raw_norm_min": 0.9999997019767761,
+  "raw_norm_max": 1.000000238418579,
+  "raw_norm_mean": 1.0,
+  "normalized_for_scoring": true,
+  "embedding_sha256": "29ff19f474f393363cd0f46717d0dcd1486a04b79595a30f9321cfdb311dea46",
+  "vocab_sha256": "56530f1aaa90f6dc3549f3eaa1b23bb01b43b37665bee05f50aded43a0626876",
+  "vocabulary_order_hash": "f401856bc561340c5257450795160ae60e373916862d0492118e8ad0631df86c",
+  "name": "full supplied vocabulary (not assumed COCA-20k)",
+  "generation_provenance": "No generation metadata supplied in pinned root repository; encoding mode initially unknown"
+}

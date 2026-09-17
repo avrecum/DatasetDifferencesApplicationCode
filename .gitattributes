@@ -1,0 +1,2 @@
+# Python's CSV writer uses RFC 4180 CRLF record endings.
+*.csv whitespace=cr-at-eol

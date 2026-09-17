@@ -1,0 +1,59 @@
+{
+  "dataset": "imagereward",
+  "synthetic": false,
+  "construction_mode": "all_strict_pairs",
+  "counts": {
+    "discovery": {
+      "prompts": 65,
+      "events": 66,
+      "comparisons": 1005,
+      "components": 65,
+      "unique_images": 408
+    },
+    "validation": {
+      "prompts": 15,
+      "events": 15,
+      "comparisons": 222,
+      "components": 15,
+      "unique_images": 90
+    },
+    "test": {
+      "prompts": 15,
+      "events": 15,
+      "comparisons": 158,
+      "components": 15,
+      "unique_images": 78
+    }
+  },
+  "vocabulary_size": 54030,
+  "score_fingerprint": "6b1345ec6e2c3189f7472dbe1f3d7007790922f7ea8b806f97fcbea4d446cef9",
+  "frozen_artifact_hash": "7e606e7fa3996c8773e90fcc96301b02ebda4f071c6384b17eabbfc7342193fa",
+  "excluded_invalid_events": [
+    {
+      "event_id": "imagereward:train:004140-0070",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "imagereward:train:004199-0025",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "imagereward:train:004381-0075",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "imagereward:train:006360-0083",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "imagereward:train:006559-0050",
+      "reason": "incomplete_valid_scored_event"
+    }
+  ],
+  "tie_tolerance": 0.0,
+  "bootstrap_resamples": 2000,
+  "seed": 42,
+  "patch_budget": 1024,
+  "status": "held-out results available",
+  "inference": "associations; similarity scores are not calibrated concept presence probabilities"
+}

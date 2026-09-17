@@ -1,0 +1,174 @@
+{
+  "settings": {
+    "seed": 42,
+    "top_k": 10,
+    "tie_tolerance": 0.0,
+    "mode": "best_vs_rest",
+    "score_fingerprint": "6b1345ec6e2c3189f7472dbe1f3d7007790922f7ea8b806f97fcbea4d446cef9",
+    "comparisons_hash": "d8494e2ccc0055c69b0af7ce4d166617f52546b8454a3e11baff2d7d6fa185e3",
+    "selection": "signed discovery effect; strictly positive/negative only; stable vocabulary-index tie break"
+  },
+  "candidates": [
+    {
+      "concept_id": 20771,
+      "concept": "green-painted",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 1,
+      "discovery_effect": 0.01098002859906399
+    },
+    {
+      "concept_id": 20762,
+      "concept": "green-and-yellow",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 2,
+      "discovery_effect": 0.010871157985139678
+    },
+    {
+      "concept_id": 15414,
+      "concept": "emerald-green",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 3,
+      "discovery_effect": 0.010296774487464862
+    },
+    {
+      "concept_id": 20767,
+      "concept": "green-gold",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 4,
+      "discovery_effect": 0.00954431010635344
+    },
+    {
+      "concept_id": 31257,
+      "concept": "neon-green",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 5,
+      "discovery_effect": 0.009363095563846634
+    },
+    {
+      "concept_id": 6565,
+      "concept": "bright-green",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 6,
+      "discovery_effect": 0.009040881333115336
+    },
+    {
+      "concept_id": 20763,
+      "concept": "green-black",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 7,
+      "discovery_effect": 0.008830375449779708
+    },
+    {
+      "concept_id": 20760,
+      "concept": "green",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 8,
+      "discovery_effect": 0.008780932259974459
+    },
+    {
+      "concept_id": 30369,
+      "concept": "moss-green",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 9,
+      "discovery_effect": 0.008547201372219095
+    },
+    {
+      "concept_id": 20772,
+      "concept": "green-striped",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 10,
+      "discovery_effect": 0.00851194632850287
+    },
+    {
+      "concept_id": 53395,
+      "concept": "wire-mesh",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 1,
+      "discovery_effect": -0.008916080594608636
+    },
+    {
+      "concept_id": 21204,
+      "concept": "hail",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 2,
+      "discovery_effect": -0.007652138079697395
+    },
+    {
+      "concept_id": 5075,
+      "concept": "bench-top",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 3,
+      "discovery_effect": -0.007562625271715088
+    },
+    {
+      "concept_id": 11321,
+      "concept": "crock",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 4,
+      "discovery_effect": -0.007373560288231892
+    },
+    {
+      "concept_id": 4919,
+      "concept": "bedrail",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 5,
+      "discovery_effect": -0.007308014143299272
+    },
+    {
+      "concept_id": 52132,
+      "concept": "vise-like",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 6,
+      "discovery_effect": -0.00720479678867501
+    },
+    {
+      "concept_id": 52131,
+      "concept": "vise",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 7,
+      "discovery_effect": -0.007196734572177407
+    },
+    {
+      "concept_id": 14689,
+      "concept": "dustpan",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 8,
+      "discovery_effect": -0.007185126637473648
+    },
+    {
+      "concept_id": 41385,
+      "concept": "scooper",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 9,
+      "discovery_effect": -0.007136546566045327
+    },
+    {
+      "concept_id": 27521,
+      "concept": "locker",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 10,
+      "discovery_effect": -0.007032266236814386
+    }
+  ],
+  "artifact_hash": "cb247fb58ff88557a3011c5cdc8772149a54f87eb2514be40471810de1fa4409"
+}

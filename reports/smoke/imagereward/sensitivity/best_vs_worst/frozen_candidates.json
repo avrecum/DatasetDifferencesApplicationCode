@@ -1,0 +1,174 @@
+{
+  "settings": {
+    "seed": 42,
+    "top_k": 10,
+    "tie_tolerance": 0.0,
+    "mode": "best_vs_worst",
+    "score_fingerprint": "d6c2cc1fbd950931a424a143baf3163424de5a8193230238dd96c5ce1e9180c5",
+    "comparisons_hash": "c0277625192dd7cd554c7b3704c8699eb0e8816cc8c07a7bfb25d2c415e25787",
+    "selection": "signed discovery effect; strictly positive/negative only; stable vocabulary-index tie break"
+  },
+  "candidates": [
+    {
+      "concept_id": 38952,
+      "concept": "red-orange",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 1,
+      "discovery_effect": 0.05347579419612884
+    },
+    {
+      "concept_id": 38923,
+      "concept": "red-and-yellow",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 2,
+      "discovery_effect": 0.0499420166015625
+    },
+    {
+      "concept_id": 38942,
+      "concept": "red-giant",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 3,
+      "discovery_effect": 0.04963415861129761
+    },
+    {
+      "concept_id": 38955,
+      "concept": "red-rock",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 4,
+      "discovery_effect": 0.04773316532373428
+    },
+    {
+      "concept_id": 38950,
+      "concept": "red-meat",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 5,
+      "discovery_effect": 0.04672678112983704
+    },
+    {
+      "concept_id": 49219,
+      "concept": "tree-ring",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 6,
+      "discovery_effect": 0.04614671319723129
+    },
+    {
+      "concept_id": 38979,
+      "concept": "reddish-orange",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 7,
+      "discovery_effect": 0.044723740220069884
+    },
+    {
+      "concept_id": 38920,
+      "concept": "red-and-green",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 8,
+      "discovery_effect": 0.04347896426916122
+    },
+    {
+      "concept_id": 38961,
+      "concept": "red-tile",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 9,
+      "discovery_effect": 0.04285087585449219
+    },
+    {
+      "concept_id": 38980,
+      "concept": "reddish-purple",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 10,
+      "discovery_effect": 0.040010251104831696
+    },
+    {
+      "concept_id": 45208,
+      "concept": "stanchion",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 1,
+      "discovery_effect": -0.04358996897935867
+    },
+    {
+      "concept_id": 16078,
+      "concept": "escalator",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 2,
+      "discovery_effect": -0.0434174194931984
+    },
+    {
+      "concept_id": 17445,
+      "concept": "fencepost",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 3,
+      "discovery_effect": -0.04333907812833786
+    },
+    {
+      "concept_id": 34603,
+      "concept": "peg",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 4,
+      "discovery_effect": -0.04005332142114639
+    },
+    {
+      "concept_id": 48710,
+      "concept": "top-shelf",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 5,
+      "discovery_effect": -0.0395152360200882
+    },
+    {
+      "concept_id": 9074,
+      "concept": "clothespin",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 6,
+      "discovery_effect": -0.03801838606595993
+    },
+    {
+      "concept_id": 32217,
+      "concept": "nozzle",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 7,
+      "discovery_effect": -0.03785269856452942
+    },
+    {
+      "concept_id": 6046,
+      "concept": "bollard",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 8,
+      "discovery_effect": -0.03734361529350281
+    },
+    {
+      "concept_id": 49159,
+      "concept": "trash",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 9,
+      "discovery_effect": -0.037001687288284305
+    },
+    {
+      "concept_id": 8664,
+      "concept": "cigarette",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 10,
+      "discovery_effect": -0.036743535101413725
+    }
+  ],
+  "artifact_hash": "0b772d6f54b0efd64acf61d46c1fc7ad265b932321d8b0d93deb090472ac50bc"
+}

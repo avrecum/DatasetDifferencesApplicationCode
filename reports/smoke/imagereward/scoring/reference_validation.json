@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "max_absolute_score_error": 0.0,
+  "atol": 0.0002,
+  "rtol": 0.0002,
+  "images": [
+    "imagereward:images/test/test_1/128c175b-0862-454d-acbc-cb28100a1333.webp",
+    "imagereward:images/test/test_1/3202d894-05ac-48da-a7d2-ba160a5c786d.webp"
+  ],
+  "concepts": 128,
+  "reference": "official dense API, float32, one image",
+  "candidate": "official dense API",
+  "dtype": "float32",
+  "patch_budget": 1024
+}

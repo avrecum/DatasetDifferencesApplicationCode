@@ -1,0 +1,420 @@
+{
+  "run_root": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward",
+  "files": [
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/all_concepts.csv",
+      "relative_path": "analysis/all_concepts.csv",
+      "bytes": 24446029,
+      "sha256": "24812a503a330a1004d1ee7df164520054e6f17720aea87fb6368a916d48f01c"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/analysis_summary.json",
+      "relative_path": "analysis/analysis_summary.json",
+      "bytes": 1584,
+      "sha256": "009e9d8ed7bd7c78b8b2b9e7e8015c077544a66cae181562e7da191cc13a27a1"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/annotation_template.csv",
+      "relative_path": "analysis/annotation_template.csv",
+      "bytes": 100196,
+      "sha256": "414c004f4a76b1b7c12d61631e7580608327801813d9fe419b83bee32b02d1b6"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/comparisons.jsonl",
+      "relative_path": "analysis/comparisons.jsonl",
+      "bytes": 750125,
+      "sha256": "67f4f4021d2a80cb3669ea56e0d704b8339ca98f0d7e9e62b08e784dbcbfbac0"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/confounder_audit.json",
+      "relative_path": "analysis/confounder_audit.json",
+      "bytes": 1187,
+      "sha256": "0ae39d4efdb899bfeb2adb5a47f2de1ee124b8af4c091f87bb09d2b0f61ff3b5"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/dataset_audit.json",
+      "relative_path": "analysis/dataset_audit.json",
+      "bytes": 24602,
+      "sha256": "378157df422ee8fa939e1f6be282628cd84feba661587e4f063f0c91417ae46f"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/frozen_candidates.json",
+      "relative_path": "analysis/frozen_candidates.json",
+      "bytes": 4362,
+      "sha256": "7f09d7aaf3497d528966b10a349c78a1c13d2a3aeff2db98b798cda7cb806946"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/gallery_selection.json",
+      "relative_path": "analysis/gallery_selection.json",
+      "bytes": 175339,
+      "sha256": "6632b1a2089420a80d1dc939e9713c1883a8664da52a66becf555896acc354e3"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/heatmaps/07aac848f1dba0f08227_preferred.npy",
+      "relative_path": "analysis/heatmaps/07aac848f1dba0f08227_preferred.npy",
+      "bytes": 4000,
+      "sha256": "1e36dd4210ae1a7e1f752856d8ced410a59f574a7ab055a8507ee2f8238b9fd5"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/heatmaps/07aac848f1dba0f08227_rejected.npy",
+      "relative_path": "analysis/heatmaps/07aac848f1dba0f08227_rejected.npy",
+      "bytes": 4000,
+      "sha256": "cb772ee08e2da7f33f0d958efeb14149b3b0027ad8c13fd3691f2ae61495170f"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/heatmaps/1715857ee7c02e23c4c4_preferred.npy",
+      "relative_path": "analysis/heatmaps/1715857ee7c02e23c4c4_preferred.npy",
+      "bytes": 4224,
+      "sha256": "6c178bfd80c39fe14620d7a8a8f9639e48a6320d8d9dc4f9ca4e2b3ba8e5bef6"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/heatmaps/1715857ee7c02e23c4c4_rejected.npy",
+      "relative_path": "analysis/heatmaps/1715857ee7c02e23c4c4_rejected.npy",
+      "bytes": 4224,
+      "sha256": "c02a59abcc20595924ae71fcde5c895d33dc4fbbf011e0dd2dd91eb0de32638f"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/heatmaps/d2c34a25ffeb4cdfa670_preferred.npy",
+      "relative_path": "analysis/heatmaps/d2c34a25ffeb4cdfa670_preferred.npy",
+      "bytes": 4224,
+      "sha256": "4c76e57c07f3ebc7a681f268fbb27e4cc2c32f707a81ab83d5d61381e28107db"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/heatmaps/d2c34a25ffeb4cdfa670_rejected.npy",
+      "relative_path": "analysis/heatmaps/d2c34a25ffeb4cdfa670_rejected.npy",
+      "bytes": 4224,
+      "sha256": "6c1c7348aa9cf527daccfa5c9a6233a76ccc6984f0f3c50bd1af5c04f4d2aef8"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/heatmaps/index.json",
+      "relative_path": "analysis/heatmaps/index.json",
+      "bytes": 3268,
+      "sha256": "e15ebd1e8efe5f98e9925131c7b3c1f0071cc97a989f7d47b2b50a2131928a64"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/joint_concept_score.json",
+      "relative_path": "analysis/joint_concept_score.json",
+      "bytes": 1097,
+      "sha256": "957e1ed4cb1be030e241d90d036a699b82e71273a78f814168aa1afe0896e691"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/paper_subsection.tex",
+      "relative_path": "analysis/paper_subsection.tex",
+      "bytes": 1610,
+      "sha256": "236c8159b387c115b32dc5006d6f8c6f572456ee376681ba46bde505f98e4e51"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/replication_summary.json",
+      "relative_path": "analysis/replication_summary.json",
+      "bytes": 281,
+      "sha256": "acfbc4a650373dc3eb53554660eb31626c622d70b137294b51dc663ee2b64f0d"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/report.md",
+      "relative_path": "analysis/report.md",
+      "bytes": 6056,
+      "sha256": "3eb90b399998ba043f7ed2706650a53497e3f71b4c92ab483091f1c4047ccce7"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/results_table.tex",
+      "relative_path": "analysis/results_table.tex",
+      "bytes": 1427,
+      "sha256": "600c80a287fb2254a108ad61fe0f86a8a8d7f139a048601031acf4ee10560f94"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/sensitivity/best_vs_rest/all_concepts.csv",
+      "relative_path": "analysis/sensitivity/best_vs_rest/all_concepts.csv",
+      "bytes": 24356369,
+      "sha256": "5c4adeb13e154b89b1e713ea0da95738984e44bdddf6151ae9bf3ca8a9f22b5f"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/sensitivity/best_vs_rest/analysis_summary.json",
+      "relative_path": "analysis/sensitivity/best_vs_rest/analysis_summary.json",
+      "bytes": 1577,
+      "sha256": "dff60adf259dae56d6dada773141af9afb67693e44db13afb0d45ab7ff476da0"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/sensitivity/best_vs_rest/annotation_template.csv",
+      "relative_path": "analysis/sensitivity/best_vs_rest/annotation_template.csv",
+      "bytes": 102634,
+      "sha256": "4887063c7db05d8124c4c9ae3e8710df1411ca4b4b72f4a0bb4d56f4d29d82ec"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/sensitivity/best_vs_rest/comparisons.jsonl",
+      "relative_path": "analysis/sensitivity/best_vs_rest/comparisons.jsonl",
+      "bytes": 356363,
+      "sha256": "91b0e61d7f419bfd61ac0642383a8f647d425b8624a1fe0644f8a6226fe1ea10"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/sensitivity/best_vs_rest/confounder_audit.json",
+      "relative_path": "analysis/sensitivity/best_vs_rest/confounder_audit.json",
+      "bytes": 1187,
+      "sha256": "0ae39d4efdb899bfeb2adb5a47f2de1ee124b8af4c091f87bb09d2b0f61ff3b5"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/sensitivity/best_vs_rest/dataset_audit.json",
+      "relative_path": "analysis/sensitivity/best_vs_rest/dataset_audit.json",
+      "bytes": 24599,
+      "sha256": "a30cc259e1ed0c6a3ce7d3653463d0ac6bdd0ce215cc72c00ee82fa43ec6b0d1"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/sensitivity/best_vs_rest/frozen_candidates.json",
+      "relative_path": "analysis/sensitivity/best_vs_rest/frozen_candidates.json",
+      "bytes": 4381,
+      "sha256": "3091b37b21840ddac2b71e8d1194656ac4422e03bbf102cd3ad0f2bb3ce7bb24"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/sensitivity/best_vs_rest/gallery_selection.json",
+      "relative_path": "analysis/sensitivity/best_vs_rest/gallery_selection.json",
+      "bytes": 177767,
+      "sha256": "0dfeca6158971f4aea19c0c7850ee09157145e9fce6066344d53fa2244e9fa3f"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/sensitivity/best_vs_rest/joint_concept_score.json",
+      "relative_path": "analysis/sensitivity/best_vs_rest/joint_concept_score.json",
+      "bytes": 1068,
+      "sha256": "30c9b1b0fe4604b6e8a13f6d1a7f8340b9c88d392652176bce445b004ab1cff8"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/sensitivity/best_vs_rest/paper_subsection.tex",
+      "relative_path": "analysis/sensitivity/best_vs_rest/paper_subsection.tex",
+      "bytes": 1621,
+      "sha256": "2c9f1f8e2ce4c02b8baff8842b38a9c77987d5d1aa17205140f145dfd01ae6f8"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/sensitivity/best_vs_rest/replication_summary.json",
+      "relative_path": "analysis/sensitivity/best_vs_rest/replication_summary.json",
+      "bytes": 292,
+      "sha256": "786898ec1e56907c04cad42011dee904f9488854dc72b027d45b8d78037e3a87"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/sensitivity/best_vs_rest/report.md",
+      "relative_path": "analysis/sensitivity/best_vs_rest/report.md",
+      "bytes": 6064,
+      "sha256": "c8919a6b09f3307ccf9633f99569620eb57e0dca86c8adb873d0c811b819bed7"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/sensitivity/best_vs_rest/results_table.tex",
+      "relative_path": "analysis/sensitivity/best_vs_rest/results_table.tex",
+      "bytes": 1442,
+      "sha256": "925d88ebd06a451b3ec28cce4986d0dc37a2e101018618e6040cfa53ac973634"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/sensitivity/best_vs_rest/stratified_sensitivity.json",
+      "relative_path": "analysis/sensitivity/best_vs_rest/stratified_sensitivity.json",
+      "bytes": 188367,
+      "sha256": "d2dc4542a0a7be0a6bf96ea92a2e1788e70430fa6d7e505532c6459acb11c316"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/sensitivity/best_vs_rest/top_concepts.json",
+      "relative_path": "analysis/sensitivity/best_vs_rest/top_concepts.json",
+      "bytes": 18295,
+      "sha256": "6433525af7b5a1b8510c23261ad8ed35bb317eadb3511cc6c080c5b1b69a97b7"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/sensitivity/best_vs_worst/all_concepts.csv",
+      "relative_path": "analysis/sensitivity/best_vs_worst/all_concepts.csv",
+      "bytes": 23776678,
+      "sha256": "ead9df486d39134a57e1c723baa85826610c163fd3b80b57daff26e96143194f"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/sensitivity/best_vs_worst/analysis_summary.json",
+      "relative_path": "analysis/sensitivity/best_vs_worst/analysis_summary.json",
+      "bytes": 1578,
+      "sha256": "fc1352334cc6a8055bcc13cb11e42dfc0672e04b6463bec620fd3d8e8a87c1f8"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/sensitivity/best_vs_worst/annotation_template.csv",
+      "relative_path": "analysis/sensitivity/best_vs_worst/annotation_template.csv",
+      "bytes": 102176,
+      "sha256": "f00312b99a0c1a666259377429c89413ade34edd7dc5293213d0117feb735289"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/sensitivity/best_vs_worst/comparisons.jsonl",
+      "relative_path": "analysis/sensitivity/best_vs_worst/comparisons.jsonl",
+      "bytes": 96178,
+      "sha256": "b1d03944fe1cfc9ddbabcb7d3e7f97f3226999e360055c6ac7f9f6ca442b86c0"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/sensitivity/best_vs_worst/confounder_audit.json",
+      "relative_path": "analysis/sensitivity/best_vs_worst/confounder_audit.json",
+      "bytes": 1187,
+      "sha256": "0ae39d4efdb899bfeb2adb5a47f2de1ee124b8af4c091f87bb09d2b0f61ff3b5"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/sensitivity/best_vs_worst/dataset_audit.json",
+      "relative_path": "analysis/sensitivity/best_vs_worst/dataset_audit.json",
+      "bytes": 24599,
+      "sha256": "d687910ee4db5757c888c506cda1dcac02326c0702bef25897f27ebd00282b3f"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/sensitivity/best_vs_worst/frozen_candidates.json",
+      "relative_path": "analysis/sensitivity/best_vs_worst/frozen_candidates.json",
+      "bytes": 4385,
+      "sha256": "d8ad355a242a3df716708fed6a12a0ad80615b67c45759dba6e40ca5398bf4bd"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/sensitivity/best_vs_worst/gallery_selection.json",
+      "relative_path": "analysis/sensitivity/best_vs_worst/gallery_selection.json",
+      "bytes": 177331,
+      "sha256": "b1d671f1989ecf68c284a6615fe1f014ac7887c7cd9baaa7ea73f760b6e9a92b"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/sensitivity/best_vs_worst/joint_concept_score.json",
+      "relative_path": "analysis/sensitivity/best_vs_worst/joint_concept_score.json",
+      "bytes": 1062,
+      "sha256": "cdc339620ab537d43f222615bd3f833682a33a000a4096c9deb4c2167cd02d4c"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/sensitivity/best_vs_worst/paper_subsection.tex",
+      "relative_path": "analysis/sensitivity/best_vs_worst/paper_subsection.tex",
+      "bytes": 1617,
+      "sha256": "383dbfead82f5abdf65af6a6dbfc6d0841341f82ed25cf5b5ea7ac5b153fc4c2"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/sensitivity/best_vs_worst/replication_summary.json",
+      "relative_path": "analysis/sensitivity/best_vs_worst/replication_summary.json",
+      "bytes": 287,
+      "sha256": "d38c2aab3906f3771f152cfefd9d2e93ad221cbd36c868ce3218effb1e857ebd"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/sensitivity/best_vs_worst/report.md",
+      "relative_path": "analysis/sensitivity/best_vs_worst/report.md",
+      "bytes": 6069,
+      "sha256": "7cdd4e71497d73054c50273f8f2cd631140034b5a0fc63375667fbb0b7b4ca3a"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/sensitivity/best_vs_worst/results_table.tex",
+      "relative_path": "analysis/sensitivity/best_vs_worst/results_table.tex",
+      "bytes": 1446,
+      "sha256": "eba02e9d74f9a72905939900c3a11008540194459ca418489b948511da921fce"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/sensitivity/best_vs_worst/stratified_sensitivity.json",
+      "relative_path": "analysis/sensitivity/best_vs_worst/stratified_sensitivity.json",
+      "bytes": 185265,
+      "sha256": "c0347b895d0cb39043991378c5899a2d4ec069d13007f70413f16e1ec46f44dc"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/sensitivity/best_vs_worst/top_concepts.json",
+      "relative_path": "analysis/sensitivity/best_vs_worst/top_concepts.json",
+      "bytes": 17979,
+      "sha256": "c62a079554cf56b276c6c063850b1cfaa7710f27b762632d717651583aecf7c2"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/stratified_sensitivity.json",
+      "relative_path": "analysis/stratified_sensitivity.json",
+      "bytes": 189164,
+      "sha256": "528f2a34356e3f1b8f9bb6b2937cea590ae32ba14bcc4d810ca754b4bb278d34"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/top_concepts.json",
+      "relative_path": "analysis/top_concepts.json",
+      "bytes": 18476,
+      "sha256": "8277f02a2e89f1b5282c35f69089417f6a92c1cc991171f701d69371348209ba"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/gpu_batch_reference_validation.json",
+      "relative_path": "gpu_batch_reference_validation.json",
+      "bytes": 470,
+      "sha256": "62cd9acae43bbcdbf180350d42e6eb6534e0931c46fb6639223b0a3bcd9a7edc"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/manifest/comparisons.jsonl",
+      "relative_path": "manifest/comparisons.jsonl",
+      "bytes": 789684,
+      "sha256": "0ae3b6765269d68bb4c4f4acf51c3958cc278fce50c032c459e39194b2fdb1b5"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/manifest/dataset_audit.json",
+      "relative_path": "manifest/dataset_audit.json",
+      "bytes": 23558,
+      "sha256": "33dd029e38b0d69660f936bf84a1a455d162cb62ab1c956428fe80a82a169c0c"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/manifest/events.jsonl",
+      "relative_path": "manifest/events.jsonl",
+      "bytes": 41090867,
+      "sha256": "f5ee9911f1589b67d4abeb5569340ba3a60f2a4c13bca9e52ec5124affdf0edc"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/manifest/images.jsonl",
+      "relative_path": "manifest/images.jsonl",
+      "bytes": 56429537,
+      "sha256": "ec17b4ab624fd234182da1d732a6ad23ec9bba053905b54b3a692aa53d5bc282"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/manifest/provenance.json",
+      "relative_path": "manifest/provenance.json",
+      "bytes": 1918,
+      "sha256": "a053d0c65249d53f55cb5d648a9f61561c4d7cf638bfff3e397f339f5f239513"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/score_config.json",
+      "relative_path": "score_config.json",
+      "bytes": 410,
+      "sha256": "97242adf169fbd26e2e26d2186b2b6b0e1610a48ba9d54b1442c30d07d02bbb8"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/scores/bank_audit.json",
+      "relative_path": "scores/bank_audit.json",
+      "bytes": 668,
+      "sha256": "c3957be172bb0ab09e9c9ced2f4db2e0b6d59bab1d396595b4a9a8dcbc2a4251"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/scores/cache.json",
+      "relative_path": "scores/cache.json",
+      "bytes": 1540,
+      "sha256": "4bdc70f257f093ab9cae7f844f0009136d181e02fd37d2fc9ba81f1c6fb0d548"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/scores/reference_validation.json",
+      "relative_path": "scores/reference_validation.json",
+      "bytes": 429,
+      "sha256": "b9245a798273d1e3176b76028d8f6a37367aacda416eb0f2bdc058e936de4632"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/scores/row_index.json",
+      "relative_path": "scores/row_index.json",
+      "bytes": 52515,
+      "sha256": "9905e1a4d0abe629f0c7910007256539c5934e3b21ad19fd1925c3ebeee6036c"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/scores/rows.json",
+      "relative_path": "scores/rows.json",
+      "bytes": 916705,
+      "sha256": "6bac0281c8fe9f56ce0872c7a3c3081a0ad4103808848b1a15ff8d265eb465ba"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/scores/scores.f32",
+      "relative_path": "scores/scores.f32",
+      "bytes": 131184840,
+      "sha256": "d740093a6be928bfd15d6aded14c7d144af3ed84239afffb693195d8e70cad2e"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/scores/state.json",
+      "relative_path": "scores/state.json",
+      "bytes": 118880,
+      "sha256": "57f582936a250ad91f287d3c6a43832b35fc40f9edf5dd7fafcc3ea575b692c7"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/scores/text_mode_audit.json",
+      "relative_path": "scores/text_mode_audit.json",
+      "bytes": 2627,
+      "sha256": "ea08921fe6f9be0a887d9d889d828f909a12a84b7af8837f6be2fb5e9f8e6ce9"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/scores/valid.npy",
+      "relative_path": "scores/valid.npy",
+      "bytes": 735,
+      "sha256": "733e0ab6aaa468d0c9b0049cfc51e8f5a0b9f6392fb8a57335f3d30a38c9a3be"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/scores/vocab.json",
+      "relative_path": "scores/vocab.json",
+      "bytes": 818330,
+      "sha256": "67d5843c259a82e580d4b0c4d95f617fb5e3de960099e104540a55991b079237"
+    }
+  ],
+  "note": "Raw manifests, scores and full vocabulary tables remain at original run paths; this export copies compact review artifacts only."
+}

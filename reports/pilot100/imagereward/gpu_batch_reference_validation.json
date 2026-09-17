@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "max_absolute_score_error": 1.1920928955078125e-07,
+  "atol": 0.0002,
+  "rtol": 0.0002,
+  "images": [
+    "imagereward:images/train/train_12/985bb12e-7e4a-45aa-a759-b191c7619664.webp",
+    "imagereward:images/train/train_7/631d80e5-e344-4b9c-aeec-dd9d02c38ba2.webp"
+  ],
+  "concepts": 128,
+  "reference": "official dense API, float32, one image",
+  "candidate": "supplied detection dense-head batch",
+  "dtype": "float32",
+  "patch_budget": 1024
+}

@@ -1,0 +1,13 @@
+{
+  "settings": {
+    "seed": 42,
+    "top_k": 10,
+    "tie_tolerance": 0.0,
+    "mode": null,
+    "score_fingerprint": "049e1657e472541ee248c72846ac3bc4e75184e4f7f8fcd814869641f218ea45",
+    "comparisons_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "selection": "signed discovery effect; strictly positive/negative only; stable vocabulary-index tie break"
+  },
+  "candidates": [],
+  "artifact_hash": "76facc402db5af12cc667791d6bbf5e39381dc42afb2930033c6c44df419a8f8"
+}

@@ -1,0 +1,31 @@
+{
+  "candidates": [],
+  "counts": {
+    "discovery": {
+      "prompts": 0,
+      "events": 0,
+      "comparisons": 0,
+      "components": 0,
+      "unique_images": 0
+    },
+    "validation": {
+      "prompts": 0,
+      "events": 0,
+      "comparisons": 0,
+      "components": 0,
+      "unique_images": 0
+    },
+    "test": {
+      "prompts": 0,
+      "events": 0,
+      "comparisons": 0,
+      "components": 0,
+      "unique_images": 0
+    }
+  },
+  "frozen_artifact_hash": "76facc402db5af12cc667791d6bbf5e39381dc42afb2930033c6c44df419a8f8",
+  "bootstrap_resamples": 2000,
+  "evaluation_split": "test",
+  "all_vocabulary_test_fields": "exploratory; no reselection",
+  "multiplicity": "Per-concept intervals for frozen candidates, no simultaneous guarantee or full-vocabulary significance claim"
+}
