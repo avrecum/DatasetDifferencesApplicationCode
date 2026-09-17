@@ -346,7 +346,9 @@ def resolve_images(
                 )
             split = shard.rsplit("_", 1)[0]
             by_archive.setdefault(f"images/{split}/{shard}.zip", []).append(im)
-        for filename, ims in sorted(by_archive.items()):
+
+        def resolve_archive(item):
+            filename, ims = item
             print(f"Resolving {len(ims)} required images from {filename}", flush=True)
             try:
                 destination = base / lock["imagereward"]["revision"]
@@ -394,6 +396,11 @@ def resolve_images(
             except Exception as exc:
                 for im in ims:
                     im["error"] = f"archive: {type(exc).__name__}: {exc}"
+
+        # Shards own disjoint canonical paths. Each worker keeps only eight range
+        # blocks and writes only requested images; no whole-archive fallback.
+        with ThreadPoolExecutor(max_workers=max(1, workers)) as pool:
+            list(pool.map(resolve_archive, sorted(by_archive.items())))
 
     def resolve(im):
         try:

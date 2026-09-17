@@ -1,0 +1,339 @@
+{
+  "status": "Real ImageReward pilot completed; Pick-a-Pic empirical analysis blocked on original image availability",
+  "tests": {
+    "passed": 29,
+    "skipped": 1,
+    "skipped_reason": "GPU-specific pytest on CPU login node; separate real GPU validation executed",
+    "lint": "Ruff passed"
+  },
+  "jobs": [
+    {
+      "job_id": 1863775,
+      "status": "COMPLETED",
+      "exit_code": "0:0",
+      "seconds": 153,
+      "gpus": 4
+    },
+    {
+      "job_id": 1863840,
+      "status": "COMPLETED",
+      "exit_code": "0:0",
+      "seconds": 628,
+      "gpus": 4
+    },
+    {
+      "job_id": 1863913,
+      "status": "COMPLETED",
+      "exit_code": "0:0",
+      "seconds": 166,
+      "gpus": 4
+    },
+    {
+      "job_id": 1864083,
+      "status": "COMPLETED",
+      "exit_code": "0:0",
+      "gpus": 4,
+      "description": "Batch-16 four-GPU recomputation of all valid 500-prompt pilot images, full-bank score equivalence",
+      "seconds": 313
+    }
+  ],
+  "requested_prompts": 500,
+  "requested_events": 510,
+  "requested_image_ids": 3119,
+  "valid_image_ids": 3036,
+  "failed_image_ids": 83,
+  "valid_unique_content_rows": 3029,
+  "reused_previously_scored_rows": 576,
+  "newly_inferred_unique_rows": 2453,
+  "counts": {
+    "discovery": {
+      "prompts": 337,
+      "events": 346,
+      "comparisons": 5255,
+      "components": 337,
+      "unique_images": 2136
+    },
+    "validation": {
+      "prompts": 75,
+      "events": 75,
+      "comparisons": 1122,
+      "components": 75,
+      "unique_images": 458
+    },
+    "test": {
+      "prompts": 75,
+      "events": 75,
+      "comparisons": 1043,
+      "components": 75,
+      "unique_images": 442
+    }
+  },
+  "construction_metrics": {
+    "all_strict_pairs": {
+      "concept_id": 0,
+      "concept": "frozen signed concept mean",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 1,
+      "discovery_effect": 0.003579182905532094,
+      "heldout_effect": 0.0022425746270324292,
+      "effect_ci_low": 0.0006216184637070036,
+      "effect_ci_high": 0.003844966866066221,
+      "raw_concordance": 0.5512612706981127,
+      "concordance_ci_low": 0.49928416104363477,
+      "concordance_ci_high": 0.5993026579536448,
+      "direction_adjusted_concordance": 0.5512612706981127,
+      "adjusted_concordance_ci_low": 0.49928416104363477,
+      "adjusted_concordance_ci_high": 0.5993026579536448,
+      "counts": {
+        "prompts": 75,
+        "events": 75,
+        "comparisons": 1043,
+        "components": 75,
+        "unique_images": 442
+      },
+      "interval_status": "per-concept percentile intervals; not simultaneous"
+    },
+    "best_vs_rest": {
+      "concept_id": 0,
+      "concept": "frozen signed concept mean",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 1,
+      "discovery_effect": 0.0042999741289713594,
+      "heldout_effect": -0.0005921065422750654,
+      "effect_ci_low": -0.002728903885156744,
+      "effect_ci_high": 0.0016157491364885888,
+      "raw_concordance": 0.48398412698412707,
+      "concordance_ci_low": 0.4172821428571428,
+      "concordance_ci_high": 0.5535281746031747,
+      "direction_adjusted_concordance": 0.48398412698412707,
+      "adjusted_concordance_ci_low": 0.4172821428571428,
+      "adjusted_concordance_ci_high": 0.5535281746031747,
+      "counts": {
+        "prompts": 75,
+        "events": 75,
+        "comparisons": 516,
+        "components": 75,
+        "unique_images": 442
+      },
+      "interval_status": "per-concept percentile intervals; not simultaneous"
+    },
+    "best_vs_worst": {
+      "concept_id": 0,
+      "concept": "frozen signed concept mean",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 1,
+      "discovery_effect": 0.006926787449240419,
+      "heldout_effect": 0.005425689230362574,
+      "effect_ci_low": 0.0024164967433859905,
+      "effect_ci_high": 0.00866647413211564,
+      "raw_concordance": 0.5966666666666667,
+      "concordance_ci_low": 0.49,
+      "concordance_ci_high": 0.6966666666666667,
+      "direction_adjusted_concordance": 0.5966666666666667,
+      "adjusted_concordance_ci_low": 0.49,
+      "adjusted_concordance_ci_high": 0.6966666666666667,
+      "counts": {
+        "prompts": 75,
+        "events": 75,
+        "comparisons": 152,
+        "components": 75,
+        "unique_images": 213
+      },
+      "interval_status": "per-concept percentile intervals; not simultaneous"
+    }
+  },
+  "direction_replicated": 19,
+  "selected_concepts": 20,
+  "bank_diagnostic_best": {
+    "walk_type": "box",
+    "max_length": 64,
+    "template": "a photo of a {}.",
+    "attention_mask": false,
+    "lowercased": true,
+    "mean_cosine": 0.9655976891517639,
+    "minimum_cosine": 0.872059166431427,
+    "maximum_absolute_error": 0.06527607887983322,
+    "same_row_nearest_fraction": 1.0,
+    "cosine_per_entry": [
+      0.9463310241699219,
+      0.9798110127449036,
+      0.9799529314041138,
+      0.9648185968399048,
+      0.9546769857406616,
+      0.9674959778785706,
+      0.9540327787399292,
+      0.9642292261123657,
+      0.9578570127487183,
+      0.9682692289352417,
+      0.9627012610435486,
+      0.9672630429267883,
+      0.9756765365600586,
+      0.970575213432312,
+      0.9783323407173157,
+      0.9811577200889587,
+      0.9418228268623352,
+      0.9779398441314697,
+      0.9624087810516357,
+      0.9640476107597351,
+      0.9736924767494202,
+      0.9822679758071899,
+      0.872059166431427,
+      0.9747012853622437,
+      0.9780029058456421,
+      0.968490719795227,
+      0.9748178720474243,
+      0.9719185829162598,
+      0.9746295213699341,
+      0.9600504040718079,
+      0.9704786539077759,
+      0.9786168336868286
+    ],
+    "nearest_bank_ids": [
+      0,
+      1742,
+      3485,
+      5228,
+      6971,
+      8714,
+      10457,
+      12200,
+      13942,
+      15685,
+      17428,
+      19171,
+      20914,
+      22657,
+      24400,
+      26143,
+      27885,
+      29628,
+      31371,
+      33114,
+      34857,
+      36600,
+      38343,
+      40086,
+      41828,
+      43571,
+      45314,
+      47057,
+      48800,
+      50543,
+      52286,
+      54029
+    ],
+    "worker_rank": 3
+  },
+  "bank_diagnostic_version": 2,
+  "observed_concordance_intervals_include_half": true,
+  "interpretation": "Associations, not calibrated concept presence or causes. Larger pilot overlaps earlier pilot. Candidate lists frozen before held-out analysis. No alternative release or failed-winner replacement.",
+  "pickapic_complete_recovered_strict_events": 0,
+  "actual_gpu_utilization": "All four workers computed scores; initial whole-job average utilization low. See measured telemetry and separate larger-batch verification.",
+  "batched_full_bank_equivalence": {
+    "passed": true,
+    "maximum_absolute_error": 8.344650268554688e-07,
+    "images": 3036,
+    "matching_invalid_image_ids": 83,
+    "reference_execution": {
+      "image_batch_size": 1,
+      "text_chunk_size": 512
+    },
+    "candidate_execution": {
+      "image_batch_size": 16,
+      "text_chunk_size": 2048
+    },
+    "concepts": 54030,
+    "absolute_tolerance": 0.0002,
+    "reference_fingerprint": "5b806a087a0fb296639f66cfdaf44d920f0463f8dc187a092e4af198dcc1b36f",
+    "candidate_fingerprint": "442d8c31ff80c7403654849976f56b83305bad2d7a0c8a56255b983b1e7e0c16",
+    "scope": "All supplied concepts for complete real-image groups; independent four-GPU recomputation"
+  },
+  "batched_gpu_utilization": {
+    "source_csv": "runs/batch16_verification/imagereward/gpu-utilization-1864083.csv",
+    "gpus": [
+      {
+        "gpu_index": 0,
+        "samples": 130,
+        "peak_utilization_percent": 68.0,
+        "mean_utilization_percent": 2.0538461538461537,
+        "samples_with_gpu_work": 7,
+        "active_sample_mean_percent": 38.142857142857146,
+        "peak_memory_mib": 5843.0
+      },
+      {
+        "gpu_index": 1,
+        "samples": 130,
+        "peak_utilization_percent": 99.0,
+        "mean_utilization_percent": 2.5384615384615383,
+        "samples_with_gpu_work": 6,
+        "active_sample_mean_percent": 55.0,
+        "peak_memory_mib": 5841.0
+      },
+      {
+        "gpu_index": 2,
+        "samples": 130,
+        "peak_utilization_percent": 85.0,
+        "mean_utilization_percent": 2.9846153846153847,
+        "samples_with_gpu_work": 8,
+        "active_sample_mean_percent": 48.5,
+        "peak_memory_mib": 5843.0
+      },
+      {
+        "gpu_index": 3,
+        "samples": 130,
+        "peak_utilization_percent": 100.0,
+        "mean_utilization_percent": 3.9076923076923076,
+        "samples_with_gpu_work": 9,
+        "active_sample_mean_percent": 56.44444444444444,
+        "peak_memory_mib": 5843.0
+      }
+    ],
+    "all_four_observed_work": true,
+    "interpretation": "Two-second snapshots include initialization, CPU analysis and shutdown. Brief tests may be dominated by startup and sampled peaks can miss short kernels. This is measured utilization, not a claim of 100% efficiency."
+  },
+  "batched_worker_timings": [
+    {
+      "started_epoch": 1789679568.2983723,
+      "inference_started_epoch": 1789679645.5076737,
+      "finished_epoch": 1789679673.0295143,
+      "inferred_images": 758,
+      "valid_images": 758,
+      "loader": "two CPU threads; at most two prefetched batches; FIFO ordering",
+      "image_batch_size": 16,
+      "text_chunk_size": 2048
+    },
+    {
+      "started_epoch": 1789679568.3028522,
+      "inference_started_epoch": 1789679645.5568492,
+      "finished_epoch": 1789679673.7897515,
+      "inferred_images": 757,
+      "valid_images": 757,
+      "loader": "two CPU threads; at most two prefetched batches; FIFO ordering",
+      "image_batch_size": 16,
+      "text_chunk_size": 2048
+    },
+    {
+      "started_epoch": 1789679568.3028102,
+      "inference_started_epoch": 1789679645.5076845,
+      "finished_epoch": 1789679673.6933677,
+      "inferred_images": 757,
+      "valid_images": 757,
+      "loader": "two CPU threads; at most two prefetched batches; FIFO ordering",
+      "image_batch_size": 16,
+      "text_chunk_size": 2048
+    },
+    {
+      "started_epoch": 1789679568.3025568,
+      "inference_started_epoch": 1789679645.5091271,
+      "finished_epoch": 1789679671.8443813,
+      "inferred_images": 757,
+      "valid_images": 757,
+      "loader": "two CPU threads; at most two prefetched batches; FIFO ordering",
+      "image_batch_size": 16,
+      "text_chunk_size": 2048
+    }
+  ]
+}

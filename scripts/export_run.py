@@ -32,6 +32,12 @@ def main():
         "results_table.tex",
         "paper_subsection.tex",
         "presentation_candidates.json",
+        "bank_template_diagnostic.json",
+        "discrimination_summary.csv",
+        "discrimination_summary.png",
+        "discrimination_summary.pdf",
+        "concept_effects.png",
+        "concept_effects.pdf",
     }
     for path in (args.run / "analysis").rglob("*"):
         if not path.is_file():
@@ -53,6 +59,8 @@ def main():
             "bank_audit.json",
             "text_mode_audit.json",
             "reference_validation.json",
+            "reuse_audit.json",
+            "distributed_execution.json",
         ):
             target = args.report / "scoring" / path.name
             target.parent.mkdir(exist_ok=True)

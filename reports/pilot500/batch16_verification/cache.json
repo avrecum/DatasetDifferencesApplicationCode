@@ -1,0 +1,45 @@
+{
+  "fingerprint": "442d8c31ff80c7403654849976f56b83305bad2d7a0c8a56255b983b1e7e0c16",
+  "configuration": {
+    "model_name": "qihoo360/fg-clip2-base",
+    "model_revision": "430fbc8a912c86fd4de601381b6245a0edab22f0",
+    "bank_revision": "4edc5ef4ac601a3d08225b53567b6695cbd60b5e",
+    "patch_budget": 1024,
+    "dtype": "float32",
+    "device": "cuda",
+    "image_batch_size": 16,
+    "text_chunk_size": 2048,
+    "reference_atol": 0.0002,
+    "reference_rtol": 0.0002,
+    "implementation": "fgclip-masked-max-v1",
+    "preset": "pilot",
+    "bank": {
+      "rows": 54030,
+      "dimension": 768,
+      "finite": true,
+      "duplicate_terms": 0,
+      "raw_norm_min": 0.9999997019767761,
+      "raw_norm_max": 1.000000238418579,
+      "raw_norm_mean": 1.0,
+      "normalized_for_scoring": true,
+      "embedding_sha256": "29ff19f474f393363cd0f46717d0dcd1486a04b79595a30f9321cfdb311dea46",
+      "vocab_sha256": "56530f1aaa90f6dc3549f3eaa1b23bb01b43b37665bee05f50aded43a0626876",
+      "vocabulary_order_hash": "f401856bc561340c5257450795160ae60e373916862d0492118e8ad0631df86c",
+      "name": "full supplied vocabulary (not assumed COCA-20k)",
+      "generation_provenance": "No generation metadata supplied in pinned root repository; encoding mode initially unknown"
+    },
+    "library_versions": {
+      "torch": "2.13.0",
+      "transformers": "4.57.6",
+      "Pillow": "12.3.0",
+      "numpy": "2.3.5"
+    }
+  },
+  "shape": [
+    3112,
+    54030
+  ],
+  "score_bytes": 672565440,
+  "storage_dtype": "float32",
+  "single_writer": true
+}

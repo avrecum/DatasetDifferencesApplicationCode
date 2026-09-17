@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 from dataclasses import asdict
 from pathlib import Path
 
@@ -78,6 +79,11 @@ def parser():
     p.add_argument("--download-retries", type=int, default=2)
     p.add_argument("--download-timeout", type=int, default=30)
     p.add_argument("--bank-dir", type=Path)
+    p.add_argument(
+        "--bank-diagnostic",
+        type=Path,
+        help="Optional independently run text-bank diagnostic to include in reporting",
+    )
     p.add_argument("--model-name")
     p.add_argument("--model-revision")
     p.add_argument("--device", default="cuda")
@@ -99,6 +105,13 @@ def parser():
         help="Optional presentation-only discovery activation correlation filter",
     )
     p.add_argument("--resume", action="store_true")
+    p.add_argument(
+        "--reuse-scores",
+        type=Path,
+        action="append",
+        default=[],
+        help="Read-only source score cache for identical-content reuse; repeatable",
+    )
     p.add_argument("--examples-per-kind", type=int, default=2)
     p.add_argument(
         "--heatmaps",
@@ -191,6 +204,14 @@ def prepare(args, lock, manifest_dir):
 
 def main(argv=None):
     args = parser().parse_args(argv)
+    rank = int(os.environ.get("RANK", 0))
+    if int(os.environ.get("WORLD_SIZE", 1)) > 1 and args.command not in (
+        "score",
+        "report",
+    ):
+        raise ValueError(
+            "torchrun is supported for score and report; run CPU analysis once"
+        )
     if args.group_limit < 0 or args.top_k < 0 or args.bootstrap < 1:
         raise ValueError("Invalid nonpositive run bounds")
     args.output.mkdir(parents=True, exist_ok=True)
@@ -268,10 +289,17 @@ def main(argv=None):
             reference_atol=args.reference_atol,
             reference_rtol=args.reference_rtol,
         )
-        write_json(args.output / "score_config.json", asdict(config))
         score_manifest(
-            m, bank_directory(args, lock), score_dir, config, args.hf_home, args.resume
+            m,
+            bank_directory(args, lock),
+            score_dir,
+            config,
+            args.hf_home,
+            args.resume,
+            args.reuse_scores,
         )
+        if rank == 0:
+            write_json(args.output / "score_config.json", asdict(config))
         if args.command == "score":
             return
     if args.command in ("analyze", "run"):
@@ -289,8 +317,19 @@ def main(argv=None):
             return
     if args.command in ("report", "run"):
         from .reporting import report
+        from .parallel import context, barrier
 
-        report(m, score_dir, analysis_dir, args.examples_per_kind, args.seed)
+        rank, _ = context()
+        if rank == 0:
+            report(
+                m,
+                score_dir,
+                analysis_dir,
+                args.examples_per_kind,
+                args.seed,
+                bank_diagnostic=args.bank_diagnostic,
+            )
+        barrier()
         if args.heatmaps:
             from .heatmaps import heatmaps
 

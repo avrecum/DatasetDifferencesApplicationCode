@@ -1,0 +1,2 @@
+construction,paired_concordance,ci_low,ci_high,signed_effect,prompts,components,comparisons,synthetic
+best_vs_rest,0.48398412698412707,0.4172821428571428,0.5535281746031747,-0.0005921065422750654,75,75,516,False

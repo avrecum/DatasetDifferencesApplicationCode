@@ -20,6 +20,12 @@
       "sha256": "414c004f4a76b1b7c12d61631e7580608327801813d9fe419b83bee32b02d1b6"
     },
     {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/bank_template_diagnostic.json",
+      "relative_path": "analysis/bank_template_diagnostic.json",
+      "bytes": 121914,
+      "sha256": "8b37f9dd5652214e758a1f73b6362c14906e6cf64d04ce254386d7a4b481dc47"
+    },
+    {
       "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/comparisons.jsonl",
       "relative_path": "analysis/comparisons.jsonl",
       "bytes": 750125,
@@ -36,6 +42,12 @@
       "relative_path": "analysis/dataset_audit.json",
       "bytes": 24602,
       "sha256": "378157df422ee8fa939e1f6be282628cd84feba661587e4f063f0c91417ae46f"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/discrimination_summary.csv",
+      "relative_path": "analysis/discrimination_summary.csv",
+      "bytes": 408,
+      "sha256": "cda381ce2d8cc0361e5ca6b0bb3d9e0cef7f42e229918ff13cc616691f5a3a92"
     },
     {
       "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/frozen_candidates.json",
@@ -112,8 +124,8 @@
     {
       "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/report.md",
       "relative_path": "analysis/report.md",
-      "bytes": 6056,
-      "sha256": "3eb90b399998ba043f7ed2706650a53497e3f71b4c92ab483091f1c4047ccce7"
+      "bytes": 6932,
+      "sha256": "c103ea40abef043db847cef89524fc729d7a762f3366b698c3d1df005f9ff2ed"
     },
     {
       "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot100/imagereward/analysis/results_table.tex",

@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "maximum_absolute_error": 8.344650268554688e-07,
+  "images": 3036,
+  "matching_invalid_image_ids": 83,
+  "reference_execution": {
+    "image_batch_size": 1,
+    "text_chunk_size": 512
+  },
+  "candidate_execution": {
+    "image_batch_size": 16,
+    "text_chunk_size": 2048
+  },
+  "concepts": 54030,
+  "absolute_tolerance": 0.0002,
+  "reference_fingerprint": "5b806a087a0fb296639f66cfdaf44d920f0463f8dc187a092e4af198dcc1b36f",
+  "candidate_fingerprint": "442d8c31ff80c7403654849976f56b83305bad2d7a0c8a56255b983b1e7e0c16",
+  "scope": "All supplied concepts for complete real-image groups; independent four-GPU recomputation"
+}

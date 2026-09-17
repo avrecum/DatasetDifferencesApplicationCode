@@ -1,0 +1,11 @@
+{
+  "repository": "CarperAI/pickapic_v1_no_images_training_sfw",
+  "revision": "ebca1a045fbb7d4192df1d4804865f9c4c91f27b",
+  "archive_rows": 335591,
+  "unique_uids": 359884,
+  "original_uid_overlap": 0,
+  "complete_original_strict_events": 0,
+  "bytes_downloaded": 27007269,
+  "overlapping_uids": [],
+  "purpose": "UID availability lookup only; no labels from this release used"
+}

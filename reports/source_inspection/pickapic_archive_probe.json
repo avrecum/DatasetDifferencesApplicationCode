@@ -1,0 +1,321 @@
+{
+  "yuvalkirstain/PickaPic": {
+    "status": 200,
+    "revision": "813243fb132c54ee12d1eb22791f584b803ce601",
+    "files": [
+      ".gitattributes",
+      "README.md"
+    ],
+    "card": null
+  },
+  "yuvalkirstain/PickaPic-downloads": {
+    "status": 200,
+    "revision": "bf0b97abe1dc52fad9e9852045ad5186de7ce459",
+    "files": [
+      ".gitattributes",
+      "README.md",
+      "data/train-00000-of-00001-4c86e3f56c0a38ff.parquet"
+    ],
+    "card": {
+      "dataset_info": {
+        "features": [
+          {
+            "name": "download_id",
+            "dtype": "int64"
+          },
+          {
+            "name": "created_at",
+            "dtype": "timestamp[ns]"
+          },
+          {
+            "name": "user_id",
+            "dtype": "int64"
+          },
+          {
+            "name": "image_uid",
+            "dtype": "string"
+          },
+          {
+            "name": "prompt",
+            "dtype": "string"
+          },
+          {
+            "name": "url",
+            "dtype": "string"
+          }
+        ],
+        "splits": [
+          {
+            "name": "train",
+            "num_bytes": 734763,
+            "num_examples": 2512
+          }
+        ],
+        "download_size": 299901,
+        "dataset_size": 734763
+      }
+    }
+  },
+  "yuvalkirstain/pick_a_pic_ranked_images_first_day": {
+    "status": 200,
+    "revision": "2f14274b2a5eb4b66c0207b6d009586a288c647f",
+    "files": [
+      ".gitattributes",
+      "README.md",
+      "data/train-00000-of-00002-7c318dedb7409098.parquet",
+      "data/train-00001-of-00002-eb6ddccbae5d82a6.parquet"
+    ],
+    "card": {
+      "dataset_info": {
+        "features": [
+          {
+            "name": "image_id",
+            "dtype": "int64"
+          },
+          {
+            "name": "created_at",
+            "dtype": "timestamp[ns]"
+          },
+          {
+            "name": "image_uid",
+            "dtype": "string"
+          },
+          {
+            "name": "user_id",
+            "dtype": "int64"
+          },
+          {
+            "name": "prompt",
+            "dtype": "string"
+          },
+          {
+            "name": "negative_prompt",
+            "dtype": "string"
+          },
+          {
+            "name": "seed",
+            "dtype": "int64"
+          },
+          {
+            "name": "gs",
+            "dtype": "float64"
+          },
+          {
+            "name": "steps",
+            "dtype": "int64"
+          },
+          {
+            "name": "idx",
+            "dtype": "int64"
+          },
+          {
+            "name": "num_generated",
+            "dtype": "int64"
+          },
+          {
+            "name": "scheduler_cls",
+            "dtype": "string"
+          },
+          {
+            "name": "model_id",
+            "dtype": "string"
+          },
+          {
+            "name": "url",
+            "dtype": "string"
+          },
+          {
+            "name": "image",
+            "dtype": "image"
+          }
+        ],
+        "splits": [
+          {
+            "name": "train",
+            "num_bytes": 592439420,
+            "num_examples": 859
+          }
+        ],
+        "download_size": 592037316,
+        "dataset_size": 592439420
+      }
+    }
+  },
+  "yuvalkirstain/pick_a_pic_preferred_images_first_day": {
+    "status": 200,
+    "revision": "43a7c5638a086dc7071d2428c2bc9fcd89231dd8",
+    "files": [
+      ".gitattributes",
+      "README.md",
+      "data/train-00000-of-00002-0b82bf804743d692.parquet",
+      "data/train-00001-of-00002-a3716c48323520b8.parquet"
+    ],
+    "card": {
+      "dataset_info": {
+        "features": [
+          {
+            "name": "image_id",
+            "dtype": "int64"
+          },
+          {
+            "name": "created_at",
+            "dtype": "timestamp[ns]"
+          },
+          {
+            "name": "image_uid",
+            "dtype": "string"
+          },
+          {
+            "name": "user_id",
+            "dtype": "int64"
+          },
+          {
+            "name": "prompt",
+            "dtype": "string"
+          },
+          {
+            "name": "negative_prompt",
+            "dtype": "string"
+          },
+          {
+            "name": "seed",
+            "dtype": "int64"
+          },
+          {
+            "name": "gs",
+            "dtype": "float64"
+          },
+          {
+            "name": "steps",
+            "dtype": "int64"
+          },
+          {
+            "name": "idx",
+            "dtype": "int64"
+          },
+          {
+            "name": "num_generated",
+            "dtype": "int64"
+          },
+          {
+            "name": "scheduler_cls",
+            "dtype": "string"
+          },
+          {
+            "name": "model_id",
+            "dtype": "string"
+          },
+          {
+            "name": "url",
+            "dtype": "string"
+          },
+          {
+            "name": "image",
+            "dtype": "image"
+          }
+        ],
+        "splits": [
+          {
+            "name": "train",
+            "num_bytes": 686322947.851,
+            "num_examples": 1001
+          }
+        ],
+        "download_size": 685855336,
+        "dataset_size": 686322947.851
+      }
+    }
+  },
+  "yuvalkirstain/PickaPic-images-6-3-2023": {
+    "status": 200,
+    "revision": "0a1f89ac17122ed3d46846af32d094b21f7d8c77",
+    "files": [
+      ".gitattributes",
+      "README.md",
+      "data/train-00000-of-00001-2bd0f1ad91f7dea0.parquet"
+    ],
+    "card": {
+      "dataset_info": {
+        "features": [
+          {
+            "name": "image_id",
+            "dtype": "int64"
+          },
+          {
+            "name": "created_at",
+            "dtype": "timestamp[ns]"
+          },
+          {
+            "name": "image_uid",
+            "dtype": "string"
+          },
+          {
+            "name": "user_id",
+            "dtype": "int64"
+          },
+          {
+            "name": "prompt",
+            "dtype": "string"
+          },
+          {
+            "name": "negative_prompt",
+            "dtype": "string"
+          },
+          {
+            "name": "seed",
+            "dtype": "int64"
+          },
+          {
+            "name": "gs",
+            "dtype": "float64"
+          },
+          {
+            "name": "steps",
+            "dtype": "int64"
+          },
+          {
+            "name": "idx",
+            "dtype": "int64"
+          },
+          {
+            "name": "num_generated",
+            "dtype": "int64"
+          },
+          {
+            "name": "scheduler_cls",
+            "dtype": "string"
+          },
+          {
+            "name": "model_id",
+            "dtype": "string"
+          },
+          {
+            "name": "url",
+            "dtype": "string"
+          }
+        ],
+        "splits": [
+          {
+            "name": "train",
+            "num_bytes": 53236259,
+            "num_examples": 86985
+          }
+        ],
+        "download_size": 10063363,
+        "dataset_size": 53236259
+      }
+    }
+  },
+  "CarperAI/pickapic_v1_no_images_training_sfw": {
+    "status": 200,
+    "revision": "ebca1a045fbb7d4192df1d4804865f9c4c91f27b",
+    "files": [
+      ".gitattributes",
+      "README.md",
+      "pickapic_training_sfw.parquet"
+    ],
+    "card": {
+      "license": "mit"
+    }
+  }
+}

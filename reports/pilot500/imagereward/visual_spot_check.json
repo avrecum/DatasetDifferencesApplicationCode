@@ -1,0 +1,9 @@
+{
+  "reviewer_type": "assistant visual spot check, not human annotation",
+  "human_review_status": "unverified",
+  "figure": "heatmaps/e158f6bd7974d852acc1.png",
+  "concept": "stare",
+  "event_id": "imagereward:test:001366-0019",
+  "observation": "The displayed pair depicts science-fiction interiors. The map maximum falls on architectural image regions, without an obvious person or gaze at those locations.",
+  "interpretation": "A model-similarity maximum does not establish that the word denotes a visually present concept. This single selected map is not a detector-accuracy estimate."
+}

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "maximum_absolute_error": 0.0,
+  "images": 22,
+  "concepts": 54030,
+  "absolute_tolerance": 0.0002,
+  "reference_fingerprint": "6b1345ec6e2c3189f7472dbe1f3d7007790922f7ea8b806f97fcbea4d446cef9",
+  "candidate_fingerprint": "374cba543feb523e1d274c2e79b86713b7f1517310a700287ecab6795cbe6b46",
+  "scope": "All supplied concepts for complete real-image groups; independent four-GPU recomputation"
+}

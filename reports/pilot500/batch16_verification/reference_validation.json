@@ -1,0 +1,72 @@
+{
+  "workers": [
+    {
+      "passed": true,
+      "max_absolute_score_error": 1.1920928955078125e-07,
+      "atol": 0.0002,
+      "rtol": 0.0002,
+      "images": [
+        "imagereward:images/test/test_1/0647a02c-879d-483f-81d0-65b945e7bec1.webp",
+        "imagereward:images/test/test_1/0bed42b7-ad82-414e-bf0e-40a43e5f867b.webp",
+        "imagereward:images/test/test_1/0db23757-50de-469b-9c11-ee2de57fb3fd.webp",
+        "imagereward:images/test/test_1/0efeea25-24dc-4146-a8c6-94fe27d82bf9.webp"
+      ],
+      "concepts": 128,
+      "reference": "official dense API, float32, one image",
+      "candidate": "supplied detection dense-head batch",
+      "dtype": "float32",
+      "patch_budget": 1024
+    },
+    {
+      "passed": true,
+      "max_absolute_score_error": 1.1920928955078125e-07,
+      "atol": 0.0002,
+      "rtol": 0.0002,
+      "images": [
+        "imagereward:images/test/test_1/04a11e8e-6a51-41ca-ae22-382b72e9002c.webp",
+        "imagereward:images/test/test_1/0917eb53-1554-42e5-8a85-309a1ee97a6b.webp",
+        "imagereward:images/test/test_1/09930877-eef9-4b5a-a9e4-5585884c089c.webp",
+        "imagereward:images/test/test_1/0b8cac0e-52c2-46b0-a10c-b6064809f96d.webp"
+      ],
+      "concepts": 128,
+      "reference": "official dense API, float32, one image",
+      "candidate": "supplied detection dense-head batch",
+      "dtype": "float32",
+      "patch_budget": 1024
+    },
+    {
+      "passed": true,
+      "max_absolute_score_error": 8.940696716308594e-08,
+      "atol": 0.0002,
+      "rtol": 0.0002,
+      "images": [
+        "imagereward:images/test/test_1/011d8794-7577-46fc-be57-ff95f602226a.webp",
+        "imagereward:images/test/test_1/02eb813a-bec8-4f00-aeb0-5c1565a86c0c.webp",
+        "imagereward:images/test/test_1/0dfebbe1-bdd9-4320-90e4-de7d2c090ee9.webp",
+        "imagereward:images/test/test_1/1011e359-5293-4c8f-9238-0a12abac8f11.webp"
+      ],
+      "concepts": 128,
+      "reference": "official dense API, float32, one image",
+      "candidate": "supplied detection dense-head batch",
+      "dtype": "float32",
+      "patch_budget": 1024
+    },
+    {
+      "passed": true,
+      "max_absolute_score_error": 8.940696716308594e-08,
+      "atol": 0.0002,
+      "rtol": 0.0002,
+      "images": [
+        "imagereward:images/test/test_1/01c59895-bb93-4be1-8150-d71d24abb149.webp",
+        "imagereward:images/test/test_1/0429a07f-659e-4c73-8fc3-10ea678df8f2.webp",
+        "imagereward:images/test/test_1/047841df-97f9-4a15-b607-09277e3b1b95.webp",
+        "imagereward:images/test/test_1/074769e5-e056-4e38-bd06-4daca670bc34.webp"
+      ],
+      "concepts": 128,
+      "reference": "official dense API, float32, one image",
+      "candidate": "supplied detection dense-head batch",
+      "dtype": "float32",
+      "patch_budget": 1024
+    }
+  ]
+}

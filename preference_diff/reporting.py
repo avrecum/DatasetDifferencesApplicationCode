@@ -174,12 +174,32 @@ def latex_escape(text):
     return "".join(replacements.get(c, c) for c in str(text))
 
 
-def report(manifest, score_dir, analysis_dir, examples_per_kind=2, seed=42):
+def report(
+    manifest,
+    score_dir,
+    analysis_dir,
+    examples_per_kind=2,
+    seed=42,
+    bank_diagnostic=None,
+):
     root = Path(analysis_dir)
     summary = read_json(root / "analysis_summary.json")
     top = read_json(root / "top_concepts.json")
     cache = read_json(Path(score_dir) / "cache.json")
+    diagnostic_path = root / "bank_template_diagnostic.json"
+    if bank_diagnostic:
+        diagnostic = read_json(bank_diagnostic)
+        cfg = cache["configuration"]
+        if diagnostic["model"]["model_revision"] != cfg.get("model_revision") or any(
+            diagnostic["bank_audit"][key] != cfg.get("bank", {}).get(key)
+            for key in ("embedding_sha256", "vocab_sha256", "vocabulary_order_hash")
+        ):
+            raise ValueError(
+                "Bank diagnostic is incompatible with this score configuration"
+            )
+        write_json(diagnostic_path, diagnostic)
     gallery(manifest, score_dir, root, examples_per_kind, seed)
+    plot_discrimination(root, summary, top)
     title = (
         "SYNTHETIC FIXTURE — NOT EMPIRICAL RESULTS"
         if summary["synthetic"]
@@ -247,6 +267,8 @@ def report(manifest, score_dir, analysis_dir, examples_per_kind=2, seed=42):
         "",
         "[All signed concept effects](all_concepts.csv), [frozen candidates](frozen_candidates.json), [held-out metrics](top_concepts.json), [dataset audit](dataset_audit.json), [paired gallery](gallery.html), [annotation template](annotation_template.csv), [confounder audit](confounder_audit.json), [stratified sensitivities](stratified_sensitivity.json), [LaTeX table](results_table.tex).",
         "",
+        "[Overall discrimination plot](discrimination_summary.png), [discrimination table](discrimination_summary.csv), and [discovery-versus-held-out concept effects](concept_effects.png). The overall score combines concepts frozen on discovery; 0.5 is the paired equal-ordering reference.",
+        "",
         "Inspect the separate ImageReward `sensitivity/best_vs_rest` and `sensitivity/best_vs_worst` analyses when available. Model/patch-count stratifications use frozen primary candidates. Annotator-component sensitivity preserves prompt weights and may have too few clusters for intervals.",
     ]
     mode_path = Path(score_dir) / "text_mode_audit.json"
@@ -279,6 +301,16 @@ def report(manifest, score_dir, analysis_dir, examples_per_kind=2, seed=42):
             f"| Paired concordance | {_fmt(metric['raw_concordance'])} | [{_fmt(metric['concordance_ci_low'])}, {_fmt(metric['concordance_ci_high'])}] |",
             "",
             "Concordance 0.5 is the equal-ordering reference; 0.6 means 60% weighted ordering credit, counting ties as half. An effect of +0.02 means +0.02 cosine-similarity units, not two percentage points of concept prevalence. Confidence intervals describe sampling uncertainty conditional on this scorer and cohort; they do not verify concept presence.",
+        ]
+    if diagnostic_path.exists():
+        diagnostic = read_json(diagnostic_path)
+        best = max(diagnostic["settings"], key=lambda r: r["mean_cosine"])
+        lines += [
+            "",
+            "## Extended text-bank diagnostic",
+            "",
+            f"An independently run diagnostic tested {len(diagnostic['settings'])} fixed mode/template/mask combinations on {len(diagnostic['words'])} vocabulary entries, without preference labels. Closest was `{best['walk_type']}` with template `{best['template']}`: mean cosine **{best['mean_cosine']:.4f}**, minimum **{best['minimum_cosine']:.4f}**, same-row nearest match fraction **{best['same_row_nearest_fraction']:.3f}** over the full bank.",
+            "This supports compatibility with templated dense-text embeddings more strongly than the raw-word check. It does not identify the exact original generation recipe, establish detector accuracy, or replace the bank. [Complete diagnostic](bank_template_diagnostic.json).",
         ]
     atomic_text(root / "report.md", "\n".join(lines) + "\n")
     atomic_text(root / "results_table.tex", "% " + title + "\n" + "\n".join(tex) + "\n")
@@ -317,3 +349,132 @@ def report(manifest, score_dir, analysis_dir, examples_per_kind=2, seed=42):
         )
     atomic_text(root / "paper_subsection.tex", paragraph)
     return summary
+
+
+def plot_discrimination(root, summary, top):
+    """Readable figures from already frozen results; no selection or fitting."""
+    import matplotlib
+
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
+    root = Path(root)
+    rows = []
+    directories = [root] + sorted((root / "sensitivity").glob("*"))
+    for directory in directories:
+        path = directory / "joint_concept_score.json"
+        if not path.exists():
+            continue
+        info = read_json(directory / "analysis_summary.json")
+        for metric in read_json(path)["metrics"]:
+            rows.append(
+                dict(
+                    construction=info["construction_mode"],
+                    paired_concordance=metric["raw_concordance"],
+                    ci_low=metric["concordance_ci_low"],
+                    ci_high=metric["concordance_ci_high"],
+                    signed_effect=metric["heldout_effect"],
+                    prompts=metric["counts"]["prompts"],
+                    components=metric["counts"]["components"],
+                    comparisons=metric["counts"]["comparisons"],
+                    synthetic=summary["synthetic"],
+                )
+            )
+    write_csv(
+        root / "discrimination_summary.csv",
+        rows,
+        fields=[
+            "construction",
+            "paired_concordance",
+            "ci_low",
+            "ci_high",
+            "signed_effect",
+            "prompts",
+            "components",
+            "comparisons",
+            "synthetic",
+        ],
+    )
+    fig, ax = plt.subplots(figsize=(8, 3.2))
+    for i, row in enumerate(rows):
+        value = row["paired_concordance"]
+        if value is None:
+            continue
+        ax.scatter([value], [i], color="navy", zorder=3)
+        if row["ci_low"] is not None:
+            ax.hlines(i, row["ci_low"], row["ci_high"], color="navy", lw=2)
+        ax.annotate(
+            f"{value:.3f}; {row['prompts']} prompts",
+            (value, i),
+            xytext=(0, 10),
+            textcoords="offset points",
+            ha="center",
+            fontsize=9,
+        )
+    ax.axvline(0.5, ls="--", color="grey", label="Equal-ordering reference (0.5)")
+    ax.set(
+        xlim=(0, 1),
+        ylim=(-0.5, max(0.5, len(rows) - 0.5)),
+        yticks=list(range(len(rows))),
+        yticklabels=[r["construction"].replace("_", " ") for r in rows],
+        xlabel="Held-out prompt-balanced paired concordance",
+    )
+    ax.invert_yaxis()
+    if not rows:
+        ax.text(
+            0.5,
+            0.5,
+            "Unavailable: no frozen concept score",
+            transform=ax.transAxes,
+            ha="center",
+        )
+    label = "SYNTHETIC CHECK" if summary["synthetic"] else summary["dataset"]
+    ax.set_title(f"{label}: frozen concept-score discrimination (95% intervals)")
+    ax.legend(loc="lower right", fontsize=8)
+    fig.tight_layout()
+    fig.savefig(root / "discrimination_summary.png", dpi=180)
+    fig.savefig(root / "discrimination_summary.pdf")
+    plt.close(fig)
+    candidates = top["candidates"]
+    fig, ax = plt.subplots(figsize=(8, max(3, len(candidates) * 0.3 + 1.5)))
+    for i, c in enumerate(candidates):
+        ax.scatter(
+            [c["discovery_effect"]],
+            [i],
+            marker="x",
+            color="grey",
+            label="Discovery" if i == 0 else None,
+        )
+        if c["heldout_effect"] is not None:
+            ax.scatter(
+                [c["heldout_effect"]],
+                [i],
+                color="navy",
+                label="Held-out" if i == 0 else None,
+            )
+            if c["effect_ci_low"] is not None:
+                ax.hlines(
+                    i, c["effect_ci_low"], c["effect_ci_high"], color="navy", lw=1.4
+                )
+    ax.axvline(0, color="grey", ls="--")
+    ax.set(
+        yticks=list(range(len(candidates))),
+        yticklabels=[c["concept"] for c in candidates],
+        xlabel="Preferred minus rejected cosine-similarity score",
+        title=f"{label}: concepts in frozen discovery order",
+    )
+    ax.invert_yaxis()
+    if candidates:
+        ax.legend()
+    else:
+        ax.text(
+            0.5,
+            0.5,
+            "Unavailable: no selected concepts",
+            transform=ax.transAxes,
+            ha="center",
+        )
+    fig.tight_layout()
+    fig.savefig(root / "concept_effects.png", dpi=180)
+    fig.savefig(root / "concept_effects.pdf")
+    plt.close(fig)

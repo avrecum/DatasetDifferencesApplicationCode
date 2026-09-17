@@ -1,0 +1,10 @@
+{
+  "started_epoch": 1789679568.3028522,
+  "inference_started_epoch": 1789679645.5568492,
+  "finished_epoch": 1789679673.7897515,
+  "inferred_images": 757,
+  "valid_images": 757,
+  "loader": "two CPU threads; at most two prefetched batches; FIFO ordering",
+  "image_batch_size": 16,
+  "text_chunk_size": 2048
+}

@@ -1,0 +1,2 @@
+construction,paired_concordance,ci_low,ci_high,signed_effect,prompts,components,comparisons,synthetic
+best_vs_worst,0.5966666666666667,0.49,0.6966666666666667,0.005425689230362574,75,75,152,False

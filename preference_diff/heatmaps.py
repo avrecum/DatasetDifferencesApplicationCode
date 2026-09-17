@@ -25,6 +25,9 @@ def heatmaps(manifest, score_dir, analysis_dir, bank_dir, cache_root, concept_li
 
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
+    from .parallel import context, barrier
+
+    rank, workers = context()
 
     root = Path(analysis_dir) / "heatmaps"
     root.mkdir(exist_ok=True)
@@ -43,6 +46,9 @@ def heatmaps(manifest, score_dir, analysis_dir, bank_dir, cache_root, concept_li
             dict(status="unavailable: no eligible gallery pairs", maps=[]),
         )
         return
+    if workers > 1 and len(chosen) < workers:
+        raise ValueError("Choose at least one heatmap concept per GPU worker")
+    chosen = chosen[rank::workers]
     scores, index, valid, vocab, meta, state = open_scores(score_dir)
     if meta["configuration"].get("model_name") == "SYNTHETIC_NO_ENCODER":
         write_json(
@@ -186,11 +192,23 @@ def heatmaps(manifest, score_dir, analysis_dir, bank_dir, cache_root, concept_li
                     scale=[low, high],
                 )
             )
-    write_json(
-        root / "index.json",
-        dict(
-            status="unverified model similarity maps",
-            geometry="inverse processor HWC patch packing; valid prefix patches only; exact processed view",
-            maps=artifacts,
-        ),
+    result = dict(
+        status="unverified model similarity maps",
+        geometry="inverse processor HWC patch packing; valid prefix patches only; exact processed view",
+        maps=artifacts,
+        worker_rank=rank,
     )
+    if workers > 1:
+        write_json(root / f"index-rank-{rank:03d}.json", result)
+        barrier()
+        if rank == 0:
+            result["maps"] = [
+                m
+                for i in range(workers)
+                for m in read_json(root / f"index-rank-{i:03d}.json")["maps"]
+            ]
+            result["gpu_workers"] = workers
+            write_json(root / "index.json", result)
+        barrier()
+    else:
+        write_json(root / "index.json", result)

@@ -1,0 +1,24 @@
+{
+  "repository": "pickapic-anonymous/pickapic_v1",
+  "source_uid_scope": "three exact UIDs from original selected smoke candidates",
+  "uids": [
+    "006f6c37-999a-4d77-9dca-41ae5766cefb",
+    "02539aa6-38ff-45a8-a6c1-bcf911744a6c",
+    "02d1b05d-4d98-4bcd-ac3f-8187552cb0bf"
+  ],
+  "results": {
+    "train": {
+      "status": null,
+      "error": "ReadTimeout: HTTPSConnectionPool(host='datasets-server.huggingface.co', port=443): Read timed out. (read timeout=30)"
+    },
+    "validation": {
+      "status": null,
+      "error": "ReadTimeout: HTTPSConnectionPool(host='datasets-server.huggingface.co', port=443): Read timed out. (read timeout=30)"
+    },
+    "test": {
+      "status": null,
+      "error": "ReadTimeout: HTTPSConnectionPool(host='datasets-server.huggingface.co', port=443): Read timed out. (read timeout=30)"
+    }
+  },
+  "interpretation": "Bounded UID lookup; failures or zero matches cannot establish population-wide absence"
+}

@@ -1,0 +1,174 @@
+{
+  "settings": {
+    "seed": 42,
+    "top_k": 10,
+    "tie_tolerance": 0.0,
+    "mode": "best_vs_rest",
+    "score_fingerprint": "5b806a087a0fb296639f66cfdaf44d920f0463f8dc187a092e4af198dcc1b36f",
+    "comparisons_hash": "aade068ba7a728df209c435d21bf787a450ef6fc9602ea7c80c2ca1f26c9cc54",
+    "selection": "signed discovery effect; strictly positive/negative only; stable vocabulary-index tie break"
+  },
+  "candidates": [
+    {
+      "concept_id": 34276,
+      "concept": "party-building",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 1,
+      "discovery_effect": 0.005373829355526816
+    },
+    {
+      "concept_id": 6830,
+      "concept": "building",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 2,
+      "discovery_effect": 0.005194644756921526
+    },
+    {
+      "concept_id": 36110,
+      "concept": "portico",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 3,
+      "discovery_effect": 0.005113914535470781
+    },
+    {
+      "concept_id": 7119,
+      "concept": "cabin",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 4,
+      "discovery_effect": 0.004872967949842724
+    },
+    {
+      "concept_id": 21007,
+      "concept": "guesthouse",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 5,
+      "discovery_effect": 0.0048196866286644
+    },
+    {
+      "concept_id": 33388,
+      "concept": "outbuilding",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 6,
+      "discovery_effect": 0.004742076711051961
+    },
+    {
+      "concept_id": 27554,
+      "concept": "log-cabin",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 7,
+      "discovery_effect": 0.004738787984507343
+    },
+    {
+      "concept_id": 8751,
+      "concept": "city-dwelling",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 8,
+      "discovery_effect": 0.004704623136569908
+    },
+    {
+      "concept_id": 9710,
+      "concept": "community-building",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 9,
+      "discovery_effect": 0.0046706990319253785
+    },
+    {
+      "concept_id": 22989,
+      "concept": "house",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 10,
+      "discovery_effect": 0.004650738114227649
+    },
+    {
+      "concept_id": 21422,
+      "concept": "hand-shaped",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 1,
+      "discovery_effect": -0.004233236675741175
+    },
+    {
+      "concept_id": 4352,
+      "concept": "backsaw",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 2,
+      "discovery_effect": -0.004153052142256562
+    },
+    {
+      "concept_id": 21448,
+      "concept": "handgrip",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 3,
+      "discovery_effect": -0.003945644014557488
+    },
+    {
+      "concept_id": 47258,
+      "concept": "tarmac",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 4,
+      "discovery_effect": -0.003803098286395861
+    },
+    {
+      "concept_id": 28114,
+      "concept": "machete",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 5,
+      "discovery_effect": -0.003589598673280138
+    },
+    {
+      "concept_id": 52513,
+      "concept": "watchband",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 6,
+      "discovery_effect": -0.003544983380116598
+    },
+    {
+      "concept_id": 21479,
+      "concept": "handsaw",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 7,
+      "discovery_effect": -0.0035393922701446407
+    },
+    {
+      "concept_id": 8832,
+      "concept": "clasp",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 8,
+      "discovery_effect": -0.0034657525756933683
+    },
+    {
+      "concept_id": 35787,
+      "concept": "pocketknife",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 9,
+      "discovery_effect": -0.0034444566769242495
+    },
+    {
+      "concept_id": 20800,
+      "concept": "grenade",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 10,
+      "discovery_effect": -0.0033982996796086073
+    }
+  ],
+  "artifact_hash": "f5fa6bb143ae08e1e186a6f7bb84552c83b3163d910b0764181e2ada9296fa51"
+}

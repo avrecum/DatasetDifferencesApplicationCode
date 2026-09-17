@@ -1,0 +1,38 @@
+{
+  "workers": [
+    {
+      "rank": 0,
+      "workers": 4,
+      "device_index": 0,
+      "assigned_unique_images": 778,
+      "valid_images": 758,
+      "elapsed_seconds": 127.29057621955872
+    },
+    {
+      "rank": 1,
+      "workers": 4,
+      "device_index": 1,
+      "assigned_unique_images": 778,
+      "valid_images": 757,
+      "elapsed_seconds": 128.10701084136963
+    },
+    {
+      "rank": 2,
+      "workers": 4,
+      "device_index": 2,
+      "assigned_unique_images": 778,
+      "valid_images": 757,
+      "elapsed_seconds": 128.01383018493652
+    },
+    {
+      "rank": 3,
+      "workers": 4,
+      "device_index": 3,
+      "assigned_unique_images": 778,
+      "valid_images": 757,
+      "elapsed_seconds": 126.10429167747498
+    }
+  ],
+  "policy": "content-group round-robin; disjoint per-GPU caches; rank-zero atomic merge",
+  "elapsed_seconds": 207.81073665618896
+}

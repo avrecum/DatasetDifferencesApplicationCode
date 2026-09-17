@@ -1,0 +1,170 @@
+{
+  "yuvalkirstain/PickaPic-downloads": {
+    "revision": "bf0b97abe1dc52fad9e9852045ad5186de7ce459",
+    "files": [
+      {
+        "file": "data/train-00000-of-00001-4c86e3f56c0a38ff.parquet",
+        "size": 299901,
+        "rows": 2512,
+        "row_groups": 3,
+        "schema": "download_id: int64\ncreated_at: timestamp[us]\nuser_id: int64\nimage_uid: string\nprompt: string\nurl: string",
+        "columns": [
+          "download_id",
+          "created_at",
+          "user_id",
+          "image_uid",
+          "prompt",
+          "url"
+        ],
+        "probe_bytes": 103293
+      }
+    ]
+  },
+  "yuvalkirstain/pick_a_pic_ranked_images_first_day": {
+    "revision": "2f14274b2a5eb4b66c0207b6d009586a288c647f",
+    "files": [
+      {
+        "file": "data/train-00000-of-00002-7c318dedb7409098.parquet",
+        "size": 295161699,
+        "rows": 430,
+        "row_groups": 1,
+        "schema": "image_id: int64\ncreated_at: timestamp[us]\nimage_uid: string\nuser_id: int64\nprompt: string\nnegative_prompt: string\nseed: int64\ngs: double\nsteps: int64\nidx: int64\nnum_generated: int64\nscheduler_cls: string\nmodel_id: string\nurl: string\nimage: struct<bytes: binary, path: string>\n  child 0, bytes: binary\n  child 1, path: string",
+        "columns": [
+          "image_id",
+          "created_at",
+          "image_uid",
+          "user_id",
+          "prompt",
+          "negative_prompt",
+          "seed",
+          "gs",
+          "steps",
+          "idx",
+          "num_generated",
+          "scheduler_cls",
+          "model_id",
+          "url",
+          "bytes",
+          "path"
+        ],
+        "probe_bytes": 118627
+      },
+      {
+        "file": "data/train-00001-of-00002-eb6ddccbae5d82a6.parquet",
+        "size": 296875617,
+        "rows": 429,
+        "row_groups": 1,
+        "schema": "image_id: int64\ncreated_at: timestamp[us]\nimage_uid: string\nuser_id: int64\nprompt: string\nnegative_prompt: string\nseed: int64\ngs: double\nsteps: int64\nidx: int64\nnum_generated: int64\nscheduler_cls: string\nmodel_id: string\nurl: string\nimage: struct<bytes: binary, path: string>\n  child 0, bytes: binary\n  child 1, path: string",
+        "columns": [
+          "image_id",
+          "created_at",
+          "image_uid",
+          "user_id",
+          "prompt",
+          "negative_prompt",
+          "seed",
+          "gs",
+          "steps",
+          "idx",
+          "num_generated",
+          "scheduler_cls",
+          "model_id",
+          "url",
+          "bytes",
+          "path"
+        ],
+        "probe_bytes": 128609
+      }
+    ]
+  },
+  "yuvalkirstain/pick_a_pic_preferred_images_first_day": {
+    "revision": "43a7c5638a086dc7071d2428c2bc9fcd89231dd8",
+    "files": [
+      {
+        "file": "data/train-00000-of-00002-0b82bf804743d692.parquet",
+        "size": 346310971,
+        "rows": 501,
+        "row_groups": 1,
+        "schema": "image_id: int64\ncreated_at: timestamp[us]\nimage_uid: string\nuser_id: int64\nprompt: string\nnegative_prompt: string\nseed: int64\ngs: double\nsteps: int64\nidx: int64\nnum_generated: int64\nscheduler_cls: string\nmodel_id: string\nurl: string\nimage: struct<bytes: binary, path: string>\n  child 0, bytes: binary\n  child 1, path: string",
+        "columns": [
+          "image_id",
+          "created_at",
+          "image_uid",
+          "user_id",
+          "prompt",
+          "negative_prompt",
+          "seed",
+          "gs",
+          "steps",
+          "idx",
+          "num_generated",
+          "scheduler_cls",
+          "model_id",
+          "url",
+          "bytes",
+          "path"
+        ],
+        "probe_bytes": 84283
+      },
+      {
+        "file": "data/train-00001-of-00002-a3716c48323520b8.parquet",
+        "size": 339544365,
+        "rows": 500,
+        "row_groups": 1,
+        "schema": "image_id: int64\ncreated_at: timestamp[us]\nimage_uid: string\nuser_id: int64\nprompt: string\nnegative_prompt: string\nseed: int64\ngs: double\nsteps: int64\nidx: int64\nnum_generated: int64\nscheduler_cls: string\nmodel_id: string\nurl: string\nimage: struct<bytes: binary, path: string>\n  child 0, bytes: binary\n  child 1, path: string",
+        "columns": [
+          "image_id",
+          "created_at",
+          "image_uid",
+          "user_id",
+          "prompt",
+          "negative_prompt",
+          "seed",
+          "gs",
+          "steps",
+          "idx",
+          "num_generated",
+          "scheduler_cls",
+          "model_id",
+          "url",
+          "bytes",
+          "path"
+        ],
+        "probe_bytes": 67885
+      }
+    ]
+  },
+  "CarperAI/pickapic_v1_no_images_training_sfw": {
+    "revision": "ebca1a045fbb7d4192df1d4804865f9c4c91f27b",
+    "files": [
+      {
+        "file": "pickapic_training_sfw.parquet",
+        "size": 88873253,
+        "rows": 335591,
+        "row_groups": 1,
+        "schema": "are_different: bool\nbest_image_uid: string\ncaption: string\ncreated_at: timestamp[us]\nhas_label: bool\nimage_0_uid: string\nimage_0_url: string\nimage_1_uid: string\nimage_1_url: string\nlabel_0: double\nlabel_1: double\nmodel_0: string\nmodel_1: string\nranking_id: int64\nuser_id: int64\nnum_example_per_prompt: int64\n__index_level_0__: int64\nis_sfw: bool\n-- schema metadata --\npandas: '{\"index_columns\": [{\"kind\": \"range\", \"name\": null, \"start\": 0, \"' + 2421",
+        "columns": [
+          "are_different",
+          "best_image_uid",
+          "caption",
+          "created_at",
+          "has_label",
+          "image_0_uid",
+          "image_0_url",
+          "image_1_uid",
+          "image_1_url",
+          "label_0",
+          "label_1",
+          "model_0",
+          "model_1",
+          "ranking_id",
+          "user_id",
+          "num_example_per_prompt",
+          "__index_level_0__",
+          "is_sfw"
+        ],
+        "probe_bytes": 71973
+      }
+    ]
+  }
+}

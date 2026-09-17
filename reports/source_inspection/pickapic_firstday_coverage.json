@@ -1,0 +1,17 @@
+{
+  "source_unique_uids": 1001,
+  "matched_original_uids": 959,
+  "complete_strict_events": 0,
+  "prompt_groups": 0,
+  "split_counts": {},
+  "event_ids": [],
+  "original_smoke_complete_events": 0,
+  "available_candidate_counts_for_strict_metadata_events": {
+    "0": 12374,
+    "1": 513,
+    "2": 198,
+    "3": 0,
+    "4": 0
+  },
+  "interpretation": "Original UID overlap exists, but no strict four-candidate event is complete. No partial-event fallback or replacement preference labels used."
+}

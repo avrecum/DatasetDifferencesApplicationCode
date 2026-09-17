@@ -1,0 +1,47 @@
+{
+  "status": "unverified model similarity maps",
+  "geometry": "inverse processor HWC patch packing; valid prefix patches only; exact processed view",
+  "maps": [
+    {
+      "concept": "wide-eyed",
+      "event_id": "imagereward:test:007367-0101",
+      "selection": "first seeded random-audit pair",
+      "figure": "6dda8ef39c6dd7185cbe.png",
+      "geometry": [
+        {
+          "image_id": "imagereward:images/test/test_1/39b0f4e1-8737-4168-9d56-98a7fca26475.webp",
+          "spatial_shape": [
+            23,
+            44
+          ],
+          "patch_size": 16,
+          "valid_patches": 1012,
+          "maximum": 0.2407408356666565,
+          "argmax_patch": [
+            5,
+            40
+          ]
+        },
+        {
+          "image_id": "imagereward:images/test/test_1/ecf9b139-7bcb-4125-88c8-b9696621b0ab.webp",
+          "spatial_shape": [
+            23,
+            44
+          ],
+          "patch_size": 16,
+          "valid_patches": 1012,
+          "maximum": 0.25973740220069885,
+          "argmax_patch": [
+            4,
+            17
+          ]
+        }
+      ],
+      "scale": [
+        0.018366731703281403,
+        0.25973740220069885
+      ]
+    }
+  ],
+  "worker_rank": 3
+}

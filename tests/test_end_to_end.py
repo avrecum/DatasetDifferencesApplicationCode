@@ -28,6 +28,9 @@ def test_offline_end_to_end_and_compare(tmp_path):
             "results_table.tex",
             "paper_subsection.tex",
             "joint_concept_score.json",
+            "discrimination_summary.csv",
+            "discrimination_summary.png",
+            "concept_effects.png",
         ):
             assert (a / file).is_file()
         result = read_json(a / "top_concepts.json")

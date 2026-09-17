@@ -1,0 +1,65 @@
+{
+  "files": [
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot500/comparison/primary/joined_concepts.csv",
+      "relative_path": "primary/joined_concepts.csv",
+      "bytes": 3486846,
+      "sha256": "aa937bb6712b1164210c13d2bcab149b55c2dc0e7bd2c34f26187179e3f54fe2"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot500/comparison/primary/frozen_list_transfer.json",
+      "relative_path": "primary/frozen_list_transfer.json",
+      "bytes": 16422,
+      "sha256": "14399549aabac840a3317249192731c030d17a08c5627ffccb0f4a77bbd0244f"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot500/comparison/primary/effect_scatter.png",
+      "relative_path": "primary/effect_scatter.png",
+      "bytes": 55372,
+      "sha256": "4127de0be10a44873e5115f97e47e83fab9a6d8aecd924bf9952b621086dcfef"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot500/comparison/primary/comparison_summary.json",
+      "relative_path": "primary/comparison_summary.json",
+      "bytes": 1025,
+      "sha256": "fce613db13fe029053ab6f80c7c9cd8978ad1500fe52146a59ce81b855f29f32"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot500/comparison/primary/effect_scatter.pdf",
+      "relative_path": "primary/effect_scatter.pdf",
+      "bytes": 14909,
+      "sha256": "97f77bfcb8e4c78ed1806cb4e248ff698df0502aeb17f3ba7719118cb279dba5"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot500/comparison/best_vs_rest/joined_concepts.csv",
+      "relative_path": "best_vs_rest/joined_concepts.csv",
+      "bytes": 3466918,
+      "sha256": "c92703138e460d55116f309a95dadf9848c89a5f9bbe0598bdae8ea5e9d56ac0"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot500/comparison/best_vs_rest/frozen_list_transfer.json",
+      "relative_path": "best_vs_rest/frozen_list_transfer.json",
+      "bytes": 16405,
+      "sha256": "cdb1f8faedc4ad5ede43f49c2ae01a36d8a20595dd5a30c4fa93bf9d0b732d16"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot500/comparison/best_vs_rest/effect_scatter.png",
+      "relative_path": "best_vs_rest/effect_scatter.png",
+      "bytes": 55372,
+      "sha256": "4127de0be10a44873e5115f97e47e83fab9a6d8aecd924bf9952b621086dcfef"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot500/comparison/best_vs_rest/comparison_summary.json",
+      "relative_path": "best_vs_rest/comparison_summary.json",
+      "bytes": 1025,
+      "sha256": "fce613db13fe029053ab6f80c7c9cd8978ad1500fe52146a59ce81b855f29f32"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pilot500/comparison/best_vs_rest/effect_scatter.pdf",
+      "relative_path": "best_vs_rest/effect_scatter.pdf",
+      "bytes": 14909,
+      "sha256": "fb8c8958242764fbda957a55004a628a36de9276358418c4f903b58b7c4044ef"
+    }
+  ],
+  "note": "Full joined concept CSV remains at indexed local run path. Pick-a-Pic results unavailable, not zero effects."
+}

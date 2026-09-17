@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "max_absolute_score_error": 1.1920928955078125e-07,
+  "atol": 0.0002,
+  "rtol": 0.0002,
+  "images": [
+    "imagereward:images/test/test_1/0647a02c-879d-483f-81d0-65b945e7bec1.webp",
+    "imagereward:images/test/test_1/0bed42b7-ad82-414e-bf0e-40a43e5f867b.webp",
+    "imagereward:images/test/test_1/0db23757-50de-469b-9c11-ee2de57fb3fd.webp",
+    "imagereward:images/test/test_1/0efeea25-24dc-4146-a8c6-94fe27d82bf9.webp"
+  ],
+  "concepts": 128,
+  "reference": "official dense API, float32, one image",
+  "candidate": "supplied detection dense-head batch",
+  "dtype": "float32",
+  "patch_budget": 1024
+}

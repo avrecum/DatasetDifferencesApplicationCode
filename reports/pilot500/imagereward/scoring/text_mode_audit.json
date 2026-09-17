@@ -1,0 +1,110 @@
+{
+  "settings": [
+    {
+      "walk_type": "box",
+      "max_length": 64,
+      "lowercased": true,
+      "words": [
+        "(abbe)",
+        "bedeck",
+        "complication",
+        "dyslexia",
+        "gargle",
+        "ingestion",
+        "mid-sixties",
+        "pathetic",
+        "reinvented",
+        "sociobiologist",
+        "transparent",
+        "zzzz"
+      ],
+      "cosine_to_bank": [
+        0.6386818289756775,
+        0.7249525785446167,
+        0.5421590805053711,
+        0.783596932888031,
+        0.6844692230224609,
+        0.4234658479690552,
+        0.8248113989830017,
+        0.6632131338119507,
+        0.7576111555099487,
+        0.7694419622421265,
+        0.7616487741470337,
+        0.550384521484375
+      ],
+      "mean_cosine": 0.6770363450050354,
+      "min_cosine": 0.4234658479690552
+    },
+    {
+      "walk_type": "short",
+      "max_length": 64,
+      "lowercased": true,
+      "words": [
+        "(abbe)",
+        "bedeck",
+        "complication",
+        "dyslexia",
+        "gargle",
+        "ingestion",
+        "mid-sixties",
+        "pathetic",
+        "reinvented",
+        "sociobiologist",
+        "transparent",
+        "zzzz"
+      ],
+      "cosine_to_bank": [
+        0.4370700716972351,
+        0.46667832136154175,
+        0.23888371884822845,
+        0.47652411460876465,
+        0.3468380570411682,
+        0.25485503673553467,
+        0.4677489399909973,
+        0.3228844404220581,
+        0.5221478939056396,
+        0.41689175367355347,
+        0.41273272037506104,
+        0.3690180778503418
+      ],
+      "mean_cosine": 0.3943561017513275,
+      "min_cosine": 0.23888371884822845
+    },
+    {
+      "walk_type": "long",
+      "max_length": 196,
+      "lowercased": true,
+      "words": [
+        "(abbe)",
+        "bedeck",
+        "complication",
+        "dyslexia",
+        "gargle",
+        "ingestion",
+        "mid-sixties",
+        "pathetic",
+        "reinvented",
+        "sociobiologist",
+        "transparent",
+        "zzzz"
+      ],
+      "cosine_to_bank": [
+        0.4399300813674927,
+        0.44250306487083435,
+        0.20335900783538818,
+        0.43563440442085266,
+        0.33269011974334717,
+        0.2580718696117401,
+        0.4026298522949219,
+        0.28248101472854614,
+        0.4664548337459564,
+        0.35960710048675537,
+        0.3607349693775177,
+        0.36734479665756226
+      ],
+      "mean_cosine": 0.362620085477829,
+      "min_cosine": 0.20335900783538818
+    }
+  ],
+  "conclusion": "Diagnostic only: high agreement supports compatibility, but cannot recover missing generation provenance. Original bank retained."
+}

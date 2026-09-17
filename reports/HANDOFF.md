@@ -1,5 +1,7 @@
 # Implementation and actual execution handoff
 
+> Historical 100-prompt pilot. The [continuation handoff](CONTINUATION.md) reports the completed 500-prompt, four-GPU experiment, expanded text-bank compatibility diagnostic and further Pick-a-Pic recovery attempts. The measurements below describe the original pilot; they are not the larger run's results.
+
 The reusable application is implemented and tested. Real ImageReward scoring, held-out evaluation, sensitivities, galleries and patch maps completed on a Slurm GPU allocation. **This pilot does not demonstrate reliable preference discrimination.** Pick-a-Pic empirical results and cross-dataset replication remain unavailable because the original image URLs failed. The supplied text bank's exact encoder/template provenance is also unresolved.
 
 ## Read these artifacts first

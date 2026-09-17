@@ -1,0 +1,8 @@
+{
+  "rank": 0,
+  "workers": 4,
+  "device_index": 0,
+  "assigned_unique_images": 778,
+  "valid_images": 758,
+  "elapsed_seconds": 326.495952129364
+}

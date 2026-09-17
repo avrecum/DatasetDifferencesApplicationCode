@@ -1,0 +1,335 @@
+{
+  "files": [
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/score_config.json",
+      "bytes": 412,
+      "sha256": "ba5716ebf1a51216421a84bd774415b33f9f45c717512694ce4815e428732fa6"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/gpu-utilization-1864083.csv",
+      "bytes": 43317,
+      "sha256": "e19d20e2ac9b6eb254f32457ea580d5f2dd66a3073b117cd860718fe7f59b6f1"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/bank_audit.json",
+      "bytes": 668,
+      "sha256": "c3957be172bb0ab09e9c9ced2f4db2e0b6d59bab1d396595b4a9a8dcbc2a4251"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/scores.f32",
+      "bytes": 672565440,
+      "sha256": "36080893504a218598fac6596fad3d8b7232da35f2d3c736bd0b5ed02751dd4e"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/vocab.json",
+      "bytes": 818330,
+      "sha256": "67d5843c259a82e580d4b0c4d95f617fb5e3de960099e104540a55991b079237"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/reuse_audit.json",
+      "bytes": 516669,
+      "sha256": "6d5b76c3a21fbb19e79af5c08eab9436c63094d1eee2130bae2af3f075d8f280"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/cache.json",
+      "bytes": 1543,
+      "sha256": "57b532af696841a3b8a6647818b2280073509e8d306f9f20fea0ecdb2f91384a"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/rows.json",
+      "bytes": 4885187,
+      "sha256": "93878389a0d73b7758efcee7aeb91cc4b3959732060827b0d290c518758af2f9"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/text_mode_audit.json",
+      "bytes": 2627,
+      "sha256": "ea08921fe6f9be0a887d9d889d828f909a12a84b7af8837f6be2fb5e9f8e6ce9"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/reference_validation.json",
+      "bytes": 2796,
+      "sha256": "6d946f7cf3d40d7b280351b7ac1d59b03d85a8546a72b63b3ccac2c850a784b0"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/state.json",
+      "bytes": 604103,
+      "sha256": "14d491f96a51549243270da34b55a5c0d44e73d99f787c63ec05d6c9e51c0855"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/row_index.json",
+      "bytes": 272345,
+      "sha256": "15bdf31ee3e137efd789eb171c02d71612f4ba74e8a6060e59538103d74e07fa"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/distributed_execution.json",
+      "bytes": 885,
+      "sha256": "8c6eae2fcd979de5bb912b5c8f57f806a4957a8f411d9f86039e00ff74b144cd"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/valid.npy",
+      "bytes": 3240,
+      "sha256": "5a22f03321f9cc3d9768af56c66be0450d1cf49a57abe3b48a971041724b1817"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-003/bank_audit.json",
+      "bytes": 668,
+      "sha256": "c3957be172bb0ab09e9c9ced2f4db2e0b6d59bab1d396595b4a9a8dcbc2a4251"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-003/scores.f32",
+      "bytes": 168141360,
+      "sha256": "387ac502f6cae2d14c1cee9fc3b74af39227f71ab01fc42ebd44c9216285ec57"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-003/vocab.json",
+      "bytes": 818330,
+      "sha256": "67d5843c259a82e580d4b0c4d95f617fb5e3de960099e104540a55991b079237"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-003/reuse_audit.json",
+      "bytes": 273,
+      "sha256": "96fdeb58d324acc89b2f4650df9e05a1a6940797fd7c96ad0793b0015dd07c93"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-003/cache.json",
+      "bytes": 1542,
+      "sha256": "cfe80b4a6856eba0fd91ccc72abf1ce74686248ca72c7eb6c30f0b85980f07fd"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-003/rows.json",
+      "bytes": 1228648,
+      "sha256": "8f523f3ad8ba378b3f5dc662182f42909fe45f875d65168abfb1738dcfc54e11"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-003/text_mode_audit.json",
+      "bytes": 2627,
+      "sha256": "ea08921fe6f9be0a887d9d889d828f909a12a84b7af8837f6be2fb5e9f8e6ce9"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-003/worker_execution.json",
+      "bytes": 150,
+      "sha256": "7b2fef8176dc27c21ebc9065a2f6ced47cbff96d7ac0150da3d2671a0adec17c"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-003/execution_timing.json",
+      "bytes": 311,
+      "sha256": "7a2c75f6e1bcae70c1eb21d4c0ac0d1200680f90cd1ea768aa44591983479cd6"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-003/reference_validation.json",
+      "bytes": 624,
+      "sha256": "99f757e968386a48926395b5f6fe73ae92d69f058854090e640da879805c99d1"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-003/state.json",
+      "bytes": 150471,
+      "sha256": "13971f07059242c2ba1f666990ada9552d67edefbdda223a0293b51522f444ce"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-003/row_index.json",
+      "bytes": 67496,
+      "sha256": "43bfed508af3a234cd054b6d74f2f889f9c91028db397574116e6f898e3b2b3d"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-003/valid.npy",
+      "bytes": 906,
+      "sha256": "5bd8a965d279963e73cf6e4fe058f695615c42bccbfb5df1b1ebdaedec0dd5a2"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-001/bank_audit.json",
+      "bytes": 668,
+      "sha256": "c3957be172bb0ab09e9c9ced2f4db2e0b6d59bab1d396595b4a9a8dcbc2a4251"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-001/scores.f32",
+      "bytes": 168141360,
+      "sha256": "d5bbf86f5c476c069bdd682a20eb27245d8711659547199412c2b6dc73f96691"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-001/vocab.json",
+      "bytes": 818330,
+      "sha256": "67d5843c259a82e580d4b0c4d95f617fb5e3de960099e104540a55991b079237"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-001/reuse_audit.json",
+      "bytes": 273,
+      "sha256": "96fdeb58d324acc89b2f4650df9e05a1a6940797fd7c96ad0793b0015dd07c93"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-001/cache.json",
+      "bytes": 1542,
+      "sha256": "cf837f8e4a9063d654f77f1564ab8ebefccb2388ce2753929670763df681bcd4"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-001/rows.json",
+      "bytes": 1227448,
+      "sha256": "545c24228dd9107b64b947ac568df47119cb346ed04b9c2400e5d05e259a18b5"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-001/text_mode_audit.json",
+      "bytes": 2627,
+      "sha256": "ea08921fe6f9be0a887d9d889d828f909a12a84b7af8837f6be2fb5e9f8e6ce9"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-001/worker_execution.json",
+      "bytes": 150,
+      "sha256": "37783120855ba5efedb22679c781bd6ed0236c9d1ee6a05633c3ec9bdddb3205"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-001/execution_timing.json",
+      "bytes": 311,
+      "sha256": "f62c85473f3a9ed8d78c800fb4610b0171b2d084c15401983c72b23bd30c58d4"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-001/reference_validation.json",
+      "bytes": 625,
+      "sha256": "94e7fafb4c8967e0da59ef5c178360e06126700aa3808974cdb3bc037949c40a"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-001/state.json",
+      "bytes": 150480,
+      "sha256": "8c435ade681e3e8ff9281132bd840daaaedde49cdc9d1c1d173e9b140e1eabc5"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-001/row_index.json",
+      "bytes": 67461,
+      "sha256": "7370f3a619a0ac73929f2ae6137adaf60bd29dfa4e251055aa84dbaa00930281"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-001/valid.npy",
+      "bytes": 906,
+      "sha256": "abe899090004244429df9de8f4716b99ceb21c01f8040c05147b6675b6cf5cc2"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-002/bank_audit.json",
+      "bytes": 668,
+      "sha256": "c3957be172bb0ab09e9c9ced2f4db2e0b6d59bab1d396595b4a9a8dcbc2a4251"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-002/scores.f32",
+      "bytes": 168141360,
+      "sha256": "bd21cd87ca4f093bab10b17085a5bc78ba3d0d5da4744218f75d23047cef2fa5"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-002/vocab.json",
+      "bytes": 818330,
+      "sha256": "67d5843c259a82e580d4b0c4d95f617fb5e3de960099e104540a55991b079237"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-002/reuse_audit.json",
+      "bytes": 273,
+      "sha256": "96fdeb58d324acc89b2f4650df9e05a1a6940797fd7c96ad0793b0015dd07c93"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-002/cache.json",
+      "bytes": 1542,
+      "sha256": "8b5b78ece5373a114a253403a37de168c357133cf16fa546335083e1065e6899"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-002/rows.json",
+      "bytes": 1219776,
+      "sha256": "534f4a1936faa7cc9015229136c00db11eb46c0e267d7841c7ef27c9bab1a478"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-002/text_mode_audit.json",
+      "bytes": 2627,
+      "sha256": "ea08921fe6f9be0a887d9d889d828f909a12a84b7af8837f6be2fb5e9f8e6ce9"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-002/worker_execution.json",
+      "bytes": 150,
+      "sha256": "eac8e609c7a55f8cfafa10fd6acffcff22be871e6660d316731265c5641f14e6"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-002/execution_timing.json",
+      "bytes": 311,
+      "sha256": "1372ddbe2e429caec0077f7772f876ce13c2c265f663f8f27bdb80761920eeda"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-002/reference_validation.json",
+      "bytes": 624,
+      "sha256": "b023c565235bbb0f186c554e80f84504b77e19f93bd7678b4240757a724b8a8d"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-002/state.json",
+      "bytes": 150491,
+      "sha256": "e9ec8a6ef0536a7dad67909148348733cd2ffe228474e7c30f1c5d22c86338b5"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-002/row_index.json",
+      "bytes": 67358,
+      "sha256": "7b767f27055da967bc33db121805a9315cd3e7a0becfb26e6b8efe2a1850b3a4"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-002/valid.npy",
+      "bytes": 906,
+      "sha256": "df210d71b6b8c7fa9b71cab15ff696e3330f5c802980703ea7337c0316ce7bd4"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-000/bank_audit.json",
+      "bytes": 668,
+      "sha256": "c3957be172bb0ab09e9c9ced2f4db2e0b6d59bab1d396595b4a9a8dcbc2a4251"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-000/scores.f32",
+      "bytes": 168141360,
+      "sha256": "f95a578590213d267c1abecd67fc0a30ff8bcd33114682e2e21f51bf2d34d68c"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-000/vocab.json",
+      "bytes": 818330,
+      "sha256": "67d5843c259a82e580d4b0c4d95f617fb5e3de960099e104540a55991b079237"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-000/reuse_audit.json",
+      "bytes": 273,
+      "sha256": "96fdeb58d324acc89b2f4650df9e05a1a6940797fd7c96ad0793b0015dd07c93"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-000/cache.json",
+      "bytes": 1542,
+      "sha256": "75d8db3789cfb8755dfb2e4b07de8cdcd1388e926e02591df018cd0a482d26d1"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-000/rows.json",
+      "bytes": 1209324,
+      "sha256": "99525eb88e7184440e26fbe2c87c76b3bec7bdc0254ef1c62f94051e9883351d"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-000/text_mode_audit.json",
+      "bytes": 2627,
+      "sha256": "ea08921fe6f9be0a887d9d889d828f909a12a84b7af8837f6be2fb5e9f8e6ce9"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-000/worker_execution.json",
+      "bytes": 150,
+      "sha256": "12d05a213d8a1eabba8059fbcdfc4db9df024b1d9bd7cfe71bff61507ecb2c61"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-000/execution_timing.json",
+      "bytes": 311,
+      "sha256": "a31fe0f17ae9581edde1e47633f8fb1fcdaa7c3502afd062f9e057b8258d9448"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-000/reference_validation.json",
+      "bytes": 625,
+      "sha256": "b0afa81b88041c290955e9b0736fdc187ce50a8a1e2803af72d606859ac052f3"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-000/state.json",
+      "bytes": 150411,
+      "sha256": "c0ac83c2e0c757f40c27be4bbb4dfb3b5f452c9a5ad6b39e0931947c2d01d073"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-000/row_index.json",
+      "bytes": 67594,
+      "sha256": "ecbeb85293825ddf335c286db025bc42c6eb5005d07cbdf04a5980e50bcc326e"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/batch16_verification/imagereward/scores/shards/rank-000/valid.npy",
+      "bytes": 906,
+      "sha256": "485d9707653db5d0d31f1ac8d811a58b5dec019cb6529ded826433ba8c6a1e76"
+    }
+  ],
+  "note": "Independent recomputation; these caches are not substituted into the primary scientific analysis."
+}

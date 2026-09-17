@@ -408,22 +408,101 @@ class ScoreCache:
         os.replace(tmp, self.root / "valid.npy")
 
     def write(self, row, scores, geometry=None):
+        self.write_many([row], np.asarray(scores)[None, :], [geometry])
+
+    def write_many(self, rows, scores, geometries=None):
+        """Flush scores before one atomic multi-row validity commit."""
+        rows = list(rows)
         scores = np.asarray(scores, np.float32)
-        if scores.shape != (self.shape[1],) or not np.isfinite(scores).all():
-            raise ValueError("Cannot commit invalid score row")
-        self.scores[row] = scores
+        geometries = geometries if geometries is not None else [None] * len(rows)
+        if scores.shape != (len(rows), self.shape[1]) or not np.isfinite(scores).all():
+            raise ValueError("Cannot commit invalid score rows")
+        if len(set(rows)) != len(rows) or len(geometries) != len(rows):
+            raise ValueError("Invalid multi-row commit mapping")
+        self.scores[rows] = scores
         if hasattr(self.scores, "flush"):
             self.scores.flush()
-        self.valid[row] = self.state["valid"][row] = True
-        self.state["errors"].pop(str(row), None)
-        if geometry is not None:
-            self.state["patch_geometry"][str(row)] = geometry
+        for row, geometry in zip(rows, geometries):
+            self.valid[row] = self.state["valid"][row] = True
+            self.state["errors"].pop(str(row), None)
+            if geometry is not None:
+                self.state["patch_geometry"][str(row)] = geometry
         self._save_state()
 
     def fail(self, row, error):
         self.valid[row] = self.state["valid"][row] = False
         self.state["errors"][str(row)] = str(error)
         self._save_state()
+
+    def reuse_from(self, source):
+        """Copy committed rows with identical content and complete scoring settings.
+
+        Population fingerprints may differ when a pilot grows. Encoder, bank,
+        preprocessing, numerical settings and ordered vocabulary must not differ.
+        Source rows are read only; copying never assigns statistical image labels.
+        """
+        source = Path(source)
+        if source.resolve() == self.root.resolve():
+            raise ValueError("Reuse source must differ from the destination cache")
+        scores, _, valid, vocab, meta, state = open_scores(source)
+        if meta["configuration"] != self.config or vocab != read_json(
+            self.root / "vocab.json"
+        ):
+            raise ValueError(
+                "Incompatible reuse source: scoring configuration or vocabulary differs"
+            )
+        lookup = {}
+        for row, image in enumerate(read_json(source / "rows.json")):
+            if not valid[row]:
+                continue
+            for field in ("pixel_hash", "content_hash"):
+                if image.get(field):
+                    lookup[(field, image[field])] = row
+        copied = []
+        buffered = []
+
+        def flush():
+            if buffered:
+                self.write_many(
+                    [x[0] for x in buffered],
+                    np.stack([scores[x[1]] for x in buffered]),
+                    [state["patch_geometry"].get(str(x[1])) for x in buffered],
+                )
+                buffered.clear()
+
+        for row, image in enumerate(self.images):
+            if self.valid[row] or image.get("status") != "valid":
+                continue
+            matches = {
+                lookup[(field, image[field])]
+                for field in ("pixel_hash", "content_hash")
+                if image.get(field) and (field, image[field]) in lookup
+            }
+            if not matches:
+                continue
+            source_row = min(matches)
+            if any(not np.array_equal(scores[source_row], scores[i]) for i in matches):
+                raise ValueError(
+                    "Conflicting scores for identical content in reuse source"
+                )
+            buffered.append((row, source_row))
+            if len(buffered) >= 64:
+                flush()
+            copied.append(
+                dict(target_row=row, source_row=source_row, image_id=image["image_id"])
+            )
+        flush()
+        audit = dict(
+            source=str(source.resolve()),
+            source_fingerprint=meta["fingerprint"],
+            copied_rows=len(copied),
+            mappings=copied,
+        )
+        path = self.root / "reuse_audit.json"
+        history = read_json(path) if path.exists() else []
+        write_json(path, history + [audit])
+        print(f"Reused {len(copied)} committed image scores from {source}", flush=True)
+        return audit
 
 
 def open_scores(root):
@@ -587,15 +666,9 @@ def validate_reference(model, processor, records, text, config):
     return audit
 
 
-def score_manifest(manifest, bank_dir, output, config, cache_root, resume=False):
-    import torch
-
-    text, vocab, bank_audit = load_text_embeddings(bank_dir, "cpu", True)
-    versions = {
-        k: importlib.metadata.version(k)
-        for k in ("torch", "transformers", "Pillow", "numpy")
-    }
-    configuration = dict(**asdict(config), bank=bank_audit, library_versions=versions)
+def score_manifest(
+    manifest, bank_dir, output, config, cache_root, resume=False, reuse_scores=()
+):
     required = {
         c
         for e in manifest["events"]
@@ -603,7 +676,28 @@ def score_manifest(manifest, bank_dir, output, config, cache_root, resume=False)
         for c in e["candidate_ids"]
     }
     images = [i for i in manifest["images"] if i["image_id"] in required]
-    for im in images:
+    if int(os.environ.get("WORLD_SIZE", 1)) > 1:
+        from .parallel import score_parallel
+
+        return score_parallel(
+            images, bank_dir, output, config, cache_root, resume, reuse_scores
+        )
+    return score_records(
+        images, bank_dir, output, config, cache_root, resume, reuse_scores
+    )
+
+
+def initialize_score_cache(
+    images, bank_dir, output, config, resume=False, reuse_scores=()
+):
+    text, vocab, bank_audit = load_text_embeddings(bank_dir, "cpu", True)
+    versions = {
+        k: importlib.metadata.version(k)
+        for k in ("torch", "transformers", "Pillow", "numpy")
+    }
+    configuration = dict(**asdict(config), bank=bank_audit, library_versions=versions)
+
+    def verify_image(im):
         if (
             im["status"] == "valid"
             and file_hash(im["local_path"]) != im["content_hash"]
@@ -611,8 +705,31 @@ def score_manifest(manifest, bank_dir, output, config, cache_root, resume=False)
             raise ValueError(
                 "Image bytes changed after preparation; prepare again before scoring"
             )
+
+    # Bounded I/O parallelism prevents a long serial file-integrity phase before
+    # four-GPU inference. It does not change the content-hash requirement.
+    from concurrent.futures import ThreadPoolExecutor
+
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        list(pool.map(verify_image, images))
     cache = ScoreCache(output, images, vocab, configuration, resume)
     write_json(Path(output) / "bank_audit.json", bank_audit)
+    for source in reuse_scores:
+        cache.reuse_from(source)
+    return cache, text
+
+
+def score_records(
+    images, bank_dir, output, config, cache_root, resume=False, reuse_scores=()
+):
+    import torch
+    import time
+
+    started = time.time()
+    cache, text = initialize_score_cache(
+        images, bank_dir, output, config, resume, reuse_scores
+    )
+    vocab = read_json(Path(output) / "vocab.json")
     pending = [
         i
         for i in range(len(cache.images))
@@ -646,16 +763,9 @@ def score_manifest(manifest, bank_dir, output, config, cache_root, resume=False)
     dataset = ImageInferenceDataset(records, processor, config.patch_budget)
     text = text.to(config.device)
     dtype = getattr(torch, config.dtype)
+    inference_started = time.time()
     with torch.inference_mode():
-        for start in range(0, len(records), config.image_batch_size):
-            batch = collate_fn(
-                [
-                    dataset[i]
-                    for i in range(
-                        start, min(start + config.image_batch_size, len(records))
-                    )
-                ]
-            )
+        for start, batch in prefetched_batches(dataset, config.image_batch_size):
             for bad in batch["failures"]:
                 cache.fail(pending[bad["record_idx"]], bad["error"])
             if batch["inputs"] is None:
@@ -673,6 +783,7 @@ def score_manifest(manifest, bank_dir, output, config, cache_root, resume=False)
                     .cpu()
                     .numpy()
                 )
+                rows, geometries = [], []
                 for b, item in enumerate(batch["records"]):
                     shape = (
                         inputs["spatial_shapes"][b].tolist()
@@ -685,7 +796,9 @@ def score_manifest(manifest, bank_dir, output, config, cache_root, resume=False)
                         patch_budget=config.patch_budget,
                         processor=type(processor).__name__,
                     )
-                    cache.write(pending[item["record_idx"]], scores[b], geometry)
+                    rows.append(pending[item["record_idx"]])
+                    geometries.append(geometry)
+                cache.write_many(rows, scores, geometries)
             except torch.OutOfMemoryError:
                 raise  # Never silently change patch budgets or mix resolutions.
             except Exception as exc:
@@ -698,4 +811,50 @@ def score_manifest(manifest, bank_dir, output, config, cache_root, resume=False)
                 f"Scored {min(start + config.image_batch_size, len(records))}/{len(records)} unique pending images",
                 flush=True,
             )
+    write_json(
+        Path(output) / "execution_timing.json",
+        dict(
+            started_epoch=started,
+            inference_started_epoch=inference_started,
+            finished_epoch=time.time(),
+            inferred_images=len(records),
+            valid_images=int(cache.valid.sum()),
+            loader="two CPU threads; at most two prefetched batches; FIFO ordering",
+            image_batch_size=config.image_batch_size,
+            text_chunk_size=config.text_chunk_size,
+        ),
+    )
     return cache
+
+
+def prefetched_batches(dataset, batch_size):
+    """Overlap bounded CPU decoding/preprocessing with GPU work; retain row order.
+
+    Threads avoid forking an initialized CUDA runtime. Processor calls are
+    independent and use the pinned processor's stateless image transforms.
+    """
+    from collections import deque
+    from concurrent.futures import ThreadPoolExecutor
+
+    if batch_size < 1:
+        raise ValueError("Batch size must be positive")
+
+    def load(start):
+        return collate_fn(
+            [dataset[i] for i in range(start, min(start + batch_size, len(dataset)))]
+        )
+
+    starts = iter(range(0, len(dataset), batch_size))
+    with ThreadPoolExecutor(max_workers=2) as pool:
+        queue = deque()
+        for _ in range(2):
+            start = next(starts, None)
+            if start is not None:
+                queue.append((start, pool.submit(load, start)))
+        while queue:
+            start, future = queue.popleft()
+            batch = future.result()
+            following = next(starts, None)
+            if following is not None:
+                queue.append((following, pool.submit(load, following)))
+            yield start, batch
