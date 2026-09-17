@@ -1,0 +1,78 @@
+{
+  "annotators_available": 115,
+  "repeated_annotators": 63,
+  "max_events_per_annotator": 55,
+  "patch_count": {
+    "known": 2053,
+    "missing": 0,
+    "min": 1024,
+    "max": 1024,
+    "quantiles": [
+      1024.0,
+      1024.0,
+      1024.0
+    ]
+  },
+  "width": {
+    "known": 2053,
+    "missing": 0,
+    "min": 512,
+    "max": 768,
+    "quantiles": [
+      512.0,
+      768.0,
+      768.0
+    ]
+  },
+  "height": {
+    "known": 2053,
+    "missing": 0,
+    "min": 512,
+    "max": 768,
+    "quantiles": [
+      512.0,
+      768.0,
+      768.0
+    ]
+  },
+  "aspect_ratio": {
+    "known": 2053,
+    "missing": 0,
+    "min": 1.0,
+    "max": 1.0,
+    "quantiles": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "generation_models": {
+    "stabilityai/stable-diffusion-2-1": 1050,
+    "yuvalkirstain/ProtoGen_X3.4_flax": 1003
+  },
+  "settings": {
+    "gs": {
+      "known": 2053,
+      "missing": 0,
+      "min": 6.0024977,
+      "max": 9.494323,
+      "quantiles": [
+        7.1603923,
+        7.772449,
+        8.432398
+      ]
+    },
+    "steps": {
+      "known": 2053,
+      "missing": 0,
+      "min": 25,
+      "max": 25,
+      "quantiles": [
+        25.0,
+        25.0,
+        25.0
+      ]
+    }
+  },
+  "note": "Prompt matching does not eliminate generator/user confounding; subgroup estimates change the target population. Categories only when provided."
+}

@@ -1,0 +1,55 @@
+{
+  "files": [
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/recovery_search/raw/author_datasets.json",
+      "sha256": "79638bb89c9155c7f93ea6372d0993da005a62ebebc642fed63e2c6f7b9eec1b",
+      "bytes": 54306
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/recovery_search/raw/candidate_repositories.json",
+      "sha256": "9afe33e87d10eff3fbaf7fd569f4f64a6acb5cbcb6b823c5db24588c36837bde",
+      "bytes": 130530
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/recovery_search/raw/dataset_down_issue_comments.json",
+      "sha256": "ded9c00bc488d95e924690f5a07527d1fe099ad2c4df077178412ea89210e136",
+      "bytes": 15361
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/recovery_search/raw/github_issues.json",
+      "sha256": "0e19079e6cd0aa341d3d84469a1d50dec9912dca403f49c17314c559ea13ffb5",
+      "bytes": 178972
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/recovery_search/raw/github_search.json",
+      "sha256": "a0de09795bbe22dc32a676804eeeab62e25884e315fa3ac9ef1962430d48823d",
+      "bytes": 222376
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/recovery_search/raw/hub_search.json",
+      "sha256": "9e7acd3f4fd2b22c86f484f400a62e64186f9aed0bf453bb62f0c4585ce0a520",
+      "bytes": 484752
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/recovery_search/raw/kaggle_search.json",
+      "sha256": "a09dd07b1688dd18af54da609b96f4668cd1e40baadccc91f96826978a65e82d",
+      "bytes": 1968
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/recovery_search/raw/repositories_with_sizes.json",
+      "sha256": "b119974c4ded8aa697356e13424ac9783f259325cc63ba8ea02b058fbf91b080",
+      "bytes": 395434
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/recovery_search/raw/unprefixed_author_archives.json",
+      "sha256": "e2770397d126fcdd2c53014146e2876774656c88409cb4a1a6775eae5b2a37bc",
+      "bytes": 12049
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/recovery_search/raw/wayback_bucket_index.json",
+      "sha256": "63b426074c305509cd3b04b71b91fd864ddbf22991a6c4f03638aca2679c7cdc",
+      "bytes": 105
+    }
+  ],
+  "note": "Raw search responses retained outside Git; source-specific coverage and retrieval evidence committed."
+}

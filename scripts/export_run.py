@@ -28,6 +28,7 @@ def main():
         "confounder_audit.json",
         "stratified_sensitivity.json",
         "annotator_component_sensitivity.json",
+        "generator_pair_sensitivity.json",
         "report.md",
         "results_table.tex",
         "paper_subsection.tex",

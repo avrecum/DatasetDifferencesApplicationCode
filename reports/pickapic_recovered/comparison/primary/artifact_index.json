@@ -1,0 +1,8 @@
+{
+  "joined_table": {
+    "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/comparison/primary/joined_concepts.csv",
+    "bytes": 5800693,
+    "sha256": "93b1b9debd732b9830116ec99264bf21c49444d16b7f5c293c049502e99dd9d7"
+  },
+  "source_run": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/comparison"
+}

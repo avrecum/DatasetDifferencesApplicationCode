@@ -1,0 +1,47 @@
+{
+  "status": "unverified model similarity maps",
+  "geometry": "inverse processor HWC patch packing; valid prefix patches only; exact processed view",
+  "maps": [
+    {
+      "concept": "lip-syncing",
+      "event_id": "pickapic:740",
+      "selection": "first seeded random-audit pair",
+      "figure": "057b49d01450e2ccd4e2.png",
+      "geometry": [
+        {
+          "image_id": "pickapic:b3243919-2433-4278-aeb9-3885c33f3d0e",
+          "spatial_shape": [
+            32,
+            32
+          ],
+          "patch_size": 16,
+          "valid_patches": 1024,
+          "maximum": 0.1993054747581482,
+          "argmax_patch": [
+            1,
+            24
+          ]
+        },
+        {
+          "image_id": "pickapic:71f81a3b-a08f-49c8-a9bb-239f54faa6d3",
+          "spatial_shape": [
+            32,
+            32
+          ],
+          "patch_size": 16,
+          "valid_patches": 1024,
+          "maximum": 0.23334330320358276,
+          "argmax_patch": [
+            16,
+            24
+          ]
+        }
+      ],
+      "scale": [
+        0.022144384682178497,
+        0.23334330320358276
+      ]
+    }
+  ],
+  "worker_rank": 1
+}

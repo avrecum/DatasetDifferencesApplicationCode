@@ -1,0 +1,11 @@
+{
+  "selected_evaluated": 20,
+  "same_direction": 19,
+  "different_or_zero_direction": 1,
+  "discovery_examples": [
+    "lip-syncing",
+    "lip-smacking",
+    "stare"
+  ],
+  "interpretation": "descriptive direction replication, not significance or verified semantic presence"
+}

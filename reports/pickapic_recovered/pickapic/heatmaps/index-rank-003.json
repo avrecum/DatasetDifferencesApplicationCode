@@ -1,0 +1,47 @@
+{
+  "status": "unverified model similarity maps",
+  "geometry": "inverse processor HWC patch packing; valid prefix patches only; exact processed view",
+  "maps": [
+    {
+      "concept": "nose",
+      "event_id": "pickapic:740",
+      "selection": "first seeded random-audit pair",
+      "figure": "7e96f808777a29d65e36.png",
+      "geometry": [
+        {
+          "image_id": "pickapic:b3243919-2433-4278-aeb9-3885c33f3d0e",
+          "spatial_shape": [
+            32,
+            32
+          ],
+          "patch_size": 16,
+          "valid_patches": 1024,
+          "maximum": 0.2410719394683838,
+          "argmax_patch": [
+            25,
+            12
+          ]
+        },
+        {
+          "image_id": "pickapic:22512d0e-499d-4c54-9e97-f6393ea82a80",
+          "spatial_shape": [
+            32,
+            32
+          ],
+          "patch_size": 16,
+          "valid_patches": 1024,
+          "maximum": 0.248027965426445,
+          "argmax_patch": [
+            14,
+            15
+          ]
+        }
+      ],
+      "scale": [
+        0.008567433804273605,
+        0.248027965426445
+      ]
+    }
+  ],
+  "worker_rank": 3
+}

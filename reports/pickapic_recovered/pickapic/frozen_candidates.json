@@ -1,0 +1,174 @@
+{
+  "settings": {
+    "seed": 42,
+    "top_k": 10,
+    "tie_tolerance": 0.0,
+    "mode": null,
+    "score_fingerprint": "8badb97d707266a3b54e1c920d92060285523dc67fe1cca01201d968de41284b",
+    "comparisons_hash": "702e492b3c5ce4cc8a90a1dc72de3ddc85ef8c29117f28551850cb71f294e0b9",
+    "selection": "signed discovery effect; strictly positive/negative only; stable vocabulary-index tie break"
+  },
+  "candidates": [
+    {
+      "concept_id": 27327,
+      "concept": "lip",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 1,
+      "discovery_effect": 0.008001116140538472
+    },
+    {
+      "concept_id": 27330,
+      "concept": "lip-syncing",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 2,
+      "discovery_effect": 0.007229932609584195
+    },
+    {
+      "concept_id": 27328,
+      "concept": "lip-smacking",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 3,
+      "discovery_effect": 0.007000551232672026
+    },
+    {
+      "concept_id": 32118,
+      "concept": "nose",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 4,
+      "discovery_effect": 0.006751243935093885
+    },
+    {
+      "concept_id": 30481,
+      "concept": "mouth",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 5,
+      "discovery_effect": 0.006474145435965456
+    },
+    {
+      "concept_id": 32131,
+      "concept": "nostril",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 6,
+      "discovery_effect": 0.006106437760268271
+    },
+    {
+      "concept_id": 30486,
+      "concept": "mouthpart",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 7,
+      "discovery_effect": 0.005884371014147652
+    },
+    {
+      "concept_id": 32120,
+      "concept": "nosebleed",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 8,
+      "discovery_effect": 0.005682450483536628
+    },
+    {
+      "concept_id": 27337,
+      "concept": "lipstick",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 9,
+      "discovery_effect": 0.005613641955451865
+    },
+    {
+      "concept_id": 30482,
+      "concept": "mouth-to-mouth",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 10,
+      "discovery_effect": 0.005428429191240673
+    },
+    {
+      "concept_id": 34449,
+      "concept": "pavement",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 1,
+      "discovery_effect": -0.007933160382144427
+    },
+    {
+      "concept_id": 26080,
+      "concept": "kickstand",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 2,
+      "discovery_effect": -0.007836264165292163
+    },
+    {
+      "concept_id": 14442,
+      "concept": "driveway",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 3,
+      "discovery_effect": -0.007627222126320814
+    },
+    {
+      "concept_id": 43084,
+      "concept": "sidewalk",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 4,
+      "discovery_effect": -0.007429928789205866
+    },
+    {
+      "concept_id": 14096,
+      "concept": "doormat",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 5,
+      "discovery_effect": -0.0073337497467794634
+    },
+    {
+      "concept_id": 7638,
+      "concept": "carpeting",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 6,
+      "discovery_effect": -0.007271587717382844
+    },
+    {
+      "concept_id": 7634,
+      "concept": "carpet",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 7,
+      "discovery_effect": -0.007156918581262528
+    },
+    {
+      "concept_id": 7637,
+      "concept": "carpeted",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 8,
+      "discovery_effect": -0.007095698323786981
+    },
+    {
+      "concept_id": 6046,
+      "concept": "bollard",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 9,
+      "discovery_effect": -0.007018883626383751
+    },
+    {
+      "concept_id": 34448,
+      "concept": "paved",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 10,
+      "discovery_effect": -0.0069576537170351945
+    }
+  ],
+  "artifact_hash": "35d92d7a95b8e3157585c13dccc633971b853d72a4ba5548fc7792cc85a28dc2"
+}

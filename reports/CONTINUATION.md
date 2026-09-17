@@ -1,3 +1,5 @@
+> Historical ImageReward continuation. Pick-a-Pic images were subsequently recovered and evaluated; see [the recovery and cross-dataset results](PICKAPIC_RECOVERY.md). Availability statements below describe the earlier run.
+
 # Human-preference application: 500-prompt continuation
 
 The ImageReward pilot now covers 500 sampled prompts and has completed real frozen FG-CLIP scoring, held-out evaluation, both ranking sensitivities, galleries and four patch maps. The primary frozen concept score obtains **55.1% prompt-balanced paired concordance, 95% CI 49.9–59.9%**, on 75 held-out prompts. Its interval includes the 50% reference. **Pick-a-Pic results and cross-dataset replication remain unavailable** because no complete eligible events with accessible original images were recovered.

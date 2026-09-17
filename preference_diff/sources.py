@@ -14,7 +14,7 @@ import zipfile
 import requests
 from PIL import Image
 
-from .io import file_hash, read_rows, write_json, clean
+from .io import file_hash, read_rows, write_json, clean, read_json
 
 
 def default_cache():
@@ -324,6 +324,11 @@ def resolve_images(
         for i in e["candidate_ids"]
     }
     selected = [i for i in manifest["images"] if i["image_id"] in required]
+    retrieval_index = {}
+    if local_root and (Path(local_root) / "retrieval_provenance.json").exists():
+        retrieval_index = read_json(Path(local_root) / "retrieval_provenance.json").get(
+            "images", {}
+        )
     base = Path(cache) / "preference_diff/images" / manifest["audit"]["dataset"]
     if manifest["audit"]["dataset"] == "imagereward" and local_root is None:
         # Metadata paths identify the exact archive: train/train_1/filename, etc.
@@ -423,6 +428,10 @@ def resolve_images(
                         "kind": "user_supplied_original_uid_cache",
                         "image_uid": uid,
                     }
+                    if uid in retrieval_index:
+                        im["retrieval_provenance"] = dict(
+                            kind="pinned_hf_archive", **retrieval_index[uid]
+                        )
                 else:
                     safe_member(source)
                     im["local_path"] = str(Path(local_root) / source)
@@ -442,7 +451,13 @@ def resolve_images(
                 raise ValueError(
                     im.get("error") or "Image absent from expected archive"
                 )
-            im.update(validate_image(im["local_path"]), status="valid", error=None)
+            decoded = validate_image(im["local_path"])
+            expected = im.get("retrieval_provenance", {}).get("content_hash")
+            if expected and expected != decoded["content_hash"]:
+                raise ValueError(
+                    "Recovered image bytes differ from recorded archive extraction"
+                )
+            im.update(decoded, status="valid", error=None)
         except Exception as exc:
             im.update(status="failed", error=f"{type(exc).__name__}: {exc}")
         return im

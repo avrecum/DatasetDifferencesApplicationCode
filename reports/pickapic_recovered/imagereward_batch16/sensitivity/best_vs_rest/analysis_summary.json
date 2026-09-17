@@ -1,0 +1,95 @@
+{
+  "dataset": "imagereward",
+  "synthetic": false,
+  "construction_mode": "best_vs_rest",
+  "counts": {
+    "discovery": {
+      "prompts": 337,
+      "events": 346,
+      "comparisons": 2495,
+      "components": 337,
+      "unique_images": 2136
+    },
+    "validation": {
+      "prompts": 75,
+      "events": 75,
+      "comparisons": 521,
+      "components": 75,
+      "unique_images": 458
+    },
+    "test": {
+      "prompts": 75,
+      "events": 75,
+      "comparisons": 516,
+      "components": 75,
+      "unique_images": 442
+    }
+  },
+  "vocabulary_size": 54030,
+  "score_fingerprint": "442d8c31ff80c7403654849976f56b83305bad2d7a0c8a56255b983b1e7e0c16",
+  "frozen_artifact_hash": "a45d2dcfa451e6b4d3fd9b3955f7affa06e64bae964d1ea8ba7ea9a9ec5930b1",
+  "excluded_invalid_events": [
+    {
+      "event_id": "imagereward:train:004125-0088",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "imagereward:train:004140-0070",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "imagereward:train:004162-0070",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "imagereward:train:004179-0024",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "imagereward:train:004196-0043",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "imagereward:train:004199-0025",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "imagereward:train:004381-0075",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "imagereward:train:004582-0152",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "imagereward:train:004584-0117",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "imagereward:train:005050-0024",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "imagereward:train:005760-0095",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "imagereward:train:006360-0083",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "imagereward:train:006381-0048",
+      "reason": "incomplete_valid_scored_event"
+    },
+    {
+      "event_id": "imagereward:train:006559-0050",
+      "reason": "incomplete_valid_scored_event"
+    }
+  ],
+  "tie_tolerance": 0.0,
+  "bootstrap_resamples": 2000,
+  "seed": 42,
+  "patch_budget": 1024,
+  "status": "held-out results available",
+  "inference": "associations; similarity scores are not calibrated concept presence probabilities"
+}

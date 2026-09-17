@@ -1,0 +1,31 @@
+{
+  "rule": "equal mean of discovery-direction-signed selected scores; no fitted weights",
+  "candidate_hash": "1840ce46ab3b85ea21fd67e8010b333c29f2db93fc530cd3f630ddf5022a01f8",
+  "metrics": [
+    {
+      "concept_id": 0,
+      "concept": "frozen signed concept mean",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 1,
+      "discovery_effect": 0.006926789630248657,
+      "heldout_effect": 0.005425689508517585,
+      "effect_ci_low": 0.0024164977880815667,
+      "effect_ci_high": 0.008666474469751119,
+      "raw_concordance": 0.5966666666666667,
+      "concordance_ci_low": 0.49,
+      "concordance_ci_high": 0.6966666666666667,
+      "direction_adjusted_concordance": 0.5966666666666667,
+      "adjusted_concordance_ci_low": 0.49,
+      "adjusted_concordance_ci_high": 0.6966666666666667,
+      "counts": {
+        "prompts": 75,
+        "events": 75,
+        "comparisons": 152,
+        "components": 75,
+        "unique_images": 213
+      },
+      "interval_status": "per-concept percentile intervals; not simultaneous"
+    }
+  ]
+}

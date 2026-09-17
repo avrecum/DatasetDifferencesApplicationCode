@@ -1,0 +1,22 @@
+{
+  "reason": "Both datasets compared using validated FP32 batch16/chunk2048 caches; original ImageReward primary reports remain unchanged",
+  "candidate_check": {
+    "primary": {
+      "same_candidate_ids_directions_order": true,
+      "reference_frozen_hash": "aba4fc9f231f7d88bc4c9ed6a51cf787fa3a276500aa2c5852a1584881999b02",
+      "batched_frozen_hash": "e8a6db708e1babb7aa714af6c159886b1b77e946eca2d20b0408f0fa3f9d1b76"
+    },
+    "sensitivity/best_vs_rest": {
+      "same_candidate_ids_directions_order": true,
+      "reference_frozen_hash": "f5fa6bb143ae08e1e186a6f7bb84552c83b3163d910b0764181e2ada9296fa51",
+      "batched_frozen_hash": "a45d2dcfa451e6b4d3fd9b3955f7affa06e64bae964d1ea8ba7ea9a9ec5930b1"
+    },
+    "sensitivity/best_vs_worst": {
+      "same_candidate_ids_directions_order": true,
+      "reference_frozen_hash": "87744c27afa011f6ef5a36c590e04a6137b5307a237060517d00e264b4a893df",
+      "batched_frozen_hash": "1840ce46ab3b85ea21fd67e8010b333c29f2db93fc530cd3f630ddf5022a01f8"
+    }
+  },
+  "reference_scores": "runs/pilot500/imagereward/scores",
+  "comparison_scores": "runs/batch16_verification/imagereward/scores"
+}

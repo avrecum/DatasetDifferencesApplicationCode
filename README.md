@@ -2,7 +2,7 @@
 
 Frozen FG-CLIP2 patch embeddings discover visual concepts associated with recorded human preference **within** ImageRewardDB and the linked four-candidate Pick-a-Pic release. This implements the missing human-preference application for *Detecting Fine-Grained Differences between Image Datasets*. It does not train a reward model, generate images, or substitute model predictions for human labels.
 
-See the [latest 500-prompt results and handoff](reports/CONTINUATION.md), [discrimination plot](reports/pilot500/imagereward/discrimination_summary.png), [paired gallery](reports/pilot500/imagereward/gallery.html), [source/method review](docs/METHOD_AND_SOURCE_REVIEW.md), [implementation plan](IMPLEMENTATION_PLAN.md), and [pinned revisions](configs/sources.lock.json). The [earlier 100-prompt handoff](reports/HANDOFF.md) remains available. Large data, score matrices and environments are ignored by Git. Actual run outputs live under `runs/` or a user-selected output path. The committed summaries identify what ran and what remains unavailable.
+See the [Pick-a-Pic recovery, real results and cross-dataset comparison](reports/PICKAPIC_RECOVERY.md), [Pick-a-Pic concept plot](reports/pickapic_recovered/pickapic/concept_effects.png), [paired gallery](reports/pickapic_recovered/pickapic/gallery.html), [ImageReward 500-prompt results](reports/CONTINUATION.md), [source/method review](docs/METHOD_AND_SOURCE_REVIEW.md), [implementation plan](IMPLEMENTATION_PLAN.md), and [pinned revisions](configs/sources.lock.json). The [earlier 100-prompt handoff](reports/HANDOFF.md) remains available. Large data, score matrices and environments are ignored by Git. Actual run outputs live under `runs/` or a user-selected output path. The committed summaries identify what ran and what remains unavailable.
 
 ## Method and experiment design
 
@@ -14,12 +14,12 @@ The primary effect is the mean preferred-minus-rejected score, averaged equally 
 - **Pick-a-Pic:** join the four displayed UIDs to the image table. A valid selected UID produces three winner-versus-rest comparisons. Exclude `none`, invalid selections, unresolved candidates and prompt mismatches. Non-selected images are not ordered. An image can win and lose in different events. Equal event weighting prevents repeated/candidate-rich events from dominating; exact duplicate event copies are removed by event ID while independent judgments remain.
 - **Matching:** Unicode NFC and whitespace collapse, retaining case and punctuation. All Pick-a-Pic candidates must match the event prompt and have compatible negative prompts. All-null negative prompts stay explicitly unknown. `--cohort event` is a separately labeled broader sensitivity. No automatic fallback or partial-event analysis.
 - **Independence:** connected components join normalized prompts, image UIDs and available byte/decoded-pixel hashes. ImageReward uses official train/validation/test as discovery/validation/test, quarantining cross-boundary components. Pick-a-Pic uses fixed-seed PCG64 shuffling of sorted independent components with largest-remainder 70/15/15 allocation. Content hashes are checked for downloaded images; metadata identities/prompts are checked over all metadata.
-- **Discovery/evaluation:** strictly positive top ten and strictly negative top ten on discovery only. `frozen_candidates.json` is written before test aggregation. Directions and main-table order remain frozen even when features fail validation. No threshold optimization. The joint concept score is an equal mean of discovery-signed features, with held-out paired evaluation and no fitted weights.
+- **Discovery/evaluation:** strictly positive top ten and strictly negative top ten on discovery only. `frozen_candidates.json` is written before test aggregation. Directions and main-table order remain frozen even when features fail validation. No threshold optimization. The joint concept score is an equal mean of discovery-signed features, with held-out paired evaluation and no fitted weights. This ensemble is an additional application diagnostic; the draft's discrimination metric uses an MLLM judge.
 - **Uncertainty:** 2,000 component-bootstrap resamples for selected features, recomputing the original prompt-weighted estimand. These are per-concept intervals, not simultaneous guarantees. Fewer than two clusters yields unavailable intervals. A conservative annotator-connected-component sensitivity is generated where user IDs exist; it may leave too few clusters.
 - **Interpretability:** paired galleries include distinct-prompt supportive extremes, counterexamples and seeded random audit examples, plus blank annotation CSVs. Heatmaps show exact processed input geometry and raw model similarity, not segmentation truth. All visual evidence is labeled human-unverified.
 - **Transfer:** join the full vocabulary, plot signed effects, report signed rank correlation/top-k overlap, and evaluate each dataset's frozen candidates on the other's test data after excluding components overlapping donor discovery prompts/hashes. ImageReward best-versus-rest has a separate comparison. A significant effect in only one dataset is not a between-dataset significance test.
 
-Confounder outputs cover available generator identity, same-model versus mixed-model events, ImageReward categories, resolution/aspect ratio, generation settings, patch counts and equal-geometry event sensitivities. No unavailable model or annotator identities are inferred. Prompt matching is not causal identification.
+Confounder outputs cover available generator identity, same-model versus mixed-model events, ImageReward categories, resolution/aspect ratio, generation settings, patch counts and equal-geometry event sensitivities. `generator_pair_sensitivity.json` additionally partitions comparisons from complete valid events into same- and cross-model pairs, renormalizing pairs within retained events and events within prompts. These conditional analyses change the observation set and retain frozen primary candidates. Annotator-component sensitivity and transfer include the joint score. No unavailable model or annotator identities are inferred. Prompt matching is not causal identification.
 
 Optional `analyze --diversity-correlation 0.95` writes a separate presentation list using discovery-image activation correlations, with every suppressed term mapped to its retained term. The unmodified frozen ranking remains the primary analysis. This filter is not Residual-OMP.
 
@@ -76,7 +76,7 @@ mkdir -p reports/logs
 sbatch scripts/pilot.sbatch "$PREFERENCE_RUN_ROOT"
 ```
 
-On this deployment, the original Pick-a-Pic AWS URLs return 403. The run reports unavailable effects instead of changing releases. To supply accessible copies of the **same original UIDs**, store exactly one `UID.png`, `.jpg`, `.jpeg` or `.webp` file per candidate and prepare using:
+On this deployment, the original Pick-a-Pic AWS URLs return 403. An original-author archive now provides verified copies for **573 complete original events / 330 prompts**; follow the recovery commands below to use this explicitly restricted cohort. To supply additional accessible copies of the **same original UIDs**, store exactly one `UID.png`, `.jpg`, `.jpeg` or `.webp` file per candidate and prepare using:
 
 ```bash
 .venv/bin/python -m preference_diff prepare --dataset pickapic \
@@ -85,6 +85,45 @@ On this deployment, the original Pick-a-Pic AWS URLs return 403. The run reports
 ```
 
 ImageReward local roots must mirror `images/train/train_N/...webp` metadata paths. Local metadata can be supplied with `--metadata`, plus `--image-metadata` for Pick-a-Pic. Preserve `original_split` on ImageReward rows. Exact source revisions default to the lock file; pass another reviewed lock with `--sources` when needed.
+
+### Recover and evaluate the original Pick-a-Pic images
+
+`yuvalkirstain/images_first_day` at revision `4f1114880da57a4d7c53d53189d5fa7f19c57527` contains original image bytes. The committed UID coverage declaration is derived from a complete scan of its 11 parquet shards. The archive contributes images only; all four candidates, prompts and human selections still come from the originally supplied repositories. Restricting availability happens after full-metadata split assignment and before sampling, so the existing prompt/image dependency assignments stay fixed. This is an early-period archive cohort, not a representative sample of the full release.
+
+```bash
+export HF_HOME="$PROJECT/avrecum/.hf"
+PREFERENCE_PAP="runs/pickapic_recovered/pickapic"
+PREFERENCE_IMAGES="$HF_HOME/preference_diff/recovered_pickapic/4f1114880da57a4d7c53d53189d5fa7f19c57527"
+.venv/bin/python -m preference_diff prepare --dataset pickapic \
+  --output "$PREFERENCE_PAP" --group-limit 500 --seed 42 --metadata-only \
+  --available-image-ids reports/recovery_search/available_original_image_ids.json
+.venv/bin/python scripts/recover_pickapic_images.py \
+  --coverage reports/recovery_search/images_first_day_coverage.json \
+  --manifest "$PREFERENCE_PAP/manifest" --image-dir "$PREFERENCE_IMAGES" \
+  --output runs/recovery_extraction.json --workers 2
+.venv/bin/python -m preference_diff prepare --dataset pickapic \
+  --output "$PREFERENCE_PAP" --group-limit 500 --seed 42 --resume \
+  --available-image-ids reports/recovery_search/available_original_image_ids.json \
+  --local-image-root "$PREFERENCE_IMAGES"
+mkdir -p reports/logs
+sbatch scripts/dataset_pilot.sbatch "$PREFERENCE_PAP" pickapic
+```
+
+All 330 available prompts fit this cap; 2,053 unique images are needed. Extraction downloads the containing pinned parquet shards (5.02 GB) into HF_HOME, extracts only required images (1.44 GB), checks UUID/prompt/available generation fields and decoding, and stores byte hashes and retrieval provenance. Reruns validate existing bytes. Metadata coverage can be independently reproduced without downloading image columns:
+
+```bash
+.venv/bin/python -m preference_diff prepare --dataset pickapic \
+  --output runs/pickapic_source_index --group-limit 0 --metadata-only
+.venv/bin/python scripts/find_pickapic_copy.py \
+  --repo yuvalkirstain/images_first_day \
+  --revision 4f1114880da57a4d7c53d53189d5fa7f19c57527 \
+  --manifest runs/pickapic_source_index/manifest \
+  --cache-dir "$HF_HOME/preference_diff/recovery_index" \
+  --output runs/rechecked_coverage.json \
+  --available-image-ids runs/rechecked_available_image_ids.json
+```
+
+Use a fresh run root if you change the cohort declaration; its file hash participates in preparation/resume checks. The rechecked declaration records its own audit path, so its hash differs even when the UID list agrees.
 
 If restored images change an existing failed run's image hashes, its score cache is deliberately incompatible. Use a fresh run root (or a fresh `--score-dir` and `--analysis-dir`) for scoring and analysis; `--resume` does not bypass content-fingerprint checks. The full-run commands below already use a fresh root.
 
@@ -108,7 +147,7 @@ Inside a GPU allocation, the individual steps and the end-to-end command are:
 
 ### Full experiment
 
-Once original Pick-a-Pic image access is restored, the following prepares the full cohorts and runs the same pipeline. Choose storage with sufficient quota and scheduler time appropriate to the full population:
+The recovered Pick-a-Pic cohort is already exhausted by the 330-prompt run. Evaluating the full original release still requires additional verified original UIDs beyond this early archive. Once those are available, the following prepares the full cohorts and runs the same pipeline. Choose storage with sufficient quota and scheduler time appropriate to the full population:
 
 ```bash
 export HF_HOME="$PROJECT/avrecum/.hf"

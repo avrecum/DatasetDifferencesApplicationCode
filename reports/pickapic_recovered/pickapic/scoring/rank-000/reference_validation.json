@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "max_absolute_score_error": 1.1920928955078125e-07,
+  "atol": 0.0002,
+  "rtol": 0.0002,
+  "images": [
+    "pickapic:0080c81b-0068-43ee-9919-9d549b9d5903",
+    "pickapic:01712e52-d444-411a-a116-c2e29073332e",
+    "pickapic:01ab460e-49eb-471c-8e22-c4ff84c9d71d",
+    "pickapic:023f63a1-ef56-45ac-92bb-83479182feb7"
+  ],
+  "concepts": 128,
+  "reference": "official dense API, float32, one image",
+  "candidate": "supplied detection dense-head batch",
+  "dtype": "float32",
+  "patch_budget": 1024
+}

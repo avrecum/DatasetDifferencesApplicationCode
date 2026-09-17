@@ -13,6 +13,7 @@ from preference_diff.splits import (
     sample_components,
     assert_no_leakage,
     quarantine_new_hash_conflicts,
+    restrict_available_cohort,
 )
 from preference_diff.statistics import (
     aggregate,
@@ -62,6 +63,34 @@ def active(m):
     assign_splits(m)
     sample_components(m, 0)
     return construct_comparisons(m)[0]
+
+
+def test_declared_archive_cohort_keeps_full_candidates_and_existing_dependencies():
+    ims, event = pap_rows()
+    second = dict(event, ranking_id=2, image_4_uid="4")
+    manifest = pickapic([event, second], ims)
+    assign_splits(manifest)
+    before = [
+        (e["analysis_split"], e["dependency_cluster_id"], list(e["candidate_ids"]))
+        for e in manifest["events"]
+    ]
+    restrict_available_cohort(
+        manifest, {f"pickapic:{i}" for i in range(4)}, {"archive": "pinned"}
+    )
+    assert [
+        (e["analysis_split"], e["dependency_cluster_id"], e["candidate_ids"])
+        for e in manifest["events"]
+    ] == before
+    assert manifest["events"][0]["exclusion_reason"] is None
+    assert (
+        manifest["events"][1]["exclusion_reason"] == "outside_available_archive_cohort"
+    )
+    sample_components(manifest, 0)
+    pairs, _ = construct_comparisons(manifest)
+    assert len(pairs) == 3
+    assert manifest["audit"]["availability_cohort"]["retained_events"] == 1
+    with pytest.raises(ValueError, match="unknown"):
+        restrict_available_cohort(manifest, {"pickapic:absent"}, {})
 
 
 def test_rank_direction_ties_and_modes():

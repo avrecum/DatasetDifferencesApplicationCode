@@ -1,0 +1,174 @@
+{
+  "settings": {
+    "seed": 42,
+    "top_k": 10,
+    "tie_tolerance": 0.0,
+    "mode": null,
+    "score_fingerprint": "442d8c31ff80c7403654849976f56b83305bad2d7a0c8a56255b983b1e7e0c16",
+    "comparisons_hash": "ed193f2d1a776f56f7e9f2d6b9763eb00859544defa48f38f923c975a9e23630",
+    "selection": "signed discovery effect; strictly positive/negative only; stable vocabulary-index tie break"
+  },
+  "candidates": [
+    {
+      "concept_id": 27330,
+      "concept": "lip-syncing",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 1,
+      "discovery_effect": 0.004553440441510898
+    },
+    {
+      "concept_id": 27328,
+      "concept": "lip-smacking",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 2,
+      "discovery_effect": 0.004167407456122379
+    },
+    {
+      "concept_id": 45267,
+      "concept": "stare",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 3,
+      "discovery_effect": 0.004102281236022794
+    },
+    {
+      "concept_id": 53213,
+      "concept": "wide-eyed",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 4,
+      "discovery_effect": 0.004029144211655201
+    },
+    {
+      "concept_id": 43947,
+      "concept": "smirk",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 5,
+      "discovery_effect": 0.003875227378546586
+    },
+    {
+      "concept_id": 16886,
+      "concept": "eyebrow-raising",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 6,
+      "discovery_effect": 0.003818555488915534
+    },
+    {
+      "concept_id": 35206,
+      "concept": "physiognomy",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 7,
+      "discovery_effect": 0.0037289416910652293
+    },
+    {
+      "concept_id": 45729,
+      "concept": "strabismus",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 8,
+      "discovery_effect": 0.003696930033909308
+    },
+    {
+      "concept_id": 5310,
+      "concept": "big-eyed",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 9,
+      "discovery_effect": 0.003638208407111674
+    },
+    {
+      "concept_id": 45268,
+      "concept": "stare-down",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 10,
+      "discovery_effect": 0.00348230255979928
+    },
+    {
+      "concept_id": 47258,
+      "concept": "tarmac",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 1,
+      "discovery_effect": -0.00357014632277865
+    },
+    {
+      "concept_id": 21422,
+      "concept": "hand-shaped",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 2,
+      "discovery_effect": -0.0034965844373197933
+    },
+    {
+      "concept_id": 34449,
+      "concept": "pavement",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 3,
+      "discovery_effect": -0.003374922029644978
+    },
+    {
+      "concept_id": 11865,
+      "concept": "dance-floor",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 4,
+      "discovery_effect": -0.003201081195963554
+    },
+    {
+      "concept_id": 3725,
+      "concept": "asphalt",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 5,
+      "discovery_effect": -0.003190768068582825
+    },
+    {
+      "concept_id": 42833,
+      "concept": "shop-floor",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 6,
+      "discovery_effect": -0.003190098547357404
+    },
+    {
+      "concept_id": 18278,
+      "concept": "floor",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 7,
+      "discovery_effect": -0.0031390581360310386
+    },
+    {
+      "concept_id": 48774,
+      "concept": "torso",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 8,
+      "discovery_effect": -0.0031375332010689003
+    },
+    {
+      "concept_id": 13678,
+      "concept": "dispersion",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 9,
+      "discovery_effect": -0.0031292002546965034
+    },
+    {
+      "concept_id": 6859,
+      "concept": "bullet-shaped",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 10,
+      "discovery_effect": -0.0030618495203169134
+    }
+  ],
+  "artifact_hash": "e8a6db708e1babb7aa714af6c159886b1b77e946eca2d20b0408f0fa3f9d1b76"
+}

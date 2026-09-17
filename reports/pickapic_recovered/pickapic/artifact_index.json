@@ -1,0 +1,624 @@
+{
+  "run_root": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic",
+  "files": [
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/analysis/all_concepts.csv",
+      "relative_path": "analysis/all_concepts.csv",
+      "bytes": 24395320,
+      "sha256": "9e9904c264a4bda79756b6eb3950cb2eb7319fda9f4e3d155cf3aa438587678a"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/analysis/analysis_summary.json",
+      "relative_path": "analysis/analysis_summary.json",
+      "bytes": 1023,
+      "sha256": "1fe658811a0ecb51c801dd0d7b6fa81ce4584848b53abd4d87c3a08786c10847"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/analysis/annotation_template.csv",
+      "relative_path": "analysis/annotation_template.csv",
+      "bytes": 160484,
+      "sha256": "53d3c6d14f74f44c311ed07748f10f8e842e2e3f3f6438ae9a4cb2d347a9a70c"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/analysis/annotator_component_sensitivity.json",
+      "relative_path": "analysis/annotator_component_sensitivity.json",
+      "bytes": 18889,
+      "sha256": "6f8ed1f38dbaceb98d6c4c8eb1005244da30ee42326f43e933833992f1004298"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/analysis/bank_template_diagnostic.json",
+      "relative_path": "analysis/bank_template_diagnostic.json",
+      "bytes": 121914,
+      "sha256": "8b37f9dd5652214e758a1f73b6362c14906e6cf64d04ce254386d7a4b481dc47"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/analysis/comparisons.jsonl",
+      "relative_path": "analysis/comparisons.jsonl",
+      "bytes": 796503,
+      "sha256": "961d1628739c4ee278f1462b754cad4d98d00e156b5f760e124df20c0b884e69"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/analysis/confounder_audit.json",
+      "relative_path": "analysis/confounder_audit.json",
+      "bytes": 1364,
+      "sha256": "d69d2041287816353ae42ca2abf6e59d3cc32f1cf21822139e1882918242944b"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/analysis/dataset_audit.json",
+      "relative_path": "analysis/dataset_audit.json",
+      "bytes": 300882,
+      "sha256": "53de4d178f17fda456981e4b483d02f3a99c31fe237952832f889e18c3b3ceea"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/analysis/discrimination_summary.csv",
+      "relative_path": "analysis/discrimination_summary.csv",
+      "bytes": 216,
+      "sha256": "0318e46c6e406870ab467300dd709045e509472c2fa980e3ef75e06d290b682d"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/analysis/frozen_candidates.json",
+      "relative_path": "analysis/frozen_candidates.json",
+      "bytes": 4353,
+      "sha256": "738d307db69e3ad0726a257869299f7f44745afe52db1f40c6bcae0623a40914"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/analysis/gallery_selection.json",
+      "relative_path": "analysis/gallery_selection.json",
+      "bytes": 234799,
+      "sha256": "5553c895fff46b7ee6612849cc2843d152882e0c0d7a07e5aad2ebb0def43495"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/analysis/generator_pair_sensitivity.json",
+      "relative_path": "analysis/generator_pair_sensitivity.json",
+      "bytes": 82942,
+      "sha256": "514a20a85fa6e9fb3134c2576da4a66afbed42cc00f235df3d2176c8d0245704"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/analysis/heatmaps/057b49d01450e2ccd4e2_preferred.npy",
+      "relative_path": "analysis/heatmaps/057b49d01450e2ccd4e2_preferred.npy",
+      "bytes": 4224,
+      "sha256": "151fbff9ff8749d048161e19cd2a0684af853395d6d9a050e4145aeda036c136"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/analysis/heatmaps/057b49d01450e2ccd4e2_rejected.npy",
+      "relative_path": "analysis/heatmaps/057b49d01450e2ccd4e2_rejected.npy",
+      "bytes": 4224,
+      "sha256": "2186226a8858137d146e45e16f6fe975ef1c4a46dd4ea7ec599ffd67ceeb8408"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/analysis/heatmaps/572fc50ca7dc228f3df0_preferred.npy",
+      "relative_path": "analysis/heatmaps/572fc50ca7dc228f3df0_preferred.npy",
+      "bytes": 4224,
+      "sha256": "0ab882f9cba677f3a22a54f0824e5a226cdca9288de7445bd63e1697995a769f"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/analysis/heatmaps/572fc50ca7dc228f3df0_rejected.npy",
+      "relative_path": "analysis/heatmaps/572fc50ca7dc228f3df0_rejected.npy",
+      "bytes": 4224,
+      "sha256": "49d7fde2b22868aeabc3c99589f18ffe27391194f504b8a819a3827435e7b632"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/analysis/heatmaps/7e96f808777a29d65e36_preferred.npy",
+      "relative_path": "analysis/heatmaps/7e96f808777a29d65e36_preferred.npy",
+      "bytes": 4224,
+      "sha256": "f9579046418e44c72bde7a0b310d516cc08e380d0f65864d39e08845777d95c3"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/analysis/heatmaps/7e96f808777a29d65e36_rejected.npy",
+      "relative_path": "analysis/heatmaps/7e96f808777a29d65e36_rejected.npy",
+      "bytes": 4224,
+      "sha256": "8cf7785bf033a5d9548d90f96bfaa3ad1fabc77905c8d594fbee0faa02731e57"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/analysis/heatmaps/a35d0077740be63d72f6_preferred.npy",
+      "relative_path": "analysis/heatmaps/a35d0077740be63d72f6_preferred.npy",
+      "bytes": 4224,
+      "sha256": "8e2f229ae3679a8a56a994a74355820f04b126c0e0859fd56fcb7103a655a245"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/analysis/heatmaps/a35d0077740be63d72f6_rejected.npy",
+      "relative_path": "analysis/heatmaps/a35d0077740be63d72f6_rejected.npy",
+      "bytes": 4224,
+      "sha256": "87b3208a5b8a828ff86f5db5dc602e404ed5d2c3cf65fc2e2e93bd7afe036976"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/analysis/heatmaps/index-rank-000.json",
+      "relative_path": "analysis/heatmaps/index-rank-000.json",
+      "bytes": 1146,
+      "sha256": "c57db424323ac212d6d0d9f31ebdce5ea273d5fde71e8103a81f260a766fdab2"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/analysis/heatmaps/index-rank-001.json",
+      "relative_path": "analysis/heatmaps/index-rank-001.json",
+      "bytes": 1152,
+      "sha256": "7cc6491cb0aea307e4b625163c91e087192f655b7441ee7d2e82f0a49b76ebca"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/analysis/heatmaps/index-rank-002.json",
+      "relative_path": "analysis/heatmaps/index-rank-002.json",
+      "bytes": 1152,
+      "sha256": "680f28dc596b56d324e2f1385d2e9c14c23ce55411d1cc09f26adaf07fee8a3b"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/analysis/heatmaps/index-rank-003.json",
+      "relative_path": "analysis/heatmaps/index-rank-003.json",
+      "bytes": 1142,
+      "sha256": "8d0ba14ed980fcb6994ae458accdd7429356e122b5a535082c4e048526225aa3"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/analysis/heatmaps/index.json",
+      "relative_path": "analysis/heatmaps/index.json",
+      "bytes": 4045,
+      "sha256": "41522e58378782edba22beaf8e9f82d59cd9d0078b328124f9a7ca197a1ee2bc"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/analysis/joint_concept_score.json",
+      "relative_path": "analysis/joint_concept_score.json",
+      "bytes": 1099,
+      "sha256": "81c45154f3f398b43bc769541a55f46ae22ec1a4433a9d6e115574278f2ed694"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/analysis/paper_subsection.tex",
+      "relative_path": "analysis/paper_subsection.tex",
+      "bytes": 1893,
+      "sha256": "7001cf0ead42fad973d2ebb7f6cc10030828ae29d8aa76bb0df156d3e1d588c7"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/analysis/replication_summary.json",
+      "relative_path": "analysis/replication_summary.json",
+      "bytes": 277,
+      "sha256": "c002e27b4f724fb369408ac58cbe79a1be39fb2c23c9c9e263c5f144943ba78f"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/analysis/report.md",
+      "relative_path": "analysis/report.md",
+      "bytes": 7636,
+      "sha256": "9c6fcffc44617c9b5a7097305ef750acfc406f1c70e8b4afbec68fca298eb71c"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/analysis/results_table.tex",
+      "relative_path": "analysis/results_table.tex",
+      "bytes": 1424,
+      "sha256": "c47d292c4cbca80ba1baa944113c7882f14ac5c10b7cdf74e7a833bf9fb97249"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/analysis/stratified_sensitivity.json",
+      "relative_path": "analysis/stratified_sensitivity.json",
+      "bytes": 121919,
+      "sha256": "5e77c11ffce6558aea620aafecb812216d44edee41f9298603ed5fb9847a74e4"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/analysis/top_concepts.json",
+      "relative_path": "analysis/top_concepts.json",
+      "bytes": 18449,
+      "sha256": "5a4ddcf69925aeaa5ecaa3172be3a8ff74b9bea994735888e39ed09d35ccf90e"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/gpu-utilization-1866021.csv",
+      "relative_path": "gpu-utilization-1866021.csv",
+      "bytes": 53337,
+      "sha256": "7534af4a23a38eeb2f9f83660d9394247e456ee75ecfd955482a367a99407b09"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/manifest/comparisons.jsonl",
+      "relative_path": "manifest/comparisons.jsonl",
+      "bytes": 796503,
+      "sha256": "961d1628739c4ee278f1462b754cad4d98d00e156b5f760e124df20c0b884e69"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/manifest/dataset_audit.json",
+      "relative_path": "manifest/dataset_audit.json",
+      "bytes": 300394,
+      "sha256": "40516191397fce9f11ecc1a298f6d58feb5934b391ff731dac0902864adaf992"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/manifest/events.jsonl",
+      "relative_path": "manifest/events.jsonl",
+      "bytes": 38687196,
+      "sha256": "75823e87556ebdc32b44b3400f20651ef3a4de6aa46a66d8b244c25375efebea"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/manifest/images.jsonl",
+      "relative_path": "manifest/images.jsonl",
+      "bytes": 156592402,
+      "sha256": "bc02d0a628587cfe148eedaf4ca1b1e748c8f8fbb38adccd9e3ac337665fd328"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/manifest/provenance.json",
+      "relative_path": "manifest/provenance.json",
+      "bytes": 2084,
+      "sha256": "217543e58259963054e9d791c24325ae0f6abc4f8ca6e002b16a073be11bd031"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/score_config.json",
+      "relative_path": "score_config.json",
+      "bytes": 412,
+      "sha256": "ba5716ebf1a51216421a84bd774415b33f9f45c717512694ce4815e428732fa6"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/bank_audit.json",
+      "relative_path": "scores/bank_audit.json",
+      "bytes": 668,
+      "sha256": "c3957be172bb0ab09e9c9ced2f4db2e0b6d59bab1d396595b4a9a8dcbc2a4251"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/cache.json",
+      "relative_path": "scores/cache.json",
+      "bytes": 1543,
+      "sha256": "19d8b6302ec046ea5bff74a11ce407cd809782ab0198f72949012c1ec745f336"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/distributed_execution.json",
+      "relative_path": "scores/distributed_execution.json",
+      "bytes": 882,
+      "sha256": "0c548c2f9ae8972e693b6b1e804d0edb5e4562d2cdc1b8c41ef5bc7016607226"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/reference_validation.json",
+      "relative_path": "scores/reference_validation.json",
+      "bytes": 2365,
+      "sha256": "a8a6806ac38e8189cb3843b61d2bae41c6fdf4c01e226a26469101a866128d7f"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/reuse_audit.json",
+      "relative_path": "scores/reuse_audit.json",
+      "bytes": 287021,
+      "sha256": "55f80aed84c173ede160d5b6444d11910a627f26f270f29a9508f6a2cf974ab4"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/row_index.json",
+      "relative_path": "scores/row_index.json",
+      "bytes": 115914,
+      "sha256": "bd155c26db4554c803496491d9d6e94c748c740ec99ad18d47460c382bf1b6a3"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/rows.json",
+      "relative_path": "scores/rows.json",
+      "bytes": 6217663,
+      "sha256": "27f326f986b2ed474463a7bd4b7019cc33bd94692d852a5afcfe9e37900c2232"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/scores.f32",
+      "relative_path": "scores/scores.f32",
+      "bytes": 443694360,
+      "sha256": "a0c5e84527d0f3d0d27b17203e814113e28adb5fa65ff45325cd2138a8834798"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-000/bank_audit.json",
+      "relative_path": "scores/shards/rank-000/bank_audit.json",
+      "bytes": 668,
+      "sha256": "c3957be172bb0ab09e9c9ced2f4db2e0b6d59bab1d396595b4a9a8dcbc2a4251"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-000/cache.json",
+      "relative_path": "scores/shards/rank-000/cache.json",
+      "bytes": 1542,
+      "sha256": "03f3a6ad058c83d08ac4a40f84f8370eb713a725b401b3d38ff6a08bf4651245"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-000/execution_timing.json",
+      "relative_path": "scores/shards/rank-000/execution_timing.json",
+      "bytes": 311,
+      "sha256": "7e1633742275a44af249a0a2baf512ad3dfd933ad990873ebfa2f9bad15474f4"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-000/reference_validation.json",
+      "relative_path": "scores/shards/rank-000/reference_validation.json",
+      "bytes": 517,
+      "sha256": "c786e24d0b9d9a96751d0d1a8bbe9808941cd95657ade979d98d02d511c26d6a"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-000/reuse_audit.json",
+      "relative_path": "scores/shards/rank-000/reuse_audit.json",
+      "bytes": 268,
+      "sha256": "b27939ab11ebf15dc2e2a10cf97ed64e8744bfb60d6a53f0f2a0224bc98faa61"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-000/row_index.json",
+      "relative_path": "scores/shards/rank-000/row_index.json",
+      "bytes": 28677,
+      "sha256": "1b089b0d0f4611e42a61a15ee32418ad571a6e26ec6af1dcd71dc285ec978f12"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-000/rows.json",
+      "relative_path": "scores/shards/rank-000/rows.json",
+      "bytes": 1568614,
+      "sha256": "708eaaedd1c0e6cfdc076cd2481c9dee4691a9943191b98651a4a4ceef89d8f7"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-000/scores.f32",
+      "relative_path": "scores/shards/rank-000/scores.f32",
+      "bytes": 111085680,
+      "sha256": "04b67459a74e92c44941bebaacfd89db93a48164227cc54757c2cfdab2796476"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-000/state.json",
+      "relative_path": "scores/shards/rank-000/state.json",
+      "bytes": 98126,
+      "sha256": "48f3ba41bd3e2447cf0580be43b7f4e1641217a2360c3a21e531f3ed3db401f9"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-000/text_mode_audit.json",
+      "relative_path": "scores/shards/rank-000/text_mode_audit.json",
+      "bytes": 2627,
+      "sha256": "ea08921fe6f9be0a887d9d889d828f909a12a84b7af8837f6be2fb5e9f8e6ce9"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-000/valid.npy",
+      "relative_path": "scores/shards/rank-000/valid.npy",
+      "bytes": 642,
+      "sha256": "9ad772ab09661f84e98418426fed2507b9bfc0c830cad6448b6e0a65f2ca488f"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-000/vocab.json",
+      "relative_path": "scores/shards/rank-000/vocab.json",
+      "bytes": 818330,
+      "sha256": "67d5843c259a82e580d4b0c4d95f617fb5e3de960099e104540a55991b079237"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-000/worker_execution.json",
+      "relative_path": "scores/shards/rank-000/worker_execution.json",
+      "bytes": 148,
+      "sha256": "c066decccaca1e569cd8bd4c1ce340ea6ffa0227dd8b9a7ca96febadc19011bf"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-001/bank_audit.json",
+      "relative_path": "scores/shards/rank-001/bank_audit.json",
+      "bytes": 668,
+      "sha256": "c3957be172bb0ab09e9c9ced2f4db2e0b6d59bab1d396595b4a9a8dcbc2a4251"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-001/cache.json",
+      "relative_path": "scores/shards/rank-001/cache.json",
+      "bytes": 1542,
+      "sha256": "ab93bfaeee0a54418195e2c09512bdb37d8ce127626dcf65574bc2953e8653cb"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-001/execution_timing.json",
+      "relative_path": "scores/shards/rank-001/execution_timing.json",
+      "bytes": 310,
+      "sha256": "209a503c48c64545f04b06c143196714b390fa18b37d27399b5a40d9bbf54254"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-001/reference_validation.json",
+      "relative_path": "scores/shards/rank-001/reference_validation.json",
+      "bytes": 517,
+      "sha256": "9aef153a2c2907a8aede4469195e823727f559a72ad8e99292253e38334ec177"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-001/reuse_audit.json",
+      "relative_path": "scores/shards/rank-001/reuse_audit.json",
+      "bytes": 268,
+      "sha256": "b27939ab11ebf15dc2e2a10cf97ed64e8744bfb60d6a53f0f2a0224bc98faa61"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-001/row_index.json",
+      "relative_path": "scores/shards/rank-001/row_index.json",
+      "bytes": 28621,
+      "sha256": "c53cf20f8249b56f92e6198e34b0c72564069a7cd6fc20b9b168cf2504b15dbd"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-001/rows.json",
+      "relative_path": "scores/shards/rank-001/rows.json",
+      "bytes": 1560451,
+      "sha256": "059cdf68260fceb545b54fb270252c1d5f62ef2d7122b9aed90975c43c265631"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-001/scores.f32",
+      "relative_path": "scores/shards/rank-001/scores.f32",
+      "bytes": 110869560,
+      "sha256": "5e5bf0dd5ddf43a4fd4e199dc17c6f196bd75c8cdd5e13ce7fe839becae9934d"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-001/state.json",
+      "relative_path": "scores/shards/rank-001/state.json",
+      "bytes": 97935,
+      "sha256": "1807f24859c4a9e3cd19754484a088d484fc609165952da018e63824b96e10d8"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-001/text_mode_audit.json",
+      "relative_path": "scores/shards/rank-001/text_mode_audit.json",
+      "bytes": 2627,
+      "sha256": "ea08921fe6f9be0a887d9d889d828f909a12a84b7af8837f6be2fb5e9f8e6ce9"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-001/valid.npy",
+      "relative_path": "scores/shards/rank-001/valid.npy",
+      "bytes": 641,
+      "sha256": "91d7de5c7d1eb40b2a9feb21aad17ba916b36646371a92f8f95ff256d2e627f4"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-001/vocab.json",
+      "relative_path": "scores/shards/rank-001/vocab.json",
+      "bytes": 818330,
+      "sha256": "67d5843c259a82e580d4b0c4d95f617fb5e3de960099e104540a55991b079237"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-001/worker_execution.json",
+      "relative_path": "scores/shards/rank-001/worker_execution.json",
+      "bytes": 150,
+      "sha256": "d74067468dd4d4aa20d98b38b08c8474ede0943bdfe9edff488e46b1738911ec"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-002/bank_audit.json",
+      "relative_path": "scores/shards/rank-002/bank_audit.json",
+      "bytes": 668,
+      "sha256": "c3957be172bb0ab09e9c9ced2f4db2e0b6d59bab1d396595b4a9a8dcbc2a4251"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-002/cache.json",
+      "relative_path": "scores/shards/rank-002/cache.json",
+      "bytes": 1542,
+      "sha256": "e903ffd3d875ec8e444f7e8be53eece0403582a144ca3aba5a896f775f11b380"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-002/execution_timing.json",
+      "relative_path": "scores/shards/rank-002/execution_timing.json",
+      "bytes": 310,
+      "sha256": "060bb73b666883bd0d858fcb2b94c7732bf946d7446504b4ca3cb43ff2e43dde"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-002/reference_validation.json",
+      "relative_path": "scores/shards/rank-002/reference_validation.json",
+      "bytes": 516,
+      "sha256": "da96d57f6807453dd9ca07194f3f3d180e079180d0780a14c1a86717a6e12e14"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-002/reuse_audit.json",
+      "relative_path": "scores/shards/rank-002/reuse_audit.json",
+      "bytes": 268,
+      "sha256": "b27939ab11ebf15dc2e2a10cf97ed64e8744bfb60d6a53f0f2a0224bc98faa61"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-002/row_index.json",
+      "relative_path": "scores/shards/rank-002/row_index.json",
+      "bytes": 28621,
+      "sha256": "c961d51bb4f388edd14c5cf701d86f46b61280a2310d1e0367af2967242e3536"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-002/rows.json",
+      "relative_path": "scores/shards/rank-002/rows.json",
+      "bytes": 1520753,
+      "sha256": "2bf620c4c1945d2486515876529d0527d524e34a741fc8c53112d7fe0e5270eb"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-002/scores.f32",
+      "relative_path": "scores/shards/rank-002/scores.f32",
+      "bytes": 110869560,
+      "sha256": "e24658c5e0995fd9bab97d90900cdf16a00167e3ecf8efa62a571c54d539df22"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-002/state.json",
+      "relative_path": "scores/shards/rank-002/state.json",
+      "bytes": 97935,
+      "sha256": "1807f24859c4a9e3cd19754484a088d484fc609165952da018e63824b96e10d8"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-002/text_mode_audit.json",
+      "relative_path": "scores/shards/rank-002/text_mode_audit.json",
+      "bytes": 2627,
+      "sha256": "ea08921fe6f9be0a887d9d889d828f909a12a84b7af8837f6be2fb5e9f8e6ce9"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-002/valid.npy",
+      "relative_path": "scores/shards/rank-002/valid.npy",
+      "bytes": 641,
+      "sha256": "91d7de5c7d1eb40b2a9feb21aad17ba916b36646371a92f8f95ff256d2e627f4"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-002/vocab.json",
+      "relative_path": "scores/shards/rank-002/vocab.json",
+      "bytes": 818330,
+      "sha256": "67d5843c259a82e580d4b0c4d95f617fb5e3de960099e104540a55991b079237"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-002/worker_execution.json",
+      "relative_path": "scores/shards/rank-002/worker_execution.json",
+      "bytes": 150,
+      "sha256": "82e4aa5a1dfc13bb8b31e4dcf64fb3a06d9f92c9459bc74b97600be3d48c687f"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-003/bank_audit.json",
+      "relative_path": "scores/shards/rank-003/bank_audit.json",
+      "bytes": 668,
+      "sha256": "c3957be172bb0ab09e9c9ced2f4db2e0b6d59bab1d396595b4a9a8dcbc2a4251"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-003/cache.json",
+      "relative_path": "scores/shards/rank-003/cache.json",
+      "bytes": 1542,
+      "sha256": "c56904bd505ce670b23404781acd100e36a9b7de92904e905e5973e3b4fa976a"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-003/execution_timing.json",
+      "relative_path": "scores/shards/rank-003/execution_timing.json",
+      "bytes": 310,
+      "sha256": "fe39d9e5c994fcfb9f3cd466d1140fad1dd12b007fbe149d3771cb73d4f5e34b"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-003/reference_validation.json",
+      "relative_path": "scores/shards/rank-003/reference_validation.json",
+      "bytes": 517,
+      "sha256": "628b2e272d254967812076bd35dc4cbcb7f0b3c2b0ec463ecf2683fb475b63c5"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-003/reuse_audit.json",
+      "relative_path": "scores/shards/rank-003/reuse_audit.json",
+      "bytes": 268,
+      "sha256": "b27939ab11ebf15dc2e2a10cf97ed64e8744bfb60d6a53f0f2a0224bc98faa61"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-003/row_index.json",
+      "relative_path": "scores/shards/rank-003/row_index.json",
+      "bytes": 28621,
+      "sha256": "8d227d5cda5f0436f96d69e11488fd68937bbe74103f858c1b330f09af5f2532"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-003/rows.json",
+      "relative_path": "scores/shards/rank-003/rows.json",
+      "bytes": 1567854,
+      "sha256": "50d13de9a71e71b81b12aa9972469b4ecf88607b169ac3d4c0233209158d0f28"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-003/scores.f32",
+      "relative_path": "scores/shards/rank-003/scores.f32",
+      "bytes": 110869560,
+      "sha256": "341f1f6e70f6a0c3bf2c8971d3635a4d07f0a22cd448a076b81576d1768c24bc"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-003/state.json",
+      "relative_path": "scores/shards/rank-003/state.json",
+      "bytes": 97935,
+      "sha256": "1807f24859c4a9e3cd19754484a088d484fc609165952da018e63824b96e10d8"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-003/text_mode_audit.json",
+      "relative_path": "scores/shards/rank-003/text_mode_audit.json",
+      "bytes": 2627,
+      "sha256": "ea08921fe6f9be0a887d9d889d828f909a12a84b7af8837f6be2fb5e9f8e6ce9"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-003/valid.npy",
+      "relative_path": "scores/shards/rank-003/valid.npy",
+      "bytes": 641,
+      "sha256": "91d7de5c7d1eb40b2a9feb21aad17ba916b36646371a92f8f95ff256d2e627f4"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-003/vocab.json",
+      "relative_path": "scores/shards/rank-003/vocab.json",
+      "bytes": 818330,
+      "sha256": "67d5843c259a82e580d4b0c4d95f617fb5e3de960099e104540a55991b079237"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/shards/rank-003/worker_execution.json",
+      "relative_path": "scores/shards/rank-003/worker_execution.json",
+      "bytes": 150,
+      "sha256": "ae6f87bb2ebe43dd3a09216470c042f895bde30c6cdf4b55be984393c3cd4f6b"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/state.json",
+      "relative_path": "scores/state.json",
+      "bytes": 393128,
+      "sha256": "772b8bb36dd72fbb4d736b23eb0fc50c80da9835e9335a3c70a2f8e7f0e2977c"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/text_mode_audit.json",
+      "relative_path": "scores/text_mode_audit.json",
+      "bytes": 2627,
+      "sha256": "ea08921fe6f9be0a887d9d889d828f909a12a84b7af8837f6be2fb5e9f8e6ce9"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/valid.npy",
+      "relative_path": "scores/valid.npy",
+      "bytes": 2181,
+      "sha256": "caf1ebb3adaee0d875abb261df865c344754f3e2588f32b25cafd4914e5bea0b"
+    },
+    {
+      "path": "/e/project1/taco-vlm/avrecum/DatasetDifferencesApplicationsCode/runs/pickapic_recovered/pickapic/scores/vocab.json",
+      "relative_path": "scores/vocab.json",
+      "bytes": 818330,
+      "sha256": "67d5843c259a82e580d4b0c4d95f617fb5e3de960099e104540a55991b079237"
+    }
+  ],
+  "note": "Raw manifests, scores and full vocabulary tables remain at original run paths; this export copies compact review artifacts only."
+}

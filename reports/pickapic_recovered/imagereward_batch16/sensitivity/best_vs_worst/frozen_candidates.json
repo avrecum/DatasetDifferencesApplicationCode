@@ -1,0 +1,174 @@
+{
+  "settings": {
+    "seed": 42,
+    "top_k": 10,
+    "tie_tolerance": 0.0,
+    "mode": "best_vs_worst",
+    "score_fingerprint": "442d8c31ff80c7403654849976f56b83305bad2d7a0c8a56255b983b1e7e0c16",
+    "comparisons_hash": "89b4ccf4f3a2eadd2b72d877f41455b6a243d578db1599e29bb953811ad2a79f",
+    "selection": "signed discovery effect; strictly positive/negative only; stable vocabulary-index tie break"
+  },
+  "candidates": [
+    {
+      "concept_id": 27330,
+      "concept": "lip-syncing",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 1,
+      "discovery_effect": 0.008937999666931014
+    },
+    {
+      "concept_id": 27328,
+      "concept": "lip-smacking",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 2,
+      "discovery_effect": 0.008356157579743898
+    },
+    {
+      "concept_id": 45267,
+      "concept": "stare",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 3,
+      "discovery_effect": 0.008334854120272557
+    },
+    {
+      "concept_id": 43947,
+      "concept": "smirk",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 4,
+      "discovery_effect": 0.008102574266869165
+    },
+    {
+      "concept_id": 53213,
+      "concept": "wide-eyed",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 5,
+      "discovery_effect": 0.007983740269916701
+    },
+    {
+      "concept_id": 16886,
+      "concept": "eyebrow-raising",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 6,
+      "discovery_effect": 0.0077368740257682716
+    },
+    {
+      "concept_id": 5310,
+      "concept": "big-eyed",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 7,
+      "discovery_effect": 0.007416192414543042
+    },
+    {
+      "concept_id": 35206,
+      "concept": "physiognomy",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 8,
+      "discovery_effect": 0.007296788426066365
+    },
+    {
+      "concept_id": 42350,
+      "concept": "serious-looking",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 9,
+      "discovery_effect": 0.0070209798212398054
+    },
+    {
+      "concept_id": 45274,
+      "concept": "staring",
+      "side": "preferred",
+      "direction": 1,
+      "discovery_rank": 10,
+      "discovery_effect": 0.006991379316730386
+    },
+    {
+      "concept_id": 47258,
+      "concept": "tarmac",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 1,
+      "discovery_effect": -0.006756896097821015
+    },
+    {
+      "concept_id": 42813,
+      "concept": "shoe",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 2,
+      "discovery_effect": -0.006492281089418012
+    },
+    {
+      "concept_id": 2822,
+      "concept": "ankle-deep",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 3,
+      "discovery_effect": -0.006027402903453533
+    },
+    {
+      "concept_id": 18543,
+      "concept": "footprint",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 4,
+      "discovery_effect": -0.006024637494446262
+    },
+    {
+      "concept_id": 21422,
+      "concept": "hand-shaped",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 5,
+      "discovery_effect": -0.006005824955307411
+    },
+    {
+      "concept_id": 6859,
+      "concept": "bullet-shaped",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 6,
+      "discovery_effect": -0.005871630707639615
+    },
+    {
+      "concept_id": 48990,
+      "concept": "trampling",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 7,
+      "discovery_effect": -0.005843222135738732
+    },
+    {
+      "concept_id": 44116,
+      "concept": "snowfield",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 8,
+      "discovery_effect": -0.005818548438191767
+    },
+    {
+      "concept_id": 18278,
+      "concept": "floor",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 9,
+      "discovery_effect": -0.005773818346972989
+    },
+    {
+      "concept_id": 17555,
+      "concept": "fibular",
+      "side": "rejected",
+      "direction": -1,
+      "discovery_rank": 10,
+      "discovery_effect": -0.005743990527902584
+    }
+  ],
+  "artifact_hash": "1840ce46ab3b85ea21fd67e8010b333c29f2db93fc530cd3f630ddf5022a01f8"
+}

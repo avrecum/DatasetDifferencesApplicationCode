@@ -206,6 +206,7 @@ def report(
         else "Recorded human-preference pilot"
     )
     counts = summary["counts"]
+    availability = manifest["audit"].get("availability_cohort")
     lines = [
         f"# {title}: {summary['dataset']}",
         "",
@@ -232,6 +233,15 @@ def report(
         lines.append(
             f"| {s} | {c['prompts']} | {c['events']} | {c['comparisons']} | {c['components']} | {c['unique_images']} |"
         )
+    if availability:
+        lines[4:4] = [
+            "**Cohort restriction:** "
+            + availability["target_population"]
+            + ". "
+            + f"Archive coverage retained {availability['retained_events']} metadata-eligible events across {availability['retained_prompts']} prompts before decoding/hash checks. "
+            + "All displayed candidates are required. Original human labels, candidates and full-metadata dependency splits are preserved. This availability-selected subset need not represent the full dataset.",
+            "",
+        ]
     lines += [
         "",
         "## Frozen candidates in discovery order",
@@ -269,7 +279,7 @@ def report(
         "",
         "[Overall discrimination plot](discrimination_summary.png), [discrimination table](discrimination_summary.csv), and [discovery-versus-held-out concept effects](concept_effects.png). The overall score combines concepts frozen on discovery; 0.5 is the paired equal-ordering reference.",
         "",
-        "Inspect the separate ImageReward `sensitivity/best_vs_rest` and `sensitivity/best_vs_worst` analyses when available. Model/patch-count stratifications use frozen primary candidates. Annotator-component sensitivity preserves prompt weights and may have too few clusters for intervals.",
+        "Inspect the separate ImageReward `sensitivity/best_vs_rest` and `sensitivity/best_vs_worst` analyses when available. Model/patch-count stratifications use frozen primary candidates. [Generator-pair sensitivities](generator_pair_sensitivity.json) restrict comparisons within complete events and renormalize event/prompt weights; this changes the conditional observation set. Annotator-component sensitivity preserves prompt weights and may have too few clusters for intervals.",
     ]
     mode_path = Path(score_dir) / "text_mode_audit.json"
     if mode_path.exists():
@@ -293,7 +303,7 @@ def report(
             "",
             "## Joint discovery-selected concept score",
             "",
-            "Equal mean of discovery-direction-adjusted concept scores; no fitted reward model. Values below use the same prompt-balanced test observations.",
+            "Additional application diagnostic: equal mean of discovery-direction-adjusted concept scores; no fitted reward model. This differs from the draft paper's MLLM discrimination evaluation. Values below use the same prompt-balanced test observations.",
             "",
             "| Metric | Estimate | 95% component-bootstrap interval |",
             "|---|---:|---|",
@@ -327,6 +337,8 @@ def report(
         + empirical
         + "\n"
     )
+    if availability:
+        paragraph += "The evaluated cohort is restricted to complete original events whose images were recovered from a pinned author archive. Original candidate sets, human labels and full-metadata split assignments are preserved; this availability-selected early archive need not represent the entire release.\n"
     if test["prompts"] and not summary["synthetic"] and top["candidates"]:
         evaluated = [c for c in top["candidates"] if c["heldout_effect"] is not None]
         replicated = sum(c["direction"] * c["heldout_effect"] > 0 for c in evaluated)

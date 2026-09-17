@@ -1,0 +1,38 @@
+{
+  "dataset": "pickapic",
+  "synthetic": false,
+  "construction_mode": "winner_vs_rest",
+  "counts": {
+    "discovery": {
+      "prompts": 262,
+      "events": 482,
+      "comparisons": 1446,
+      "components": 170,
+      "unique_images": 1714
+    },
+    "validation": {
+      "prompts": 35,
+      "events": 47,
+      "comparisons": 141,
+      "components": 32,
+      "unique_images": 177
+    },
+    "test": {
+      "prompts": 33,
+      "events": 44,
+      "comparisons": 132,
+      "components": 31,
+      "unique_images": 162
+    }
+  },
+  "vocabulary_size": 54030,
+  "score_fingerprint": "8badb97d707266a3b54e1c920d92060285523dc67fe1cca01201d968de41284b",
+  "frozen_artifact_hash": "35d92d7a95b8e3157585c13dccc633971b853d72a4ba5548fc7792cc85a28dc2",
+  "excluded_invalid_events": [],
+  "tie_tolerance": 0.0,
+  "bootstrap_resamples": 2000,
+  "seed": 42,
+  "patch_budget": 1024,
+  "status": "held-out results available",
+  "inference": "associations; similarity scores are not calibrated concept presence probabilities"
+}

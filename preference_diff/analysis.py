@@ -11,6 +11,7 @@ from .io import digest, read_json, write_json, write_csv, write_jsonl
 from .scoring import open_scores
 from .splits import assert_no_leakage, components
 from .statistics import aggregate, evaluate_frozen, select_candidates
+from .sensitivity import frozen_joint_scores, generator_sensitivity
 
 
 METRICS = (
@@ -346,6 +347,12 @@ def confounder_audit(
             rows.append(dict(stratum=name, **row))
     write_json(Path(output) / "confounder_audit.json", audit)
     write_json(Path(output) / "stratified_sensitivity.json", rows)
+    write_json(
+        Path(output) / "generator_pair_sensitivity.json",
+        generator_sensitivity(
+            scores, index, comparisons, images, candidates, tolerance, bootstrap, seed
+        ),
+    )
     if annotators:
         # Merge prompts/image components connected by a user. Conservative one-way
         # cluster sensitivity, with the ORIGINAL prompt-weighted point estimand.
@@ -356,11 +363,17 @@ def confounder_audit(
             if c["analysis_split"] == "test"
         ]
         a = aggregate(scores, index, cs, selected_columns, tolerance)
+        joint_metrics = []
+        if candidates:
+            joint, joint_candidate = frozen_joint_scores(scores, candidates)
+            j = aggregate(joint, index, cs, [0], tolerance)
+            joint_metrics = evaluate_frozen(joint_candidate, j, bootstrap, seed)
         write_json(
             Path(output) / "annotator_component_sensitivity.json",
             dict(
                 method="union prompt/image components sharing annotators; recompute original prompt estimand",
                 metrics=evaluate_frozen(candidates, a, bootstrap, seed),
+                joint_metrics=joint_metrics,
                 counts=a["counts"],
                 caveat="May collapse to very few clusters; unavailable intervals are retained.",
             ),

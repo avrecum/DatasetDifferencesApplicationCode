@@ -1,0 +1,34 @@
+{
+  "discovery": {
+    "signed_rank_correlation": 0.09384774501686262,
+    "available_concepts": 54030,
+    "direction_agreement": 0.5519526189154174
+  },
+  "test": {
+    "signed_rank_correlation": -0.03452377877789058,
+    "available_concepts": 54030,
+    "direction_agreement": 0.44201369609476215
+  },
+  "top_k_overlap": {
+    "preferred": {
+      "left_size": 10,
+      "right_size": 10,
+      "intersection": 0,
+      "jaccard": 0.0,
+      "status": "available"
+    },
+    "rejected": {
+      "left_size": 10,
+      "right_size": 10,
+      "intersection": 0,
+      "jaccard": 0.0,
+      "status": "available"
+    }
+  },
+  "cross_dataset_duplicate_audit": {
+    "shared_normalized_prompts": 0,
+    "shared_hashes": 0,
+    "hash_scope": "resolved pilot images"
+  },
+  "interpretation": "Descriptive agreement; different candidate pools/protocols. Direction agreement differs from magnitude agreement. Significance in one dataset alone is not a between-dataset difference test."
+}

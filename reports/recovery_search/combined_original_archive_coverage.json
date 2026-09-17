@@ -1,0 +1,16 @@
+{
+  "unique_available_uids": 4097,
+  "complete_original_strict_events": 0,
+  "complete_event_ids": [],
+  "available_candidate_counts": {
+    "0": 7177,
+    "1": 4811,
+    "2": 1097
+  },
+  "coverage_all_recorded_events": {
+    "0": 16362,
+    "1": 6856,
+    "2": 2133,
+    "3": 4
+  }
+}

@@ -7,7 +7,14 @@ from pathlib import Path
 
 from .adapters import imagereward, pickapic, construct_comparisons
 from .analysis import analyze_with_sensitivities
-from .io import load_manifest, read_json, read_rows, save_manifest, write_json
+from .io import (
+    load_manifest,
+    read_json,
+    read_rows,
+    save_manifest,
+    write_json,
+    file_hash,
+)
 from .scoring import ScoreConfig, score_manifest
 from .sources import (
     default_cache,
@@ -17,7 +24,12 @@ from .sources import (
     resolve_images,
     prefetch_model,
 )
-from .splits import assign_splits, sample_components, quarantine_new_hash_conflicts
+from .splits import (
+    assign_splits,
+    sample_components,
+    quarantine_new_hash_conflicts,
+    restrict_available_cohort,
+)
 
 
 def parser():
@@ -58,6 +70,11 @@ def parser():
     )
     p.add_argument("--image-metadata", type=Path, help="Local PickaPic UID table")
     p.add_argument("--local-image-root", type=Path)
+    p.add_argument(
+        "--available-image-ids",
+        type=Path,
+        help="Explicit archive-covered cohort JSON: canonical image_ids plus source provenance; require complete events",
+    )
     p.add_argument("--metadata-only", action="store_true")
     p.add_argument(
         "--group-limit",
@@ -138,6 +155,11 @@ def bank_directory(args, lock):
 
 
 def prepare(args, lock, manifest_dir):
+    availability_settings = (
+        {"available_image_ids_sha256": file_hash(args.available_image_ids)}
+        if args.available_image_ids
+        else {}
+    )
     if args.resume and (manifest_dir / "dataset_audit.json").exists():
         m = load_manifest(manifest_dir)
         old = m["provenance"].get("prepare_settings")
@@ -148,6 +170,7 @@ def prepare(args, lock, manifest_dir):
             mode=args.comparison_mode,
             split_policy=args.split_policy,
             sources=lock,
+            **availability_settings,
         )
         if old != new:
             raise ValueError("Prepare configuration changed; use a fresh run root")
@@ -172,6 +195,16 @@ def prepare(args, lock, manifest_dir):
                 args.cohort,
             )
         assign_splits(m, args.seed, args.split_policy)
+        if args.available_image_ids:
+            available = read_json(args.available_image_ids)
+            restrict_available_cohort(
+                m,
+                available["image_ids"],
+                {
+                    "sha256": availability_settings["available_image_ids_sha256"],
+                    "sources": available.get("sources"),
+                },
+            )
         sample_components(m, args.group_limit, args.seed)
         m["provenance"].update(
             sources=lock,
@@ -183,6 +216,7 @@ def prepare(args, lock, manifest_dir):
                 mode=args.comparison_mode,
                 split_policy=args.split_policy,
                 sources=lock,
+                **availability_settings,
             ),
         )
         save_manifest(manifest_dir, m)

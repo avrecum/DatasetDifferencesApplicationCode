@@ -54,6 +54,10 @@ def test_offline_end_to_end_and_compare(tmp_path):
     transfer = read_json(tmp_path / "comparison/primary/frozen_list_transfer.json")
     # Shared synthetic prompts are audited/excluded from transfer, never claimed independent.
     assert transfer["imagereward_to_pickapic"]["duplicate_events"]
+    assert (
+        transfer["imagereward_to_pickapic"]["joint_metrics"][0]["counts"]
+        == transfer["imagereward_to_pickapic"]["counts"]
+    )
 
 
 def test_null_fixture_has_no_selected_features(tmp_path):

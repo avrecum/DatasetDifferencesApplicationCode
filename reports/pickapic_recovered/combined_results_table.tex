@@ -1,0 +1,13 @@
+% Additional frozen signed-concept-mean diagnostic, not MLLM discrimination.
+\begin{tabular}{llrrl}
+\toprule
+Discovery & Evaluation & Test prompts & Concordance & 95\% CI \\
+\midrule
+ImageReward all pairs & ImageReward all pairs & 75 & 55.1\% & [49.9, 59.9]\% \\
+Pick-a-Pic & Pick-a-Pic & 33 & 49.2\% & [37.5, 61.1]\% \\
+ImageReward all pairs & Pick-a-Pic & 33 & 55.8\% & [43.5, 67.7]\% \\
+Pick-a-Pic & ImageReward all pairs & 75 & 51.5\% & [46.6, 56.1]\% \\
+ImageReward best/rest & Pick-a-Pic & 33 & 64.6\% & [53.3, 75.8]\% \\
+Pick-a-Pic & ImageReward best/rest & 75 & 54.5\% & [47.4, 61.5]\% \\
+\bottomrule
+\end{tabular}

@@ -9,6 +9,8 @@ from scipy.stats import spearmanr
 from .io import read_json, read_rows, write_json, write_csv
 from .scoring import open_scores
 from .statistics import aggregate, evaluate_frozen
+from .sensitivity import frozen_joint_scores, generator_sensitivity
+from .splits import components
 
 
 def _identities(manifest, event_ids):
@@ -171,13 +173,45 @@ def compare(
             [c["concept_id"] for c in candidates],
             tolerance,
         )
+        joint_metrics = []
+        if candidates:
+            joint, joint_candidate = frozen_joint_scores(target_cache[0], candidates)
+            j = aggregate(joint, target_cache[1], retained, [0], tolerance)
+            joint_metrics = evaluate_frozen(joint_candidate, j, bootstrap, seed)
         transfer[name] = dict(
             metrics=evaluate_frozen(candidates, a, bootstrap, seed),
+            joint_metrics=joint_metrics,
+            joint_rule="Additional diagnostic: equal mean of donor discovery-direction-signed concepts, evaluated only on recipient held-out groups; no fitted weights.",
             counts=a["counts"],
             duplicate_events=bad_events,
             excluded_components=sorted(bad_clusters),
             note="Recipient test components overlapping donor discovery prompts or known image hashes excluded; candidate list and direction frozen on donor discovery.",
         )
+        transfer[name]["generator_pair_sensitivity"] = generator_sensitivity(
+            target_cache[0],
+            target_cache[1],
+            retained,
+            {i["image_id"]: i for i in target_manifest["images"]},
+            candidates,
+            tolerance,
+            bootstrap,
+            seed,
+        )
+        if candidates and any(
+            e.get("annotator_id") is not None for e in target_manifest["events"]
+        ):
+            mapping = components(
+                target_manifest["events"], target_manifest["images"], annotators=True
+            )
+            annotator_cs = [
+                dict(c, dependency_cluster_id=mapping[c["event_id"]]) for c in retained
+            ]
+            j = aggregate(joint, target_cache[1], annotator_cs, [0], tolerance)
+            transfer[name]["annotator_component_sensitivity"] = dict(
+                method="Union full-metadata prompt/image components sharing annotators; preserve recipient test prompt-weighted estimand and frozen donor concepts.",
+                joint_metrics=evaluate_frozen(joint_candidate, j, bootstrap, seed),
+                counts=j["counts"],
+            )
     all_left = {e["event_id"] for e in left_manifest["events"] if e["sampled"]}
     all_right = {e["event_id"] for e in right_manifest["events"] if e["sampled"]}
     lp, lh = _identities(left_manifest, all_left)

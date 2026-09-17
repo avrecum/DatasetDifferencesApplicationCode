@@ -48,7 +48,11 @@ def components(events, images, annotators=False):
     groups = defaultdict(list)
     for e in events:
         groups[uf.find(e["event_id"])].append(e["event_id"])
-    return {eid: digest(sorted(ids)) for ids in groups.values() for eid in ids}
+    result = {}
+    for ids in groups.values():
+        component_id = digest(sorted(ids))
+        result.update((eid, component_id) for eid in ids)
+    return result
 
 
 def assign_splits(manifest, seed=42, policy="auto"):
@@ -156,6 +160,46 @@ def sample_components(manifest, limit=500, seed=42):
         algorithm="hash-order whole components within fixed splits; 70/15/15 prompt caps; no replenishment after image failure",
         selected_prompt_counts=dict(counts),
         skipped_components=len(skipped),
+    )
+
+
+def restrict_available_cohort(manifest, image_ids, provenance):
+    """Declare archive coverage before sampling, retaining all dependency links.
+
+    This changes the target population to complete events covered by the named
+    archive. It never removes candidates from an event or substitutes a winner.
+    Splits must already have been assigned on the full original metadata.
+    """
+    image_ids = set(image_ids)
+    known = {i["image_id"] for i in manifest["images"]}
+    if image_ids - known:
+        raise ValueError("Availability list contains unknown canonical image IDs")
+    excluded, retained = [], []
+    for e in manifest["events"]:
+        if "analysis_split" not in e:
+            raise ValueError(
+                "Assign full-metadata dependency splits before availability filtering"
+            )
+        if e["exclusion_reason"]:
+            continue
+        if not set(e["candidate_ids"]) <= image_ids:
+            e["exclusion_reason"] = "outside_available_archive_cohort"
+            excluded.append(e["event_id"])
+        else:
+            retained.append(e)
+    manifest["audit"]["availability_cohort"] = dict(
+        provenance=provenance,
+        available_image_ids=len(image_ids),
+        excluded_event_ids=excluded,
+        retained_events=len(retained),
+        retained_prompts=len({e["normalized_prompt_group_id"] for e in retained}),
+        target_population="Complete eligible original events covered by the declared archive; not the full dataset",
+        split_policy="Keep assignments and dependency components from full original metadata",
+    )
+    manifest["audit"]["exclusions"] = dict(
+        Counter(
+            e["exclusion_reason"] for e in manifest["events"] if e["exclusion_reason"]
+        )
     )
 
 
